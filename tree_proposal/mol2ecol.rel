@@ -1,0 +1,26 @@
+;; RefTeX parse info file
+;; File: /Users/ajr/Dropbox/hawaiiDimensions/manuscripts/tree_paper/proposal/mol2ecol.tex
+;; User: ajr (Andrew Rominger)
+
+(set reftex-docstruct-symbol '(
+
+
+(xr nil "\\\\\\\\\\\\")
+
+(index-tags)
+
+(is-multi nil)
+
+(bibview-cache)
+
+(master-dir . "/Users/ajr/Dropbox/hawaiiDimensions/manuscripts/tree_paper/proposal/")
+
+(label-numbers ("eq:" . 1))
+
+(bof "/Users/ajr/Dropbox/hawaiiDimensions/manuscripts/tree_paper/proposal/mol2ecol.tex")
+
+("eq:1" "e" nil "/Users/ajr/Dropbox/hawaiiDimensions/manuscripts/tree_paper/proposal/mol2ecol.tex" nil "")
+
+(eof "/Users/ajr/Dropbox/hawaiiDimensions/manuscripts/tree_paper/proposal/mol2ecol.tex")
+))
+
