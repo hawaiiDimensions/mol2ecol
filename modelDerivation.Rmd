@@ -1,0 +1,21 @@
+---
+title: "Metabarcoding model development in `NIMBLE`"
+author: "A. J. Rominger"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# The model
+
+We know the total number of reads $N_{reads}$, the number of species $S$, the total number of individuals $N$, and the correlation structure from the phylogeny $\Sigma_{phy}$.  We also know the vector of number of reads per species $x_{read}$. We do not know the rate of copy number evolution $\sigma_{copy}$ nor the rate of primer affinity evolution $\sigma_{primer}$.  We also most importantly don't know the actual vector of abundances $x$.  We want to model the number of reads as multinomial conditioned on $N_{reads}$ and $S$, and with a probability vector $p$ given by
+$$
+p \sim \text{dirch}(x \nu \lambda)
+$$
+where $\nu$ is a variable proportional to copy number and $\lambda$ is a variable proportional to primer affinity.  We will assume that $\text{log}\nu$ evolved according to a Brownian motion process with rate $\sigma_{copy}$ and mean $\mu_{copy} = 0$.  We will assume that $\text{logit}_{min=\alpha}(\lambda)$ evoloved according to an independent Brownian motion process with rate $\sigma_{primer}$ and mean $\mu_{primer} = 0$. $\text{logit}_{min=\alpha}$ is a modified *logit* function which assumes $\lambda$ is constrained by a lower bound $0 \leq \alpha \leq 1$.  Its corresponding modified *expit* function is
+$$
+\text{expit}(x) = \alpha + \frac{1 - \alpha}{1 + \text{exp}(-x)}
+$$
