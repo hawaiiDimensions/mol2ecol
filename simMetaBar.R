@@ -1,7 +1,6 @@
 library(ape)
-# library(phylosim)
-library(phangorn)
-library(pika)
+library(TreeSim)
+# library(pika)
 
 
 ## ========================================
@@ -46,6 +45,7 @@ makeCommTree <- function(abund) {
     
     return(tre)
 }
+
 
 ## =========================================
 ## function to simulate metabarcoding output
