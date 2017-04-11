@@ -19,3 +19,40 @@ where $\nu$ is a variable proportional to copy number and $\lambda$ is a variabl
 $$
 \text{expit}(x) = \alpha + \frac{1 - \alpha}{1 + \text{exp}(-x)}
 $$
+
+The variance-covariance matrix for a Brownian-motion process on a known phylogeny is given as
+$$
+\Sigma_{i,j} = \sigma d_{MRCA(i,j)}
+$$
+where $d_{MRCA(i,j)}$ is the distance from the root to the most recent common ancestor of tips $i$ and $j$.  $d_{MRCA(i,i)}$ is simply the depth of the root.
+
+Thus our full model is 
+$$
+x_{reads} \sim \text{multinom}(N_{reads}, p_1, \ldots, p_S)
+$$
+where 
+$$
+p \sim \text{dirch}(x \nu \lambda)
+$$
+and $\nu$ and $\lambda$ follow the following distributions
+$$
+\text{log}(\nu) \sim \text{mvnorm}(0, \sigma_{copy} d_{MRCA(i,j)})
+$$
+$$
+\text{logit}_{min = \alpha}(\nu) \sim \text{mvnorm}(0, \sigma_{primer} d_{MRCA(i,j)})
+$$
+with priors
+$$
+x/N \sim \text{dirch}(N/S, \ldots, N/S)
+$$
+$$
+\frac{1}{\sigma_{copy}} \sim \Gamma(0.001, 0.001)
+$$
+$$
+\frac{1}{\sigma_{primer}} \sim \Gamma(0.001, 0.001)
+$$
+$$
+\alpha \sim \text{Unif}(0, 1)
+$$
+
+
