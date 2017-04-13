@@ -92,7 +92,7 @@ tre <- sim$tre
 
 Let's quickly check the simulation to see that it's reasonable
 
-```{r, fig.height=3, fig.width=6}
+```{r, fig.height=3, fig.width=6, cache=TRUE}
 library(socorro)
 par(mfrow = c(1, 2), mar = c(3, 3, 0, 0) + 0.5, mgp = c(2, 0.75, 0))
 plot(sim$abund, numberReads, xlab = 'Real abundance', ylab = 'Simulated number of reads', 
@@ -216,8 +216,33 @@ mod <- nimbleModel(code = mod, name = 'mod', constants = modConstants,
 
 Now we can compile and run the model
 
-```{r, eval=FALSE}
+```{r, chache=TRUE}
 Cmod <- compileNimble(mod)
 modConf <- configureMCMC(mod)
-modConf$setThin(1)
+
+# set the thinning param
+thin <- 10
+modConf$setThin(thin)
+
+# add block sampling for p (=relative spp abund)
+modConf$addSampler(target = sprintf('p[1:%s]', modConstants$S),
+                   type = 'RW_block')
+
+# compile MCMC
+modMCMC <- buildMCMC(modConf)
+CmodMCMC <- compileNimble(modMCMC, project = mod)
+
+# set MCMC params
+mcmcN <- 1e+05
+burn <- 8000
+niter <- (mcmcN + burn) * modConf$thin
+CmodMCMC$run(niter)
+
+# the posterior sample    
+samp <- as.matrix(CmodMCMC$mvSamples)[-(1:burn), ]
 ```
+
+All sampled parameters are saved in `samp`.  We can evaluate stationarity of our MCMC with some diagnostics.  Firt just trace plots:
+
+# WE NEED TO NOT INCLUDE PRIMER MODEL CAUSE IT GOES CRAZY!!!!
+
