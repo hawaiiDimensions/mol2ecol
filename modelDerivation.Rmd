@@ -6,25 +6,25 @@ output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, comment='##')
 ```
 
 # The model
 
 We know the total number of reads $N_{reads}$, the number of species $S$, the total number of individuals $N$, and the correlation structure from the phylogeny $\Sigma_{phy}$.  We also know the vector of number of reads per species $x_{read}$. We do not know the rate of copy number evolution $\sigma_{copy}$ nor the rate of primer affinity evolution $\sigma_{primer}$.  We also most importantly don't know the actual vector of abundances $x$.  We want to model the number of reads as multinomial conditioned on $N_{reads}$ and $S$, and with a probability vector $p$ given by
 $$
-p \sim \text{dirch}(x \nu \lambda)
+p \sim \text{dir}(x \nu \lambda)
 $$
-where $\nu$ is a variable proportional to copy number and $\lambda$ is a variable proportional to primer affinity.  We will assume that $\text{log}\nu$ evolved according to a Brownian motion process with rate $\sigma_{copy}$ and mean $\mu_{copy} = 0$.  We will assume that $\text{logit}_{min=\alpha}(\lambda)$ evoloved according to an independent Brownian motion process with rate $\sigma_{primer}$ and mean $\mu_{primer} = 0$. $\text{logit}_{min=\alpha}$ is a modified *logit* function which assumes $\lambda$ is constrained by a lower bound $0 \leq \alpha \leq 1$.  Its corresponding modified *expit* function is
+where $\nu$ is a variable proportional to copy number and $\lambda$ is a variable proportional to primer affinity.  We will assume that $\text{log}\nu$ evolved according to a Brownian motion process with rate $\sigma_{copy}$ and mean $\mu_{copy} = 0$.  We will assume that $\text{logit}_{min=\rho}(\lambda)$ evoloved according to an independent Brownian motion process with rate $\sigma_{primer}$ and mean $\mu_{primer} = 0$. $\text{logit}_{min=\rho}$ is a modified *logit* function which assumes $\lambda$ is constrained by a lower bound $0 \leq \rho \leq 1$.  Its corresponding modified *expit* function is
 $$
-\text{expit}(x) = \alpha + \frac{1 - \alpha}{1 + \text{exp}(-x)}
+\text{expit}_{min = \rho}(x) = \rho + \frac{1 - \rho}{1 + \text{exp}(-x)}
 $$
 
 The variance-covariance matrix for a Brownian-motion process on a known phylogeny is given as
 $$
-\Sigma_{i,j} = \sigma d_{MRCA(i,j)}
+\Sigma_{i,j} = \sigma D_{MRCA(i,j)}
 $$
-where $d_{MRCA(i,j)}$ is the distance from the root to the most recent common ancestor of tips $i$ and $j$.  $d_{MRCA(i,i)}$ is simply the depth of the root.
+where $D_{MRCA(i,j)}$ is the distance from the root to the most recent common ancestor of tips $i$ and $j$.  $D_{MRCA(i,i)}$ is simply the depth of the root.
 
 Thus our full model is 
 $$
@@ -32,27 +32,192 @@ x_{reads} \sim \text{multinom}(N_{reads}, p_1, \ldots, p_S)
 $$
 where 
 $$
-p \sim \text{dirch}(x \nu \lambda)
+p \sim \text{dir}(x \nu \lambda)
 $$
-and $\nu$ and $\lambda$ follow the following distributions
+and $\nu$ and $\lambda$ are distributed
 $$
 \text{log}(\nu) \sim \text{mvnorm}(0, \sigma_{copy} d_{MRCA(i,j)})
 $$
 $$
-\text{logit}_{min = \alpha}(\nu) \sim \text{mvnorm}(0, \sigma_{primer} d_{MRCA(i,j)})
+\text{logit}_{min = \rho}(\lambda) \sim \text{mvnorm}(0, \sigma_{primer} d_{MRCA(i,j)})
 $$
-with priors
+The priors for this hierrarchical model are
 $$
-x/N \sim \text{dirch}(N/S, \ldots, N/S)
-$$
-$$
-\frac{1}{\sigma_{copy}} \sim \Gamma(0.001, 0.001)
+x/N \sim \text{dir}(N/S, \ldots, N/S)
 $$
 $$
-\frac{1}{\sigma_{primer}} \sim \Gamma(0.001, 0.001)
+\frac{1}{\sigma^2_{copy}} \sim \Gamma(0.001, 0.001)
 $$
 $$
-\alpha \sim \text{Unif}(0, 1)
+\frac{1}{\sigma^2_{primer}} \sim \Gamma(0.001, 0.001)
+$$
+$$
+\rho \sim \text{unif}(0, 1)
 $$
 
 
+# `NIMBLE` model
+
+We first simulate some data that will be needed in the model specification:
+
+* `S` number of species to simulate
+* `tre` is the underlying phylogeny
+* `N` is the number of actual individuals
+* `Nreads` is the total number of reads
+* `numberReads` is a vector of the number of reads assigned to each spp
+
+```{r, message=FALSE, cache=TRUE}
+# simulation functions
+source('~/Dropbox/hawaiiDimensions/mol2ecol/simMetaBar.R')
+
+# set parameters for simulation
+S <- 50
+n <- round(seq(1, 80, length.out = S))
+N <- sum(n)
+Nreads <- 1e+06
+sigCopy <- 0.1
+sigPrimer <- 0.05
+minAffin <- 0.8
+
+# simulate phylogeny and number of reads resulting form metabarcoding
+set.seed(1)
+sim <- simMetaBar(abund = n, minAffin = minAffin, 
+                  sigCopy = sigCopy, sigPrimer = sigPrimer, 
+                  nreads = Nreads)
+
+# extract needed objects from output
+numberReads <- sim$reads
+tre <- sim$tre
+```
+
+Let's quickly check the simulation to see that it's reasonable
+
+```{r, fig.height=3, fig.width=6}
+library(socorro)
+par(mfrow = c(1, 2), mar = c(3, 3, 0, 0) + 0.5, mgp = c(2, 0.75, 0))
+plot(sim$abund, numberReads, xlab = 'Real abundance', ylab = 'Simulated number of reads', 
+     log = 'xy', axes = FALSE, frame.plot = TRUE)
+logAxis(1, expLab = TRUE); logAxis(2, expLab = TRUE)
+plot(tre, show.tip.label = FALSE)
+axis(1, at = pretty(par('usr')[1:2]), labels = rev(pretty(par('usr')[1:2])))
+mtext('Mya', side = 1, line = 2)
+```
+
+To specify our model in `NIMBLE` we can define and use custom multinomial-Dirichlet functions:
+
+```{r, results='hide', message=FALSE}
+library(nimble)
+
+ddirchmulti <- nimbleFunction(
+    run = function(x = double(1), alpha = double(1), size = double(0),
+                   log = integer(0, default = 0)) {
+        returnType(double(0))
+        alpha0 <- sum(alpha)
+        
+        # new log prob that ignores 0's instead of throwing NaN/Inf
+        lgammaSum <- numeric(length = length(x), value = 0, init = TRUE)
+        for(i in 1:length(lgammaSum)) {
+            if(x[i] > 0) {
+                lgammaSum[i] <- log(x[i]) + lgamma(alpha[i]) +
+                    lgamma(x[i]) -
+                    lgamma(alpha[i] + x[i])
+            }
+        }
+        logProb <- log(size) +
+            lgamma(alpha0) + lgamma(size) - lgamma(alpha0 + size) -
+            sum(lgammaSum)
+        
+        if(log) return(logProb)
+        else return(exp(logProb))
+    }
+)
+
+rdirchmulti <- nimbleFunction(
+    run = function(n = double(0, default = 1), alpha = double(1), size = double(0)) {
+        returnType(double(1))
+        
+        # modified from MCMCpack to allow alpha_k = 0
+        x <- numeric(length = length(alpha), value = 0, init = TRUE)
+        for(i in 1:length(x)) x[i] <- rgamma(1, shape = alpha[i], rate = 1)
+        p <- x/sum(x)
+        
+        return(rmulti(1, size = size, prob = p))
+    }
+)
+```
+
+The arguments are:
+    
+* `x` vector of values (e.g. number of reads for each species $x_{reads}$)
+* `alpha` vector of parameters of the Dirichlet distribution
+* `size` number of trials (e.g. total number of reads $N_{reads}$)
+* `n` number of observations (only `n = 1` supported)
+
+
+We can now specify the model:
+
+```{r, cache=TRUE}
+mod <- nimbleCode({
+    # p is proportion of total abundance for each spp
+    x[1:S] <- N*p[1:S]
+    
+    # define phylogenetically-correlated copy number (nu) and primer affinity (lambda)
+    # Note: tauCopy and tauPrimer are inverse variances, and 'Prec' stands for 
+    # 'Preceission' matrix (the inverse of the var-covar matrix)
+    # Note: var-cov matrix D is defined in constants, as is mu0 (which is a vector of 0)
+    PrecCopy[1:S, 1:S] <- tauCopy * Dinv[1:S, 1:S]
+    PrecPrimer[1:S, 1:S] <- tauPrimer * Dinv[1:S, 1:S]
+    logNu[1:S] ~ dmnorm(mu0[1:S], PrecCopy[1:S, 1:S])
+    logitLambda[1:S] ~ dmnorm(mu0[1:S], PrecPrimer[1:S, 1:S])
+    nu[1:S] <- exp(logNu[1:S])
+    lambda[1:S] <- rho + (1 - rho) / (1 + exp(-logitLambda[1:S]))
+    
+    # define dirichlet-multinom params and the distribution of x_{reads}
+    alpha[1:S] <- x[1:S] * nu[1:S] * lambda[1:S]
+    xreads[1:S] ~ ddirchmulti(alpha[1:S], Nreads)
+    
+    # priors
+    p[1:S] ~ ddirch(p0[1:S]) # p0 defined in constants
+    tauCopy ~ dgamma(0.001, 0.001)
+    tauPrimer ~ dgamma(0.001, 0.001)
+    rho ~ dunif(0, 1)
+})
+```
+
+
+And initialize the model
+
+```{r, cache=TRUE}
+# model constants, data and inits
+S <- length(tre$tip.label)
+modConstants <- list(S = S, N = N, Nreads = Nreads,
+                     Dinv = solve(vcv(tre)),  # vcv gives the vcov mat of a phylo for sig = 1
+                     mu0 = rep(0, S), p0 = rep(N/S, S))
+modData <- list(xreads = numberReads)
+modInits <- list(
+    # priors
+    p = rep(1/modConstants$S, modConstants$S), tauCopy = 1, tauPrimer = 1, rho = 0.5, 
+    
+    # deterministic relationships
+    x = rep(modConstants$N/modConstants$S, modConstants$S), 
+    PrecCopy = modConstants$Dinv, PrecPrimer = modConstants$Dinv,
+    
+    # hyper distributions
+    logNu = rep(0, modConstants$S), logitLambda = rep(0, modConstants$S),
+    
+    # deterministic relationships arrising from hyperdistributions
+    nu = rep(1, modConstants$S), lambda = rep(0.75, modConstants$S)
+)
+
+# build model
+mod <- nimbleModel(code = mod, name = 'mod', constants = modConstants, 
+                   data = modData, inits = modInits)
+```
+
+Now we can compile and run the model
+
+```{r, eval=FALSE}
+Cmod <- compileNimble(mod)
+modConf <- configureMCMC(mod)
+modConf$setThin(1)
+```
