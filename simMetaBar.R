@@ -54,7 +54,8 @@ makeCommTree <- function(abund) {
 ## assumes copy number and primar affinity evolve by independent BM (log and logit transformed,
 ## repectively). returns resulting number of reads for each spp, as well as their actual
 ## abundances
-simMetaBar <- function(abund, minAffin = 0.8, sigCopy, sigPrimer, nreads = 10^6) {
+# simMetaBar <- function(abund, minAffin = 0.8, sigCopy, sigPrimer, nreads = 10^6) {
+simMetaBar <- function(abund, sigCopy, nreads = 10^6) {
     nspp <- length(abund)
     
     ## simulate tree
@@ -66,7 +67,8 @@ simMetaBar <- function(abund, minAffin = 0.8, sigCopy, sigPrimer, nreads = 10^6)
     cn <- exp(rTraitCont(tre, sigma = sqrt(sigCopy)))
     
     ## simulate primary affinity as logit-normal with absolute minimum value
-    pa <- minAffin + (1 - minAffin) / (1 + exp(-rTraitCont(tre, sigma = sqrt(sigPrimer))))
+    # pa <- minAffin + (1 - minAffin) / (1 + exp(-rTraitCont(tre, sigma = sqrt(sigPrimer))))
+    pa <- 1 # removing primer affinity from simulation
     
     ## simulate reads as a multinomial sample given abund, cn, pa
     reads <- rmultinom(1, nreads, abund*cn*pa)[, 1]
