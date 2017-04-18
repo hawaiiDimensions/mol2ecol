@@ -60,11 +60,12 @@ We first simulate some data that will be needed in the model specification:
 source('~/Dropbox/hawaiiDimensions/mol2ecol/simMetaBar.R')
 
 # set parameters for simulation
-S <- 40
-n <- round(seq(1, 80, length.out = S))
+S <- 70
+set.seed(1)
+n <- sample(round(seq(1, 80, length.out = S)))
 N <- sum(n)
 Nreads <- 1e+06
-sigCopy <- 0.01
+sigCopy <- 0.1
 
 # simulate phylogeny and number of reads resulting form metabarcoding
 set.seed(1)
@@ -73,16 +74,18 @@ sim <- simMetaBar(abund = n, sigCopy = sigCopy, nreads = Nreads)
 # extract needed objects from output
 numberReads <- sim$reads
 tre <- sim$tre
+ordID <- sim$ordID
 ```
 
 Let's quickly check the simulation to see that it's reasonable
 
 ```{r, fig.height=3, fig.width=6, cache=FALSE}
-library(socorro)
+palette(hsv(h = seq(0, 0.8, length.out = max(ordID)), 
+            s = 1-0.3*seq(-1, 1, length.out = max(ordID))^2, 
+            v = 0.7 + 0.3*seq(-1, 1, length.out = max(ordID))^2))
 par(mfrow = c(1, 2), mar = c(3, 3, 0, 0) + 0.5, mgp = c(2, 0.75, 0))
 plot(sim$abund, numberReads, xlab = 'Real abundance', ylab = 'Simulated number of reads', 
-     log = 'xy', axes = FALSE, frame.plot = TRUE)
-logAxis(1, expLab = TRUE); logAxis(2, expLab = TRUE)
+     col = ordID, cex = 1.5, pch = 16)
 plot(tre, show.tip.label = FALSE)
 axis(1, at = pretty(par('usr')[1:2]), labels = rev(pretty(par('usr')[1:2])))
 mtext('Mya', side = 1, line = 2)
@@ -147,14 +150,16 @@ mod <- nimbleCode({
     # x[1:S] <- N*p[1:S]
     
     # define phylogenetically-correlated copy number (nu) and primer affinity (lambda)
-    # Note: tauCopy and tauPrimer are inverse variances, and 'Prec' stands for 
-    # 'Preceission' matrix (the inverse of the var-covar matrix)
+    # Note: tauCopy is inverse variance, and 'Prec' stands for 'Preceission' matrix (the
+    # inverse of the var-covar matrix)
     # Note: var-cov matrix D is defined in constants, as is mu0 (which is a vector of 0)
-    PrecCopy[1:S, 1:S] <- tauCopy * Dinv[1:S, 1:S]
-    log(nu[1:S]) ~ dmnorm(mu0[1:S], PrecCopy[1:S, 1:S])
+    PrecCopy[1:nOrd, 1:nOrd] <- tauCopy * Dinv[1:nOrd, 1:nOrd]
+    log(nu[1:nOrd]) ~ dmnorm(mu0[1:nOrd], PrecCopy[1:nOrd, 1:nOrd])
     
     # define dirichlet-multinom params and the distribution of x_{reads}
-    alpha[1:S] <- x[1:S] * nu[1:S]
+    for(i in 1:S) {
+        alpha[i] <- x[i] * nu[ordID[i]]
+    }
     xreads[1:S] ~ ddirchmulti(alpha[1:S], Nreads)
     
     # priors
@@ -168,11 +173,12 @@ And initialize the model
 
 ```{r, cache=FALSE}
 # model constants, data and inits
-S <- length(tre$tip.label)
-modConstants <- list(S = S, N = N, Nreads = Nreads,
+modConstants <- list(S = S, N = N, Nreads = Nreads, nOrd = max(ordID), ordID = ordID,
                      Dinv = solve(vcv(tre)),  # vcv gives the vcov mat of a phylo for sig = 1
-                     mu0 = rep(0, S), p0 = rep(1/S, S))
+                     mu0 = rep(0, max(ordID)), p0 = rep(1/S, S))
+
 modData <- list(xreads = numberReads)
+
 modInits <- list(
     # priors
     tauCopy = 1,
@@ -185,8 +191,8 @@ modInits <- list(
     # deterministic relationships
     PrecCopy = modConstants$Dinv,
     
-    # hyper distributions
-    nu = rep(1, modConstants$S)
+    # hyper distribution
+    nu = rep(1, modConstants$nOrd)
 )
 
 # build model
