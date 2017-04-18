@@ -242,7 +242,7 @@ acf(samp[, 'x[2]'])
 ```
 
 Now a plot of real versus estimated abundance
-```{r, fig.width=6, fig.height=3, cache=FALSE}
+```{r, fig.width=3, fig.height=3, cache=FALSE}
 par(mar = c(3, 3, 0, 0) + 0.5, mgp = c(2, 0.75, 0))
 plot(sim$abund, colMeans(samp[, grep('x', colnames(samp))]), 
      xlab = 'real abundance', ylab = 'estimated abundance')
