@@ -58,21 +58,23 @@ makeCommTree <- function(abund) {
 simMetaBar <- function(abund, sigCopy, nreads = 10^6) {
     nspp <- length(abund)
     
-    ## simulate tree
+    ## simulate order-level tree
     T0 <- 25
-    tre <- sim.bd.taxa.age(nspp, numbsim = 1, lambda = 1, mu = 0.9, 
+    tre <- sim.bd.taxa.age(ifelse(nspp/10 < 3, 3, round(nspp/10)), 
+                           numbsim = 1, lambda = 1, mu = 0.9, 
                            age = T0, mrca = TRUE)[[1]]
     
     ## simulate copy number evolution as log-normal
     cn <- exp(rTraitCont(tre, sigma = sqrt(sigCopy)))
     
-    ## simulate primary affinity as logit-normal with absolute minimum value
-    # pa <- minAffin + (1 - minAffin) / (1 + exp(-rTraitCont(tre, sigma = sqrt(sigPrimer))))
-    pa <- 1 # removing primer affinity from simulation
+    ## assign spp to orders and replicate cn
+    ordAbund <- split(abund, cut(abund, length(tre$tip.label)))
+    ordID <- rep(1:length(ordAbund), sapply(ordAbund, length))
+    cn <- cn[ordID]
     
-    ## simulate reads as a multinomial sample given abund, cn, pa
-    reads <- rmultinom(1, nreads, abund*cn*pa)[, 1]
+    ## simulate reads as a multinomial sample given abund, cn
+    reads <- rmultinom(1, nreads, abund*cn)[, 1]
     
     ## return starting abundance and resultant reads
-    return(list(abund = abund, reads = reads, tre = tre))
+    return(list(abund = abund, reads = reads, ordID = ordID, tre = tre))
 }
