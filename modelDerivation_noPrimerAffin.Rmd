@@ -55,16 +55,16 @@ We first simulate some data that will be needed in the model specification:
 * `Nreads` is the total number of reads
 * `numberReads` is a vector of the number of reads assigned to each spp
 
-```{r, message=FALSE, cache=TRUE}
+```{r, message=FALSE, cache=FALSE}
 # simulation functions
 source('~/Dropbox/hawaiiDimensions/mol2ecol/simMetaBar.R')
 
 # set parameters for simulation
-S <- 50
+S <- 40
 n <- round(seq(1, 80, length.out = S))
 N <- sum(n)
 Nreads <- 1e+06
-sigCopy <- 0.1
+sigCopy <- 0.01
 
 # simulate phylogeny and number of reads resulting form metabarcoding
 set.seed(1)
@@ -77,7 +77,7 @@ tre <- sim$tre
 
 Let's quickly check the simulation to see that it's reasonable
 
-```{r, fig.height=3, fig.width=6, cache=TRUE}
+```{r, fig.height=3, fig.width=6, cache=FALSE}
 library(socorro)
 par(mfrow = c(1, 2), mar = c(3, 3, 0, 0) + 0.5, mgp = c(2, 0.75, 0))
 plot(sim$abund, numberReads, xlab = 'Real abundance', ylab = 'Simulated number of reads', 
@@ -141,7 +141,7 @@ The arguments are:
 
 We can now specify the model:
 
-```{r, cache=TRUE}
+```{r, cache=FALSE}
 mod <- nimbleCode({
     # p is proportion of total abundance for each spp
     # x[1:S] <- N*p[1:S]
@@ -151,15 +151,14 @@ mod <- nimbleCode({
     # 'Preceission' matrix (the inverse of the var-covar matrix)
     # Note: var-cov matrix D is defined in constants, as is mu0 (which is a vector of 0)
     PrecCopy[1:S, 1:S] <- tauCopy * Dinv[1:S, 1:S]
-    logNu[1:S] ~ dmnorm(mu0[1:S], PrecCopy[1:S, 1:S])
-    nu[1:S] <- exp(logNu[1:S])
+    log(nu[1:S]) ~ dmnorm(mu0[1:S], PrecCopy[1:S, 1:S])
     
     # define dirichlet-multinom params and the distribution of x_{reads}
     alpha[1:S] <- x[1:S] * nu[1:S]
     xreads[1:S] ~ ddirchmulti(alpha[1:S], Nreads)
     
     # priors
-    x[1:S] ~ dmulti(size = N, prob = p0[1:S]) # p0 defined in constants
+    x[1:S] ~ dmulti(p0[1:S], N) # p0 defined in constants
     tauCopy ~ dgamma(0.001, 0.001)
 })
 ```
@@ -167,7 +166,7 @@ mod <- nimbleCode({
 
 And initialize the model
 
-```{r, cache=TRUE}
+```{r, cache=FALSE}
 # model constants, data and inits
 S <- length(tre$tip.label)
 modConstants <- list(S = S, N = N, Nreads = Nreads,
@@ -176,7 +175,6 @@ modConstants <- list(S = S, N = N, Nreads = Nreads,
 modData <- list(xreads = numberReads)
 modInits <- list(
     # priors
-    # p = rep(1/modConstants$S, modConstants$S), 
     tauCopy = 1,
     x = {
         foo <- rep(round(N / S), S)
@@ -185,13 +183,9 @@ modInits <- list(
     }, 
     
     # deterministic relationships
-    
     PrecCopy = modConstants$Dinv,
     
     # hyper distributions
-    logNu = rep(0, modConstants$S),
-    
-    # deterministic relationships arrising from hyperdistributions
     nu = rep(1, modConstants$S)
 )
 
@@ -205,13 +199,15 @@ Now we can compile and run the model
 ```{r, chache=TRUE}
 Cmod <- compileNimble(mod)
 modConf <- configureMCMC(mod)
+modConf$addMonitors('alpha')
+modConf$addMonitors('nu')
 
 # set the thinning param
 thin <- 1
 modConf$setThin(thin)
 
-# add block sampling for p (=relative spp abund)
-modConf$addSampler(target = sprintf('p[1:%s]', modConstants$S),
+# add block sampling for x
+modConf$addSampler(target = sprintf('nu[1:%s]', modConstants$S),
                    type = 'RW_block')
 
 # compile MCMC
@@ -219,7 +215,7 @@ modMCMC <- buildMCMC(modConf)
 CmodMCMC <- compileNimble(modMCMC, project = mod)
 
 # set MCMC params
-mcmcN <- 1e+02
+mcmcN <- 1e+03
 burn <- 1
 niter <- (mcmcN + burn) * modConf$thin
 CmodMCMC$run(niter)
@@ -230,24 +226,25 @@ samp <- as.matrix(CmodMCMC$mvSamples)[-(1:burn), ]
 
 All sampled parameters are saved in `samp`.  We can evaluate stationarity of our MCMC with some diagnostics.  First just trace plots:
 
-```{r, fig.width=6, fig.height=3, cache=TRUE}
+```{r, fig.width=6, fig.height=3, cache=FALSE}
 par(mfrow = c(1, 2), mar = c(3, 3, 0, 0) + 0.5, mgp = c(2, 0.75, 0))
 plot(1/samp[, 'tauCopy'], type = 'l', xlab = 'iter', ylab = 'sigCopy')
 abline(h = sigCopy, col = 'red')
-plot(samp[, 'x[2]'], type = 'l', xlab = 'iter', ylab = 'Sp 2 abund')
+plot(samp[, 'x[3]'], type = 'l', xlab = 'iter', ylab = 'Sp 2 abund')
 abline(h = sim$abund[2], col = 'red')
 ```
 
 Now auto-correlation plots
-```{r, fig.width=6, fig.height=3, cache=TRUE}
+```{r, fig.width=6, fig.height=3, cache=FALSE}
 par(mfrow = c(1, 2), mar = c(3, 3, 0, 0) + 0.5, mgp = c(2, 0.75, 0))
 acf(1/samp[, 'tauCopy'])
 acf(samp[, 'x[2]'])
 ```
 
 Now a plot of real versus estimated abundance
-```{r, fig.width=6, fig.height=3, cache=TRUE}
+```{r, fig.width=6, fig.height=3, cache=FALSE}
 par(mar = c(3, 3, 0, 0) + 0.5, mgp = c(2, 0.75, 0))
-plot(sim$abund, colMeans(samp[, (1:S)+1]), 
+plot(sim$abund, colMeans(samp[, grep('x', colnames(samp))]), 
      xlab = 'real abundance', ylab = 'estimated abundance')
+abline(0, 1, col = 'red')
 ```
