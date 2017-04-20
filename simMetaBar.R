@@ -76,5 +76,5 @@ simMetaBar <- function(abund, sigCopy, nreads = 10^6) {
     reads <- rmultinom(1, nreads, abund*cn)[, 1]
     
     ## return starting abundance and resultant reads
-    return(list(abund = abund, reads = reads, ordID = ordID, tre = tre))
+    return(list(abund = abund, reads = reads, ordID = ordID, tre = tre, copy = cn))
 }
