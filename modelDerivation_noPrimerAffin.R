@@ -117,6 +117,13 @@ plot(1/samp[, 'tauCopy'], type = 'l', xlab = 'Iterations', ylab = expression(sig
 abline(h = sigCopy, col = 'red')
 dev.off()
 
+pdf('fig_copyCoeff.pdf', width = 5, height = 5)
+par(mar = c(3, 3, 0, 0) + 0.5, mgp = c(2, 0.75, 0))
+plot(log(unique(sim$copy)), colMeans(samp[, grep('Nu', colnames(samp))]), 
+     xlab = 'Real copy number coeff', ylab = 'Estimate copy number coeff')
+abline(0, 1, col = 'red')
+dev.off()
+
 
 ## save output and input
 write.csv(samp, file = 'mcmcRes_noPrimerAffin.csv', row.names = FALSE)
