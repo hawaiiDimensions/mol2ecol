@@ -153,12 +153,16 @@ mod <- nimbleCode({
     # Note: tauCopy is inverse variance, and 'Prec' stands for 'Preceission' matrix (the
     # inverse of the var-covar matrix)
     # Note: var-cov matrix D is defined in constants, as is mu0 (which is a vector of 0)
-    PrecCopy[1:nOrd, 1:nOrd] <- tauCopy * Dinv[1:nOrd, 1:nOrd]
-    log(nu[1:nOrd]) ~ dmnorm(mu0[1:nOrd], PrecCopy[1:nOrd, 1:nOrd])
+    # PrecCopy[1:nOrd, 1:nOrd] <- tauCopy * Dinv[1:nOrd, 1:nOrd]
+    # log(nu[1:nOrd]) ~ dmnorm(mu0[1:nOrd], PrecCopy[1:nOrd, 1:nOrd])
+    for(i in 1:S) {
+        log(nu[i]) ~ dnorm(0, tauCopy^0.5)
+    }
     
     # define dirichlet-multinom params and the distribution of x_{reads}
     for(i in 1:S) {
-        alpha[i] <- x[i] * nu[ordID[i]]
+        # alpha[i] <- x[i] * nu[ordID[i]]
+        alpha[i] <- x[i] * nu[i]
     }
     xreads[1:S] ~ ddirchmulti(alpha[1:S], Nreads)
     
