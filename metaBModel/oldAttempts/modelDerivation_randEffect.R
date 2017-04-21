@@ -43,7 +43,7 @@ mod <- nimbleCode({
 
 # model constants, data and inits
 modConstants <- list(S = S, N = N, Nreads = Nreads, ordID = ordID, nOrd = max(ordID),
-                     p0 = rep(1/S, S), nu = unique(sim$copy))
+                     p0 = rep(1/S, S))
 
 modData <- list(xreads = numberReads)
 
@@ -67,10 +67,6 @@ modInits <- list(
 # build model
 mod <- nimbleModel(code = mod, 
                    constants = modConstants, data = modData, inits = modInits)
-
-pdf('fig_graph.pdf', width = 15, height = 15)
-plot(mod$graph)
-dev.off()
 
 # compile model
 Cmod <- compileNimble(mod)

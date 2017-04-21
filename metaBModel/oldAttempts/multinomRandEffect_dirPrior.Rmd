@@ -1,0 +1,211 @@
+---
+title: "Random effect multinomial model with Dirichlet prior"
+author: "A. J. Rominger"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(nimble)
+```
+
+# The model
+
+Given the number of sequencing reads assigned to each of $S$ species, we want to estimate the number of individuals for each species that went into the sequencing run, call that vector $x$. We know the total number of reads $N_{reads}$, the number of species $S$, the total number of individuals $N$ that were sequenced, and the vector of number of reads per species $x_{read}$. We assume that stochastic evolutionary processes have led to some species having a greater propensity to be sequenced.  These stochastic processes we summarize in a random effect $nu$.  We further assume that within orders these random effects are constant, thus each species within the same order gets the same random effect.
+
+Thus our model for the number of reads is:
+$$
+x_{reads} \sim \text{multinom}\left(N_{reads}, \frac{x\nu}{\sum_i x_i \nu_i}\right)
+$$
+
+Thus the vector of probabilities for the multinomial distribution is proportional to the unknown abundance times the unknown random effect $\nu$.  
+
+We could choose to put a multinomial prior on $x$, or approximate $x$ with a continuous relative abundance
+$$
+x_i = p_iN
+$$
+where $p$ has a Dirichlet prior.  Substituting $pN$ into the model for $x_{reads}$ we get
+$$
+x_{reads} \sim \text{multinom}\left(N_{reads}, \frac{p\nu}{\sum_i p_i \nu_i}\right)
+$$
+
+Given that $\nu$ is constant within orders, varies across orders, and must be positive, we model it as
+$$
+\text{log}(\nu_{order=j}) \sim \text{norm}(0, \sigma^2_{\nu})
+$$
+That is, for order $j$ the log of the random effect is distributed normally with mean 0 and variance $\sigma^2_{\nu}$.
+
+
+<!---
+# The punchline
+
+When I build and run this model using NIMBLE, I don't get good estimates for $x$ and $\sigma_{\nu}$, and I'm not sure why.  I'm not sure if:
+
+1) the model is not identifiable, or
+2) I'm simulating too few orders (currently 7), or
+3) I've misspecified the model somehow
+
+Any help figure that out would be really great.  Below you'll find my NIMBLE code.
+-->
+
+# The model in NIMBLE code
+
+First we set up the simulation
+
+```{r, simSetup}
+# number of orders
+nOrd <- 7
+
+# number of species
+nspp <- nOrd * 10
+
+# vector identifying which species are in which orders
+ordID <- rep(1:nOrd, each = nspp/nOrd)
+
+# simulate random effect
+ordSD <- 0.5
+set.seed(1)
+ordEffect <- exp(rnorm(nOrd, mean = 0, sd = ordSD))
+
+# generate true abundances for each species
+set.seed(1)
+x <- sample(1:40, nspp, rep = TRUE)
+
+# simulate number of reads for each species
+totReads <- 10^6
+set.seed(1)
+xreads <- rmulti(1, totReads, x*ordEffect[ordID])
+```
+
+A quick plot of what those simulated data look like (colors correspond to order identity)
+```{r, simPlot, fig.width=4, fig.height=4, fig.align='center'}
+palette(hsv(h = seq(0, 0.8, length.out = max(ordID)), 
+            s = 1-0.3*seq(-1, 1, length.out = max(ordID))^2, 
+            v = 0.7 + 0.3*seq(-1, 1, length.out = max(ordID))^2, 
+            alpha = 0.7))
+plot(x, xreads, bg = ordID, pch = 21, 
+     xlab = 'Abundance', ylab = 'Number of reads')
+```
+
+Define the model and initialize it with constants, data and inits.
+
+```{r, modSetup}
+modCode <- nimbleCode({
+    ## reads model
+    xreads[1:S] ~ dmulti(alpha[1:S], totReads)
+    
+    # priors
+    p[1:S] ~ ddirch(a0[1:S]) # a0 is defined in constants
+    sigCopy ~ dunif(0, 100)
+    
+    # order-level random effect
+    for(j in 1:nOrd) {
+        logNu[j] ~ dnorm(0, sd = sigCopy)
+        nu[j] <- exp(logNu[j])
+    }
+    
+    # define multinom param
+    for(i in 1:S) {
+        alpha[i] <- p[i] * nu[ordID[i]]
+    }
+})
+
+# model constants, data and inits
+modConstants <- list(S = nspp, N = sum(x), totReads = totReads, ordID = ordID, nOrd = nOrd,
+                     a0 = rep(sum(x)/nspp, nspp))
+
+modData <- list(xreads = xreads)
+
+modInits <- list( 
+    # priors
+    sigCopy = 1,
+    p = rep(1/nspp, nspp),
+    
+    # hyperdistribution
+    logNu = rep(0, modConstants$nOrd),
+    nu = rep(1, modConstants$nOrd),
+    
+    # deterministic relationships
+    alpha = rep(1/nspp, nspp)
+)
+
+# build model
+mod <- nimbleModel(code = modCode, 
+                   constants = modConstants, data = modData, inits = modInits)
+```
+
+Compile the model and configure it for MCMC:
+
+```{r, config}
+Cmod <- compileNimble(mod)
+modConf <- configureMCMC(mod)
+```
+
+One quick question: `configureMCMC` automatically adds monitors for `tauCopy` and `x`, but why does it not for `logNu`?  Because `logNu` is a hyper-distribution?
+
+```{r, monitors}
+modConf$getMonitors()
+modConf$addMonitors('logNu')
+```
+
+Now I build and compile the MCMC (note, the below code is not actually run by this rmarkdown document, but run in the background and its output is loaded silently before continuing).
+
+```{r, runMCMC, eval=FALSE}
+# add block sampling
+modConf$addSampler(target = sprintf('logNu[1:%s]', modConstants$nOrd),
+                   type = 'RW_block')
+# add block sampling
+modConf$addSampler(target = sprintf('p[1:%s]', modConstants$S),
+                   type = 'RW_block')
+
+# compile MCMC
+modMCMC <- buildMCMC(modConf)
+CmodMCMC <- compileNimble(modMCMC, project = mod)
+
+# set MCMC iterations
+mcmcN <- 5e+04
+burn <- 4e+00
+niter <- (mcmcN + burn) * modConf$thin
+CmodMCMC$run(niter)
+
+# the posterior sample    
+samp <- as.matrix(CmodMCMC$mvSamples)[-(1:burn), ]
+```
+
+```{r, loadMCMC, echo=FALSE}
+# load mcmc output from background run
+samp <- as.matrix(read.csv('mcmcRes_multinomRand.csv', header = TRUE))
+colnames(samp) <- strsplit(gsub('"', '', 
+                                readLines('mcmcRes_multinomRand.csv', n = 1)), 
+                           ',')[[1]]
+```
+
+Now plot the true versus estimated abundances: it looks like a scaled version of the plot of abundance versus number of reads.
+
+```{r, plotAbund, fig.width=4, fig.height=4, fig.align='center'}
+par(mar = c(3, 3, 0, 0) + 0.5, mgp = c(2, 0.75, 0))
+plot(x, sum(x)*colMeans(samp[, grep('p\\[', colnames(samp))]), bg = ordID, pch = 21, 
+     xlab = 'Actual Abundance', ylab = 'Estimated')
+abline(0, 1)
+```
+
+We can see that the parameter $\sigma_{order}$ (red line) is underestimated (posterior trace: black line; note, trace is thinned to reduce file size)
+
+```{r, plotSig, fig.width=4, fig.height=4, fig.align='center'}
+plot(round(seq(1, nrow(samp), length.out = nrow(samp)/10)), 
+     samp[round(seq(1, nrow(samp), length.out = nrow(samp)/10)), 'tauCopy']^-0.5, 
+     type = 'l', ylim = range(ordSD, samp[, 'tauCopy']^-0.5), 
+     xlab = 'Iterations', ylab = expression(sigma[order]))
+abline(h = ordSD, col = 'red')
+```
+
+This leads to the estimates of random effects being too small as well, so the estimate for `x` must do the work that `nu` should be doing---thus explaining why the plot of true versus estimated abundances looks like a scaled version of the plot of abundance versus reads.
+
+```{r, plotLogNu, fig.width=4, fig.height=4, fig.align='center'}
+plot(ordEffect, colMeans(samp[, grep('Nu', colnames(samp))]), bg = unique(ordID), pch = 21, 
+     xlab = 'Actual Order Effect', ylab = 'Estimated Order Effect', 
+     xlim = range(ordEffect, samp[, grep('Nu', colnames(samp))]), 
+     ylim = range(ordEffect, samp[, grep('Nu', colnames(samp))]))
+abline(0, 1)
+```
