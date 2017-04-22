@@ -1,13 +1,11 @@
-setwd('~/Dropbox/hawaiiDimensions/mol2ecol')
+setwd('~/Dropbox/hawaiiDimensions/mol2ecol/metaBModel')
 library(rjags)
 
-file.remove('multiRandEffect.jag')
-
 # number of orders
-nOrd <- 12
+nOrd <- 10
 
 # number of species
-nspp <- nOrd * 10
+nspp <- nOrd * 8
 
 # vector identifying which species are in which orders
 ordID <- rep(1:nOrd, each = nspp/nOrd)
@@ -19,10 +17,10 @@ ordEffect <- exp(rnorm(nOrd, mean = 0, sd = ordSD))
 
 # generate true abundances for each species
 set.seed(1)
-x <- sample(1:40, nspp, replace = TRUE)
+x <- sample(seq(1, 80, length.out = nspp))
 
 # simulate number of reads for each species
-totReads <- 10^5
+totReads <- 10^6
 set.seed(1)
 xreads <- rmultinom(1, totReads, x*ordEffect[ordID])[, 1]
 
@@ -88,21 +86,20 @@ palette(c(hsv(h = seq(0, 0.8, length.out = ncol),
             v = 0.7 + 0.3*seq(-1, 1, length.out = ncol)^2), 
           'black', 'white', 'gray'))
 
-# xest <- sum(x) * sampJAGS[, grep('x', colnames(sampJAGS))]
+
 xest <- sum(x) * sampJAGS[, grep('x', colnames(sampJAGS))] / 
     rowSums(sampJAGS[, grep('x', colnames(sampJAGS))])
 xestCI <- apply(xest, 2, quantile, prob = c(0.025, 0.975))
-plot(x, colMeans(xest), bg = ordID, pch = 21, 
-     panel.first = segments(x0 = x, y0 = xestCI[1, ], y1 = xestCI[2, ]))
-abline(0, 1)
-
-plot(xest[, 2], type = 'l')
+plot(x, colMeans(xest), cex = 0.5,
+     panel.first = {
+         segments(x0 = x, y0 = xestCI[1, ], y1 = xestCI[2, ])
+         points(x, colMeans(xest), col = 'white', pch = 16, cex = 0.5)
+     }, 
+     ylim = range(xestCI))
+abline(0, 1, col = 'red')
 
 
 plot(sampJAGS[, 'sigCopy'], type = 'l')
 abline(h = ordSD, col = 'red')
 
-plot(log(ordEffect), colMeans(sampJAGS[, grep('logNu', colnames(sampJAGS))]), 
-     xlim = range(log(ordEffect), colMeans(sampJAGS[, grep('logNu', colnames(sampJAGS))])),
-     ylim = range(log(ordEffect), colMeans(sampJAGS[, grep('logNu', colnames(sampJAGS))])))
-abline(0, 1)
+
