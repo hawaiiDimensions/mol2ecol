@@ -1,30 +1,27 @@
 model{
+        # reads model
+        xreads[1:S] ~ dmulti(alpha[1:S], totReads)
     
-    ## reads model
-    xreads[1:S] ~ dmulti(alpha[1:S], totReads)
+        # priors
+        sigX ~ dunif(0, 100)
+        tauX <- 1/(sigX^2)
+        sigCopy ~ dunif(0, 100)
+        tauCopy <- 1/(sigCopy^2)
     
-    # priors
-    sigX ~ dunif(0, 100)
-    tauX <- 1/(sigX^2)
-    sigCopy ~ dunif(0, 100)
-    tauCopy <- 1/(sigCopy^2)
-    
-    # species-level effect
-    for(i in 1:S) {
-    logX[i] ~ dnorm(N/S, tauX)
-    x[i] <- exp(logX[i])
-    }
-    # x[1:S] ~ ddirch(p0[1:S]) #dmulti(p0[1:S], N) # p0 defined in constants
+        # species-level effect
+        for(i in 1:S) {
+            logX[i] ~ dnorm(N/S, tauX)
+            x[i] <- exp(logX[i])
+        }
 
-    # order-level random effect
-    for(j in 1:nOrd) {
-    logNu[j] ~ dnorm(0, tauCopy)
-    nu[j] <- exp(logNu[j])
-    }
+        # order-level random effect
+        for(j in 1:nOrd) {
+            logNu[j] ~ dnorm(0, tauCopy)
+            nu[j] <- exp(logNu[j])
+        }
     
-    # define multinom param
-    for(i in 1:S) {
-    alpha[i] <- x[i] * nu[ordID[i]]
-    }
-    
+        # define multinom param
+        for(i in 1:S) {
+            alpha[i] <- x[i] * nu[ordID[i]]
+        }
     }
