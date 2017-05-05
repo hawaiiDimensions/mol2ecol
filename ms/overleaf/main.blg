@@ -3,55 +3,46 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: tree.bst
 Database file #1: references.bib.bib
-Warning--I didn't find a database entry for "krehenwinkel2016"
-Warning--I didn't find a database entry for "shokralla2015"
-Warning--I didn't find a database entry for "gibson2014"
-Warning--I didn't find a database entry for "taberlet2012"
-Warning--I didn't find a database entry for "elbrecht2015"
-Warning--I didn't find a database entry for "foo"
-Warning--I didn't find a database entry for "henrik"
-Warning--I didn't find a database entry for "overcast"
-Warning--I didn't find a database entry for "rosindel"
-Warning--I didn't find a database entry for "msPrime"
-You've used 138 entries,
+Warning--empty journal in overcast
+You've used 159 entries,
             2349 wiz_defined-function locations,
-            1413 strings with 30625 characters,
-and the built_in function-call counts, 45619 in all, are:
-= -- 3923
-> -- 1062
+            1506 strings with 35840 characters,
+and the built_in function-call counts, 52602 in all, are:
+= -- 4508
+> -- 1246
 < -- 1
-+ -- 480
-- -- 240
-* -- 2646
-:= -- 5820
-add.period$ -- 138
-call.type$ -- 138
-change.case$ -- 134
++ -- 562
+- -- 281
+* -- 3051
+:= -- 6713
+add.period$ -- 158
+call.type$ -- 159
+change.case$ -- 155
 chr.to.int$ -- 0
-cite$ -- 138
-duplicate$ -- 4286
-empty$ -- 4636
-format.name$ -- 342
-if$ -- 10171
+cite$ -- 160
+duplicate$ -- 4956
+empty$ -- 5334
+format.name$ -- 403
+if$ -- 11731
 int.to.chr$ -- 0
-int.to.str$ -- 138
-missing$ -- 1039
-newline$ -- 555
-num.names$ -- 138
-pop$ -- 1303
+int.to.str$ -- 159
+missing$ -- 1200
+newline$ -- 638
+num.names$ -- 159
+pop$ -- 1516
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 675
+skip$ -- 784
 stack$ -- 0
-substring$ -- 3194
-swap$ -- 2548
+substring$ -- 3630
+swap$ -- 2945
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 364
-width$ -- 141
-write$ -- 1367
-(There were 10 warnings)
+warning$ -- 1
+while$ -- 416
+width$ -- 162
+write$ -- 1572
+(There was 1 warning)

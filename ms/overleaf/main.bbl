@@ -696,4 +696,116 @@ Godoy, O. \emph{et~al.} (2014) Phylogenetic relatedness and the determinants of
 Kirchner, J.W. and Weil, A. (1998) No fractals in fossil extinction statistics.
 \newblock \emph{Nature} 395, 337--338
 
+\bibitem{krehenwinkel2016}
+Krehenwinkel, H. \emph{et~al.} (2016) A cost-efficient and simple protocol to
+  enrich prey dna from extractions of predatory arthropods for large-scale gut
+  content analysis by illumina sequencing.
+\newblock \emph{Methods in Ecology and Evolution}
+
+\bibitem{shokralla2015}
+Shokralla, S. \emph{et~al.} (2015) Massively parallel multiplex dna sequencing
+  for specimen identification using an illumina miseq platform.
+\newblock \emph{Scientific reports} 5, 9687
+
+\bibitem{gibson2014}
+Gibson, J. \emph{et~al.} (2014) Simultaneous assessment of the macrobiome and
+  microbiome in a bulk sample of tropical arthropods through dna
+  metasystematics.
+\newblock \emph{Proceedings of the National Academy of Sciences} 111,
+  8007--8012
+
+\bibitem{taberlet2012}
+Taberlet, P. \emph{et~al.} (2012) Towards next-generation biodiversity
+  assessment using dna metabarcoding.
+\newblock \emph{Molecular Ecology} 21, 2045--2050
+
+\bibitem{Yu2012}
+Yu, D.W. \emph{et~al.} (2012) {Biodiversity soup: metabarcoding of arthropods
+  for rapid biodiversity assessment and biomonitoring}.
+\newblock \emph{Methods in Ecology and Evolution} 3, 613--623
+
+\bibitem{ji2013}
+Ji, Y. \emph{et~al.} (2013) Reliable, verifiable and efficient monitoring of
+  biodiversity via metabarcoding.
+\newblock \emph{Ecology letters} 16, 1245--1257
+
+\bibitem{bohmann2014}
+Bohmann, K. \emph{et~al.} (2014) Environmental dna for wildlife biology and
+  biodiversity monitoring.
+\newblock \emph{Trends in Ecology \& Evolution} 29, 358--367
+
+\bibitem{leray2015}
+Leray, M. and Knowlton, N. (2015) Dna barcoding and metabarcoding of
+  standardized samples reveal patterns of marine benthic diversity.
+\newblock \emph{Proceedings of the National Academy of Sciences} 112,
+  2076--2081
+
+\bibitem{pompanon2012}
+Pompanon, F. \emph{et~al.} (2012) Who is eating what: diet assessment using
+  next generation sequencing.
+\newblock \emph{Molecular ecology} 21, 1931--1950
+
+\bibitem{elbrecht2015}
+Elbrecht, V. and Leese, F. (2015) Can dna-based ecosystem assessments quantify
+  species abundance? testing primer bias and biomass—sequence relationships
+  with an innovative metabarcoding protocol.
+\newblock \emph{PloS one} 10, e0130324
+
+\bibitem{dodsworth2015}
+Dodsworth, S. (2015) Genome skimming for next-generation biodiversity analysis.
+\newblock \emph{Trends in plant science} 20, 525--527
+
+\bibitem{linard2015}
+Linard, B. \emph{et~al.} (2015) Metagenome skimming of insect specimen pools:
+  potential for comparative genomics.
+\newblock \emph{Genome biology and evolution} 7, 1474--1489
+
+\bibitem{tang2014}
+Tang, M. \emph{et~al.} (2014) Multiplex sequencing of pooled mitochondrial
+  genomes—a crucial step toward biodiversity analysis using
+  mito-metagenomics.
+\newblock \emph{Nucleic acids research} 42, e166--e166
+
+\bibitem{liu2016}
+Liu, S. \emph{et~al.} (2016) Mitochondrial capture enriches mito-dna 100 fold,
+  enabling pcr-free mitogenomics biodiversity analysis.
+\newblock \emph{Molecular ecology resources} 16, 470--479
+
+\bibitem{zhou2013}
+Zhou, X. \emph{et~al.} (2013) Ultra-deep sequencing enables high-fidelity
+  recovery of biodiversity for bulk arthropod samples without pcr
+  amplification.
+\newblock \emph{Gigascience} 2, 4
+
+\bibitem{coissac2016}
+Coissac, E. \emph{et~al.} (2016) From barcodes to genomes: extending the
+  concept of dna barcoding.
+\newblock \emph{Molecular ecology}
+
+\bibitem{nielsen2014}
+Nielsen, H.B. \emph{et~al.} (2014) Identification and assembly of genomes and
+  genetic elements in complex metagenomic samples without using reference
+  genomes.
+\newblock \emph{Nature biotechnology} 32, 822--828
+
+\bibitem{angly2014}
+Angly, F.E. \emph{et~al.} (2014) Copyrighter: a rapid tool for improving the
+  accuracy of microbial community profiles through lineage-specific gene copy
+  number correction.
+\newblock \emph{Microbiome} 2, 11
+
+\bibitem{Saitoh2016}
+Saitoh, S. \emph{et~al.} (2016) A quantitative protocol for dna metabarcoding
+  of springtails (collembola) 1.
+\newblock \emph{Genome} 59, 705--723
+
+\bibitem{overcast}
+Overcast, I.A. and Hickerson, M.J. ({in prep.}) Integrating community assembly
+  models and comparative population genetics.
+
+\bibitem{kelleher2016}
+Kelleher, J. \emph{et~al.} (2016) Efficient coalescent simulation and
+  genealogical analysis for large sample sizes.
+\newblock \emph{PLoS Comput Biol} 12, e1004842
+
 \end{thebibliography}

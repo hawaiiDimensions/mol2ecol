@@ -26,6 +26,7 @@
 \usepackage{authblk}
 
 \usepackage{xcolor}
+\usepackage{lineno}
 
 % \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt plus 2pt minus 1pt}
@@ -40,7 +41,7 @@
 \makeatother
 
 \title{Linking evolutionary and ecological theory illuminates
-  non-stationary biodiversity}
+  non-stationary biodiversity \vspace{2em}}
 
 \author[1, 2]{A. J. Rominger}
 \author[3]{I. Overcast}
@@ -54,13 +55,31 @@
   University of California, Berkeley}
 \affil[2]{Santa Fe Institute}
 \affil[3]{Biology Department, City College of New York}
-\affil[4]{Energy and Resource Group, University of California, Berkeley}
+\affil[4]{Energy and Resource Group, University of California,
+  Berkeley}
+
+\renewcommand\Affilfont{\normalsize}
+
 
 \date{}
 
 \begin{document}
 \maketitle
+\thispagestyle{empty}
+\addtocounter{page}{-1}
+
+\noindent
+{\it Corresponding author:} Rominger, A.J. (ajrominger@gmail.com).
+
+\noindent {\it Keywords:} Equilibrium dynamics, ecology-evolution
+synthesis, neutral theory, maximum entropy, next generation sequencing
+
 \pagebreak
+\linenumbers
+\doublespacing
+
+\section*{Abstract}
+stub
 
 \section{Equilibrium in ecology and evolution}
 
@@ -190,13 +209,13 @@ coexistence is itself a prediction of equilibrium.
 
 \subsubsection{Mechanistically neutral theory}
 
-Neutral theory (cite) is another answer to the high dimensionality of
-the niche hypothesis. By presuming that populations do not differ in
-fitness nor in resource use, neutrality avoids the intractability of
-over parameterization and arrives as an equilibrial prediction when
-homogeneous stochastic processes of birth, death, speciation and
-immigration have reached stationarity. Thus neutrality in ecology is
-analogous to neutral drift in population genetics.
+Neutral theory \citep{Hubbell2001-dx} is another answer to the high
+dimensionality of the niche hypothesis. By presuming that populations
+do not differ in fitness nor in resource use, neutrality avoids the
+intractability of over parameterization and arrives as an equilibrial
+prediction when homogeneous stochastic processes of birth, death,
+speciation and immigration have reached stationarity. Thus neutrality
+in ecology is analogous to neutral drift in population genetics.
 
 \subsubsection{Statistical theory}
 
@@ -709,7 +728,8 @@ large genomic regions (see Boxes \ref{box:wet} and
 deviate from equilibrial theory while demographic and
 macroevolutionary metrics conform to equilibrial theory presents an
 opportunity to understand and test hypotheses relating to disturbance,
-assembly, and the shape of the species abundance distribution (cite).
+assembly, and the shape of the species abundance distribution
+\citep[e.g.;][]{Harte2011-um}.
 
 \subsection{Non-equilibrium ecological communities fostering non-equilibrium evolution}
 
@@ -793,90 +813,84 @@ Conclude on why this all matters.
 
 \pagebreak
 
-\section*{Glossary and boxes}
+\bibliographystyle{tree}
+\bibliography{references.bib}
 
-\noindent
-\colorbox{gray!20}{
-  \begin{minipage}{0.97\textwidth}
-    \noindent
-    {\bf \large Glossary} 
-    \vspace{1pt}
-    \hrule
-    \vspace{1pt}
+\pagebreak
+
+\section*{Boxes}
+
+
+\refstepcounter{Box}\label{box:wet}
+\subsection*{Box \theBox: Wetlab techniques}
+
+% \noindent
+% \colorbox{gray!20}{
+%   \begin{minipage}{0.97\textwidth}
+%     \refstepcounter{Box}\label{box:wet}
+%     \noindent
+%     {\bf \large Box \theBox: Wetlab techniques} 
+%     \vspace{1pt}
+%     \hrule
+%     \vspace{1pt}
     
-    {\bf ahistorial}
-    {\bf equilibrium}
-  \end{minipage}
-}
+Next generation sequencing technology has ushered in a revolution in
+evolutionary biology and ecology. The large scale recovery from bulk
+samples (e.g. passive arthropod traps) of species richness, food web
+structure, cryptic species promise unprecedented new insights into
+ecosystem function and assembly \citep{krehenwinkel2016,
+  shokralla2015, gibson2014, taberlet2012}.  Two approaches, differing
+in cost and effectiveness, have emerged.
 
-\noindent
-\colorbox{gray!20}{
-  \begin{minipage}{0.97\textwidth}
-    \refstepcounter{Box}\label{box:wet}
-    \noindent
-    {\bf \large Box \theBox: Wetlab techniques} 
-    \vspace{1pt}
-    \hrule
-    \vspace{1pt}
-    
-    Next generation sequencing technology has ushered in a revolution
-    in evolutionary biology and ecology. The large scale recovery from
-    bulk samples (e.g. passive arthropod traps) of species richness,
-    food web structure, cryptic species promise unprecedented new
-    insights into ecosystem function and assembly
-    \citep{krehenwinkel2016, shokralla2015, gibson2014, taberlet2012}.
-    Two approaches, differing in cost and effectiveness, have emerged.
+\paragraph{Metabarcoding} describes the targeted PCR amplification and
+next generation sequencing of short DNA barcode markers (typically
+~300-500 bp) from community samples \citep{Yu2012, ji2013}. The
+resulting amplicon sequences can be clustered into OTUs or grafted
+onto more well supported phylogenies. Even minute traces of taxa in
+environmental samples can be detected using metabarcoding
+\citep{bohmann2014}.  Amplicon sequencing is cheap, requires a small
+workload and thus allows rapid inventories of species composition and
+species interactions in whole ecosystems \citep{gibson2014, leray2015,
+  pompanon2012}. However, the preferential amplification of some taxa
+during PCR can lead to highly skewed abundance estimates
+\citep{Yu2012, elbrecht2015} from metabarcoding libraries.
 
-    {\bf Metabarcoding} describes the targeted PCR amplification and
-    next generation sequencing of short DNA barcode markers (typically
-    ~300-500 bp) from community samples (Ji et al. 2013; Yu et
-    al. 2012). The resulting amplicon sequences can be clustered into
-    OTUs or grafted onto more well supported phylogenies. Even minute
-    traces of taxa in environmental samples can be detected using
-    metabarcoding (Bohmann et al. 2014). Amplicon sequencing is cheap,
-    requires a small workload and thus allows rapid inventories of
-    species composition and species interactions in whole ecosystems
-    (Gibson et al. 2014; Leray \& Knowlton 2015, Pompanon et
-    al. 2012). However, the preferential amplification of some taxa
-    during PCR can lead to highly skewed abundance estimates (Elbrecht
-    \& Leese 2015; Yu et al. 2012) from metabarcoding libraries.
+\paragraph{Metagenomic approaches}, in contrast, avoid marker specific
+amplification bias by sequencing libraries constructed either from
+untreated genomic DNA \citep{dodsworth2015, linard2015, tang2014}, or
+after targeted enrichment of genomic regions \citep{liu2016}. While
+being more laborious, expensive and computationally demanding than
+metabarcoding, metagenomics thus offers improved accuracy in detecting
+species composition and abundance \citep{zhou2013}. Moreover, the
+assembly of high coverage metagenomic datasets recovers large
+contiguous sequence stretches, even from rare members in a community,
+offering high phylogenetic resolution at the whole community level
+\citep{coissac2016}. Due to large genome sizes and high genomic
+complexity, metazoan metagenomics is currently mostly limited to the
+assembly of fairly short high copy regions. Particularly mitochondrial
+and chloroplast genomes as well as nuclear ribosomal clusters are
+popular targets \citep{dodsworth2015, coissac2016}. In contrast,
+microbial metagenomic studies now routinely assemble complete genomes
+and characterize gene content and metabolic pathways even from complex
+communities \citep{nielsen2014}. This allows unprecedented insights
+into functional genetic process underlying community assembly and
+evolutionary change of communities to environmental stress.
 
-    {\bf Metagenomic approaches}, in contrast, avoid marker specific
-    amplification bias by sequencing libraries constructed either from
-    untreated genomic DNA (Dodsworth 2015; Linard et al. 2015; Tang et
-    al. 2014), or after targeted enrichment of genomic regions (Liu et
-    al. 2016). While being more laborious, expensive and
-    computationally demanding than metabarcoding, metagenomics thus
-    offers improved accuracy in detecting species composition and
-    abundance (Zhou et al. 2013). Moreover, the assembly of high
-    coverage metagenomic datasets recovers large contiguous sequence
-    stretches, even from rare members in a community, offering high
-    phylogenetic resolution at the whole community level (Coissac et
-    al. 2016). Due to large genome sizes and high genomic complexity,
-    metazoan metagenomics is currently mostly limited to the assembly
-    of fairly short high copy regions. Particularly mitochondrial and
-    chloroplast genomes as well as nuclear ribosomal clusters are
-    popular targets (Dodsworth 2015; Coissac et al. 2016). In
-    contrast, microbial metagenomic studies now routinely assemble
-    complete genomes and characterize gene content and metabolic
-    pathways even from complex communities (Nielsen et al. 2014). This
-    allows unprecedented insights into functional genetic process
-    underlying community assembly and evolutionary change of
-    communities to environmental stress.
+%   \end{minipage}
+% }
 
-  \end{minipage}
-}
+\refstepcounter{Box}\label{box:dry}
+\subsection*{Box \theBox: Bioinformatic advances}
 
-
-\noindent
-\colorbox{gray!20}{
-  \begin{minipage}{0.97\textwidth}
-    \refstepcounter{Box}\label{box:dry}
-    \noindent
-    {\bf \large Box \theBox: Bioinformatic advances} 
-    \vspace{1pt}
-    \hrule
-    \vspace{1pt}
+% \noindent
+% \colorbox{gray!20}{
+%   \begin{minipage}{0.97\textwidth}
+%     \refstepcounter{Box}\label{box:dry}
+%     \noindent
+%     {\bf \large Box \theBox: Bioinformatic advances} 
+%     \vspace{1pt}
+%     \hrule
+%     \vspace{1pt}
     
     While species richness can be routinely identified by sequencing
     bulk samples using high throughput methods, estimating species
@@ -889,55 +903,77 @@ Conclude on why this all matters.
     of a specific assembly model of interest along with the parameters
     of a coalescent-based population genetic model.
 
-    {\bf Model-free abundance estimation.} We propose a pipeline
-    (Fig. I) where raw reads are generated and assembled into a
-    phylogeny using standard approaches, and potentially aided by
-    additionally available sequence data in a super tree or super
-    matrix approach. The numbers of sequences assigned to each
-    terminal tip are then used in a Bayesian hierarchical model which
-    seeks to estimate the true number of organisms representing each
-    terminal tip, accounting for sequencing biases originating from
-    primer affinity and copy number differences between taxa.
-    Information on phylogenetic relatedness can inform modeled
-    correlations in biases between taxa \citep[e.g. copy number is
-    known to be phylogenetically conserved]{foo}. This approach is
-    particularly tailored to metabarcoding data. In a potentially
-    powerful extension, and thanks to the proposed Bayesian framework,
+    \paragraph{Model-free abundance estimation.} We propose a pipeline
+    (Fig. \ref{fig:abundPipeline}) where raw reads are generated and
+    assembled into a phylogeny using standard approaches, and
+    potentially aided by additionally available sequence data in a
+    super tree or super matrix approach. The numbers of sequences
+    assigned to each terminal tip are then used in a Bayesian
+    hierarchical model which seeks to estimate the true number of
+    organisms representing each terminal tip, accounting for
+    sequencing biases originating from primer affinity and copy number
+    differences between taxa.  Information on phylogenetic relatedness
+    can inform modeled correlations in biases between taxa
+    \citep[e.g. copy number is known to be phylogenetically conserved
+    at least in microbes]{angly2014}. This approach is particularly
+    tailored to metabarcoding data. In a potentially powerful
+    extension, and thanks to the proposed Bayesian framework,
     information from sequencing experiments that seek to calibrate
-    metabarcoding studies \citep[e.g.,][]{henrik, Saitoh2016} can be
-    used to build meaningfully informative priors and improve model
-    accuracy. Through a simulation study (described in the supplement)
-    we show that true underlying abundances can be accurately
-    estimated (Fig. II).
+    metabarcoding studies \citep[e.g.,][]{krehenwinkel2016,
+      Saitoh2016} can be used to build meaningfully informative priors
+    and improve model accuracy. Through a simulation study (described
+    in the supplement) we show that true underlying abundances can be
+    accurately estimated (Fig. \ref{fig:abundEst}).
 
-    {\bf Joint inference of community assembly and population genetic
-      models.} Coupling individual-based, forward-time models of
-    community assembly with backwards-time hierarchical multi-taxa
+    \paragraph{Joint inference of community assembly and population
+      genetic models.} Coupling individual-based, forward-time models
+    of community assembly with backwards-time hierarchical multi-taxa
     coalescent models permits inference about the values of the
     parameters in both models. This framework is flexible enough to
     incorporate multiple refugia, colonization routes, ongoing
     migration and both neutral and deterministic processes of assembly
-    on time scales of hundreds of thousands of years (Fig. III). A
-    forthcoming implementation \citep[gimmeSAD$\pi$][]{overcast}
-    simulates an individual-based forward time community dispersal
-    model \citep{rosindel} with the msPrime coalescent simulator
-    \citep{msPrime}. This has been accomplished by rescaling the time
-    dependent local abundance distributions into time dependent
-    effective population size distributions while allowing for
-    heterogeneity in migration and colonization rates. This simulation
-    model can be combined with random forest classifiers and
-    hierarchical ABC to enable testing alternative assembly models,
-    including models that have not yet reached their theoretical
-    equilibria.
+    on time scales of hundreds of thousands of years
+    (Fig. \ref{fig:gimmeSAD}). A forthcoming implementation
+    \citep[gimmeSAD$\pi$;][]{overcast} simulates an individual-based
+    forward time community dispersal model \citep{Rosindell2015-dk} linked
+    with the msPrime coalescent simulator \citep{kelleher2016}. This has
+    been accomplished by rescaling the time dependent local abundance
+    distributions into time dependent effective population size
+    distributions while allowing for heterogeneity in migration and
+    colonization rates. This simulation model can be combined with
+    random forest classifiers and hierarchical ABC to enable testing
+    alternative assembly models, including models that have not yet
+    reached their theoretical equilibria.
 
-  \end{minipage}
-}
+%   \end{minipage}
+% }
+
+
+\subsection*{Glossary}
+
+% \noindent
+% \colorbox{gray!20}{
+%   \begin{minipage}{0.97\textwidth}
+%     \noindent
+%     {\bf \large Glossary} 
+%     \vspace{1pt}
+%     \hrule
+%     \vspace{1pt}
+    
+%     {\bf ahistorial}
+%     {\bf equilibrium}
+%   \end{minipage}
+% }
+
+\paragraph{ahistorical}
+
+\paragraph{coalesent}
 
 \pagebreak
 
 \section*{Figures}
 
-\begin{figure}[!ht]
+\begin{figure}[!hbp]
   \centering
   \includegraphics[scale=1]{fig_cycles.pdf}
   \caption{Hypothesized cycles between different states of equilibrium
@@ -952,7 +988,7 @@ Conclude on why this all matters.
   \label{fig:cycles}
 \end{figure}
 
-\begin{figure}[!htp]
+\begin{figure}[!hbp]
   \centering
   \includegraphics[scale=1]{fig_age-abund.pdf}
   \caption{Hypothesized relationships between lineage age and
@@ -967,7 +1003,45 @@ Conclude on why this all matters.
 
 \pagebreak
 
-\bibliographystyle{tree}
-\bibliography{references.bib}
+\section*{Box \ref{box:dry} figures}
+
+\setcounter{figure}{0}
+\renewcommand{\thefigure}{\Roman{figure}}
+
+\begin{figure}[!hbp]
+  \centering
+  \includegraphics[scale=0.4]{fig_metab.pdf}
+  \caption{Pipeline to estimate true abundances from metabarcoding
+    data. The pipeline follows sequence generation, matching sequences
+    to a phylogeny (generated from the sequences themselves, or better
+    yet from highercoverage data) and finally Bayesian hierrarchical
+    modeling leading to abundance estimates.}
+  \label{fig:abundPipeline}
+\end{figure}
+
+\begin{figure}[!hbp]
+  \centering
+  \includegraphics[scale=1]{fig_abundEst-1.pdf}
+  \caption{Demonstration of agreement between actual and estimated
+    abundances. Actual (simulated) abundances are on the x-axis, which
+    the y-axis shows estimated abundances (error bars are 95\% maximum
+    credible intervals). The simulation study is described in the
+    supplement.}
+  \label{fig:abundEst}
+\end{figure}
+
+\begin{figure}[!hbp]
+  \centering
+  \includegraphics[scale=0.4]{fig_gimmeSAD.png}
+  \caption{The gimmeSAD$\pi$ pipeline. The forward time models
+    involves multi-regional expansion generating local abundance
+    distributions over time with geterogeneity in
+    colonizationtimes. These temporally dynamic local abundances are
+    re-scaled into local $n_e$ distribuitons over time to generate
+    multi-species genetic data the the coalescent, which is summarized
+    here with a time-dependent joint spectrum of genetic diversity
+    statistics.}
+  \label{fig:gimmeSAD}
+\end{figure}
 
 \end{document}
