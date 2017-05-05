@@ -17,8 +17,8 @@ write future directions
 
 add missing citations
 
-edit wetlab box
+X edit wetlab box
 
-edit drylab box
+X edit drylab box
 
 make glossary

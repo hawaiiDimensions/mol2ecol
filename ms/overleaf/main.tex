@@ -819,28 +819,29 @@ Conclude on why this all matters.
     \hrule
     \vspace{1pt}
     
-    Metabarcoding describes the targeted PCR amplification and next
-    generation sequencing of short DNA barcode markers (typically
-    ~300-500 bp) from community samples (Ji et al. 2013; Yu et
-    al. 2012). The resulting amplicon sequences are clustered into
-    operational taxonomic units (OTUs), based on sequence similarity
-    and compared to reference databases for taxonomic assignment. Even
-    minute traces of taxa in environmental samples can be detected
-    using metabarcoding (Bohmann et al. 2014). At the same time,
-    amplicon sequencing is cheap, requires a small workload and thus
-    allows rapid inventories of species composition and species
-    interactions in whole ecosystems (Gibson et al. 2014; Leray \&
-    Knowlton 2015, Pompanon et al. 2012). However, the phylogenetic
-    resolution offered by short barcode markers is limited. And the
-    preferential amplification of some taxa during PCR can lead to
-    highly skewed abundance estimates (Elbrecht \& Leese 2015) or the
-    complete loss of some taxa (Yu et al. 2012) from metabarcoding
-    libraries. Recent work (Saitoh et al. 2016) suggests the
-    application of taxon specific read abundance correction factors to
-    account for amplification bias and derive accurate estimates for
-    taxa from amplicon sequencing data.  
+    Next generation sequencing technology has ushered in a revolution
+    in evolutionary biology and ecology. The large scale recovery from
+    bulk samples (e.g. passive arthropod traps) of species richness,
+    food web structure, cryptic species promise unprecedented new
+    insights into ecosystem function and assembly
+    \citep{krehenwinkel2016, shokralla2015, gibson2014, taberlet2012}.
+    Two approaches, differing in cost and effectiveness, have emerged.
 
-    Metagenomic approaches, in contrast, avoid marker specific
+    {\bf Metabarcoding} describes the targeted PCR amplification and
+    next generation sequencing of short DNA barcode markers (typically
+    ~300-500 bp) from community samples (Ji et al. 2013; Yu et
+    al. 2012). The resulting amplicon sequences can be clustered into
+    OTUs or grafted onto more well supported phylogenies. Even minute
+    traces of taxa in environmental samples can be detected using
+    metabarcoding (Bohmann et al. 2014). Amplicon sequencing is cheap,
+    requires a small workload and thus allows rapid inventories of
+    species composition and species interactions in whole ecosystems
+    (Gibson et al. 2014; Leray \& Knowlton 2015, Pompanon et
+    al. 2012). However, the preferential amplification of some taxa
+    during PCR can lead to highly skewed abundance estimates (Elbrecht
+    \& Leese 2015; Yu et al. 2012) from metabarcoding libraries.
+
+    {\bf Metagenomic approaches}, in contrast, avoid marker specific
     amplification bias by sequencing libraries constructed either from
     untreated genomic DNA (Dodsworth 2015; Linard et al. 2015; Tang et
     al. 2014), or after targeted enrichment of genomic regions (Liu et
@@ -862,6 +863,7 @@ Conclude on why this all matters.
     allows unprecedented insights into functional genetic process
     underlying community assembly and evolutionary change of
     communities to environmental stress.
+
   \end{minipage}
 }
 
@@ -875,72 +877,59 @@ Conclude on why this all matters.
     \vspace{1pt}
     \hrule
     \vspace{1pt}
-
-    Next generation sequencing technology has ushered in a revolution
-    in evolutionary biology and ecology. The large scale recovery of
-    species richness, food web structure, cryptic species,
-    identification of juveniles and hidden diversity, e.g. internal
-    parasitoids, promise unprecedented new insights into ecosystem
-    function and assembly \citep[see Box
-    \ref{box:wet};][]{krehenwinkel2016, shokralla2015, gibson2014,
-      taberlet2012}. While species richness can be routinely
-    identified by sequencing bulk samples, estimating species
+    
+    While species richness can be routinely identified by sequencing
+    bulk samples using high throughput methods, estimating species
     abundance remains challenging \citep{elbrecht2015} and severely
     limits the application of high throughput sequencing methods to
     many community-level studies. We propose two complementary
-    approaches to estimate species abundance from highthroughput
-    sequenc data, while of course retaining the genetic information.
-    The first approach estimates abundance free from any models of
-    community assembly, the second jointly estimates the parameters of
-    a specific assembly model of interest along with the parameters of
-    a coalescent-based population genetic/demographic model.  Both
-    methods assume genetic data are availible from a pooled sample of
-    organisms, for example as collected by many pasive sampling
-    methods for arthropod communities or in sampling microbial
-    communities from the environment.
+    approaches to estimate species abundance from high throughput
+    data.  The first approach estimates abundance free from any models
+    of community assembly, the second jointly estimates the parameters
+    of a specific assembly model of interest along with the parameters
+    of a coalescent-based population genetic model.
 
-    {\bf Model-free abundance estimation.} We propose a pipline
+    {\bf Model-free abundance estimation.} We propose a pipeline
     (Fig. I) where raw reads are generated and assembled into a
-    phylogeny using standard approaches, and potentially added by
-    additionally availible sequence data in a super tree or super
-    matrix approache. The numbers of sequences assigned to each
-    terminal tip are then used in a Bayesian hierrarchical model which
+    phylogeny using standard approaches, and potentially aided by
+    additionally available sequence data in a super tree or super
+    matrix approach. The numbers of sequences assigned to each
+    terminal tip are then used in a Bayesian hierarchical model which
     seeks to estimate the true number of organisms representing each
-    terminal tip while accounting for sequencing biases originating
-    from primer affinity and copy number differences between taxa.
-    Information on phylogenetic relatedness will be used to inform
-    modeled correlations in biases between taxa \citep[e.g. copy
-    number is known to be phylogenetically conserved]{foo}. This
-    approach is particularely taylored to metabarcoding data. In a
-    potentially powerful approach, and thanks to the proposed Bayesian
-    framework, information from sequencing experiments that seek to
-    calibrate metabarcoding studies \citep[e.g.,][]{henrik} can be
+    terminal tip, accounting for sequencing biases originating from
+    primer affinity and copy number differences between taxa.
+    Information on phylogenetic relatedness can inform modeled
+    correlations in biases between taxa \citep[e.g. copy number is
+    known to be phylogenetically conserved]{foo}. This approach is
+    particularly tailored to metabarcoding data. In a potentially
+    powerful extension, and thanks to the proposed Bayesian framework,
+    information from sequencing experiments that seek to calibrate
+    metabarcoding studies \citep[e.g.,][]{henrik, Saitoh2016} can be
     used to build meaningfully informative priors and improve model
-    accuracy. In a simplistic simulation study (described in the
-    supplement) we show that such an approach can accurately estimate
-    true underlying abundances while accounting for known biases
-    (Fig. II).
+    accuracy. Through a simulation study (described in the supplement)
+    we show that true underlying abundances can be accurately
+    estimated (Fig. II).
 
     {\bf Joint inference of community assembly and population genetic
       models.} Coupling individual-based, forward-time models of
-    community colonization and expansion with a backwards-time
-    hierarchical multi-taxa coalescent models will allow us to make
-    inference about the values of the parameters in both models. This
-    framework is flexible enough to incorporate multiple refugia,
-    colonization routes, ongoing migration and parameterizing both
-    neutral and deterministic processes of assembly on time scales of
-    hundreds of thousands of years (Fig. III). So far we have
-    implemented a simulation model in the gimmeSAD$\pi$
-    \citep{overcast} by merging an individual-based forward time
-    community dispersal model \citep{rosindel} with the msPrime
-    coalescent simulator \citep{msPrime}. This has been accomplished
-    by rescaling the time dependent local abundance distributions into
-    time- dependent effective population size distributions while
-    allowing for heterogeneity in migration and colonization
-    rates. This simulation model can be combined with random forest
-    classifiers and hierarchical ABC to enable testing alternative
-    assembly models, including models that have not yet reached their
-    theoretical equilibria.
+    community assembly with backwards-time hierarchical multi-taxa
+    coalescent models permits inference about the values of the
+    parameters in both models. This framework is flexible enough to
+    incorporate multiple refugia, colonization routes, ongoing
+    migration and both neutral and deterministic processes of assembly
+    on time scales of hundreds of thousands of years (Fig. III). A
+    forthcoming implementation \citep[gimmeSAD$\pi$][]{overcast}
+    simulates an individual-based forward time community dispersal
+    model \citep{rosindel} with the msPrime coalescent simulator
+    \citep{msPrime}. This has been accomplished by rescaling the time
+    dependent local abundance distributions into time dependent
+    effective population size distributions while allowing for
+    heterogeneity in migration and colonization rates. This simulation
+    model can be combined with random forest classifiers and
+    hierarchical ABC to enable testing alternative assembly models,
+    including models that have not yet reached their theoretical
+    equilibria.
+
   \end{minipage}
 }
 
