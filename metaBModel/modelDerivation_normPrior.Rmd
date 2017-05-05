@@ -140,7 +140,7 @@ samp <- as.matrix(samp[[1]])[-(1:burn), ]
 
 Now plot real versus estimated abundance.  Error bars are 95% credible intervals, red line is 1:1 line:
 
-```{r, fig_abundEst, fig.align='center', fig.width=4, fig.height=4}
+```{r, fig_abundEst, fig.align='center', fig.width=4, fig.height=4, cache=TRUE}
 xest <- sum(x) * samp[, grep('x', colnames(samp))] / 
     rowSums(samp[, grep('x', colnames(samp))])
 xestCI <- apply(xest, 2, quantile, prob = c(0.025, 0.975))
