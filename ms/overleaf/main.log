@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  4 MAY 2017 22:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  5 MAY 2017 12:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -502,104 +502,104 @@ LaTeX Font Info:    Try loading font information for T1+cmss on input line 81.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ) [1] [2] [3]
-[4] [5] [6] [7] [8] [9] [10] [11] [12]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 566.
+[4] [5] [6] [7] [8] [9] [10] [11]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 560.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 566.
- [13] [14]
-[15] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 734--734
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 560.
+ [12] [13]
+[14] [15] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 728--728
 []\T1/cmr/bx/n/14.4 Non-equilibrium eco-log-i-cal com-mu-ni-ties fos-ter-ing no
 n-
  []
 
-[17] [18] [19] (./main.bbl [20] [21] [22] [23] [24] [25] [26] [27] [28]
-[29] [30] [31] [32]
+[17] [18] [19] (./main.bbl
 (/usr/local/texlive/2015/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
-) [33])
-[34] [35] [36] [37] <fig_cycles.pdf, id=666, 289.08pt x 289.08pt>
+) [20]
+[21] [22] [23] [24] [25] [26] [27] [28] [29] [30] [31] [32] [33]) [34] [35]
+[36] [37] <fig_cycles.pdf, id=684, 289.08pt x 289.08pt>
 File: fig_cycles.pdf Graphic file (type pdf)
-
-<use fig_cycles.pdf>
-Package pdftex.def Info: fig_cycles.pdf used on input line 978.
+ <use fig_cycles.pdf>
+Package pdftex.def Info: fig_cycles.pdf used on input line 974.
 (pdftex.def)             Requested size: 289.07928pt x 289.07928pt.
- <fig_age-abund.pdf, id=667, 289.08pt x 289.08pt>
+
+<fig_age-abund.pdf, id=685, 289.08pt x 289.08pt>
 File: fig_age-abund.pdf Graphic file (type pdf)
-
-<use fig_age-abund.pdf>
-Package pdftex.def Info: fig_age-abund.pdf used on input line 993.
+ <use fig_age-abund.pdf>
+Package pdftex.def Info: fig_age-abund.pdf used on input line 989.
 (pdftex.def)             Requested size: 289.07928pt x 289.07928pt.
- [38 <./fig_cycles.pdf>] [39 <./fig_age-abund.pdf>]
-<fig_metab.pdf, id=693, 770.77408pt x 827.08333pt>
+
+[38 <./fig_cycles.pdf>] [39 <./fig_age-abund.pdf>]
+<fig_metab.pdf, id=712, 770.77408pt x 827.08333pt>
 File: fig_metab.pdf Graphic file (type pdf)
  <use fig_metab.pdf>
-Package pdftex.def Info: fig_metab.pdf used on input line 1013.
+Package pdftex.def Info: fig_metab.pdf used on input line 1009.
 (pdftex.def)             Requested size: 308.30417pt x 330.82747pt.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1018 ...odeling leading to abundance estimates.}
+l.1014 ...odeling leading to abundance estimates.}
                                                   pdfTeX warning (ext4): destin
 ation with the same identifier (name{figure.1}) has been already used, duplicat
 e ignored
 <to be read again> 
                    \relax 
-l.1018 ...odeling leading to abundance estimates.}
+l.1014 ...odeling leading to abundance estimates.}
                                                   
-<fig_abundEst-1.pdf, id=694, 276.03125pt x 278.03876pt>
+<fig_abundEst-1.pdf, id=713, 276.03125pt x 278.03876pt>
 File: fig_abundEst-1.pdf Graphic file (type pdf)
 
 <use fig_abundEst-1.pdf>
-Package pdftex.def Info: fig_abundEst-1.pdf used on input line 1024.
+Package pdftex.def Info: fig_abundEst-1.pdf used on input line 1020.
 (pdftex.def)             Requested size: 276.03056pt x 278.03807pt.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1029     supplement.}
+l.1025     supplement.}
                        pdfTeX warning (ext4): destination with the same identif
 ier (name{figure.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1029     supplement.}
-                        <fig_gimmeSAD.png, id=695, 1263.72125pt x 792.9625pt>
+l.1025     supplement.}
+                        <fig_gimmeSAD.png, id=714, 1263.72125pt x 792.9625pt>
 File: fig_gimmeSAD.png Graphic file (type png)
 
 <use fig_gimmeSAD.png>
-Package pdftex.def Info: fig_gimmeSAD.png used on input line 1035.
+Package pdftex.def Info: fig_gimmeSAD.png used on input line 1031.
 (pdftex.def)             Requested size: 505.47955pt x 317.17938pt.
 
-Overfull \hbox (35.72453pt too wide) in paragraph at lines 1035--1043
+Overfull \hbox (35.72453pt too wide) in paragraph at lines 1031--1039
  [][] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1047.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1043.
 [40 <./fig_metab.pdf>] [41 <./fig_abundEst-1.pdf>] [42 <./fig_gimmeSAD.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1047.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1043.
 
 (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1047.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1047.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1043.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1043.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 61760A294A38F7F77D9C29E37DC27783;5610.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1047.
+(rerunfilecheck)             Checksum: F7C6A661F406035754A01B63DE94631E;4984.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1043.
  ) 
 Here is how much of TeX's memory you used:
- 12531 strings out of 493089
- 177329 string characters out of 6134842
- 261463 words of memory out of 5000000
- 15612 multiletter control sequences out of 15000+600000
+ 12540 strings out of 493089
+ 177382 string characters out of 6134842
+ 261627 words of memory out of 5000000
+ 15619 multiletter control sequences out of 15000+600000
  20033 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,7n,35p,631b,1067s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,7n,35p,647b,1075s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
@@ -615,10 +615,10 @@ ve/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive
 015/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/201
 5/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/local/texlive/2015/
 texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on main.pdf (43 pages, 2855673 bytes).
+Output written on main.pdf (43 pages, 2856122 bytes).
 PDF statistics:
- 854 PDF objects out of 1000 (max. 8388607)
- 769 compressed objects within 8 object streams
- 245 named destinations out of 1000 (max. 500000)
- 194 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 873 PDF objects out of 1000 (max. 8388607)
+ 788 compressed objects within 8 object streams
+ 247 named destinations out of 1000 (max. 500000)
+ 186 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,5 +1,74 @@
 \begin{thebibliography}{100}
 
+\bibitem{Yu2012}
+Yu, D.W. \emph{et~al.} (2012) {Biodiversity soup: metabarcoding of arthropods
+  for rapid biodiversity assessment and biomonitoring}.
+\newblock \emph{Methods in Ecology and Evolution} 3, 613--623
+
+\bibitem{pompanon2012}
+Pompanon, F. \emph{et~al.} (2012) Who is eating what: diet assessment using
+  next generation sequencing.
+\newblock \emph{Molecular ecology} 21, 1931--1950
+
+\bibitem{taberlet2012}
+Taberlet, P. \emph{et~al.} (2012) Towards next-generation biodiversity
+  assessment using dna metabarcoding.
+\newblock \emph{Molecular Ecology} 21, 2045--2050
+
+\bibitem{ji2013}
+Ji, Y. \emph{et~al.} (2013) Reliable, verifiable and efficient monitoring of
+  biodiversity via metabarcoding.
+\newblock \emph{Ecology letters} 16, 1245--1257
+
+\bibitem{zhou2013}
+Zhou, X. \emph{et~al.} (2013) Ultra-deep sequencing enables high-fidelity
+  recovery of biodiversity for bulk arthropod samples without pcr
+  amplification.
+\newblock \emph{Gigascience} 2, 4
+
+\bibitem{tang2014}
+Tang, M. \emph{et~al.} (2014) Multiplex sequencing of pooled mitochondrial
+  genomes—a crucial step toward biodiversity analysis using
+  mito-metagenomics.
+\newblock \emph{Nucleic acids research} 42, e166--e166
+
+\bibitem{bohmann2014}
+Bohmann, K. \emph{et~al.} (2014) Environmental dna for wildlife biology and
+  biodiversity monitoring.
+\newblock \emph{Trends in Ecology \& Evolution} 29, 358--367
+
+\bibitem{gibson2014}
+Gibson, J. \emph{et~al.} (2014) Simultaneous assessment of the macrobiome and
+  microbiome in a bulk sample of tropical arthropods through dna
+  metasystematics.
+\newblock \emph{Proceedings of the National Academy of Sciences} 111,
+  8007--8012
+
+\bibitem{shokralla2015}
+Shokralla, S. \emph{et~al.} (2015) Massively parallel multiplex dna sequencing
+  for specimen identification using an illumina miseq platform.
+\newblock \emph{Scientific reports} 5, 9687
+
+\bibitem{linard2015}
+Linard, B. \emph{et~al.} (2015) Metagenome skimming of insect specimen pools:
+  potential for comparative genomics.
+\newblock \emph{Genome biology and evolution} 7, 1474--1489
+
+\bibitem{leray2015}
+Leray, M. and Knowlton, N. (2015) Dna barcoding and metabarcoding of
+  standardized samples reveal patterns of marine benthic diversity.
+\newblock \emph{Proceedings of the National Academy of Sciences} 112,
+  2076--2081
+
+\bibitem{dodsworth2015}
+Dodsworth, S. (2015) Genome skimming for next-generation biodiversity analysis.
+\newblock \emph{Trends in plant science} 20, 525--527
+
+\bibitem{liu2016}
+Liu, S. \emph{et~al.} (2016) Mitochondrial capture enriches mito-dna 100 fold,
+  enabling pcr-free mitogenomics biodiversity analysis.
+\newblock \emph{Molecular ecology resources} 16, 470--479
+
 \bibitem{Sepkoski1984-kv}
 Sepkoski, J.J. (1984) A kinetic model of phanerozoic taxonomic diversity.
   {III}. {Post-Paleozoic} families and mass extinctions.
@@ -65,6 +134,16 @@ Ricklefs, R.E. (2006) The unified neutral theory of biodiversity: do the
   numbers add up?
 \newblock \emph{Ecology} 87, 1424--1431
 
+\bibitem{McGill2007-hx}
+McGill, B.J. \emph{et~al.} (2007) Species abundance distributions: moving
+  beyond single prediction theories to integration within an ecological
+  framework.
+\newblock \emph{Ecol. Lett.} 10, 995--1015
+
+\bibitem{mcgill2010}
+McGill, B.J. (2010) Towards a unification of unified theories of biodiversity.
+\newblock \emph{Ecology Letters} 13, 627--642
+
 \bibitem{Barnosky2012-qz}
 Barnosky, A.D. \emph{et~al.} (2012) Approaching a state shift in earth/'s
   biosphere.
@@ -74,6 +153,31 @@ Barnosky, A.D. \emph{et~al.} (2012) Approaching a state shift in earth/'s
 Wallington, T.J. \emph{et~al.} (2005) Implications of current ecological
   thinking for biodiversity conservation: A review of the salient issues.
 \newblock \emph{Ecol. Soc.} 10
+
+\bibitem{MacArthur1967-ux}
+MacArthur, R.H. and Wilson, E.O. (1967) \emph{The theory of island
+  biogeography}.
+\newblock Princeton University Press
+
+\bibitem{hutch}
+Hutchinson, G.E. (1959) Homage to santa rosalia or why are there so many kinds
+  of animals?
+\newblock \emph{The American Naturalist} 93, 145--159
+
+\bibitem{Xiao2015-jv}
+Xiao, X. \emph{et~al.} (2015) A strong test of the maximum entropy theory of
+  ecology.
+\newblock \emph{Am. Nat.} 185, E70--E80
+
+\bibitem{Harte2009-zq}
+Harte, J. \emph{et~al.} (2009) Biodiversity scales from plots to biomes with a
+  universal species-area curve.
+\newblock \emph{Ecol. Lett.} 12, 789--797
+
+\bibitem{Rominger2015-kb}
+Rominger, A.J. \emph{et~al.} (2015) Community assembly on isolated islands:
+  macroecology meets evolution.
+\newblock \emph{Glob. Ecol. Biogeogr.}
 
 \bibitem{Alroy2008-no}
 Alroy, J. \emph{et~al.} (2008) Phanerozoic trends in the global diversity of
@@ -173,26 +277,6 @@ Hickerson, M.J. \emph{et~al.} (2014) Recommendations for using msbayes to
   et al.
 \newblock \emph{Evolution} 68, 284--294
 
-\bibitem{MacArthur1967-ux}
-MacArthur, R.H. and Wilson, E.O. (1967) \emph{The theory of island
-  biogeography}.
-\newblock Princeton University Press
-
-\bibitem{Xiao2015-jv}
-Xiao, X. \emph{et~al.} (2015) A strong test of the maximum entropy theory of
-  ecology.
-\newblock \emph{Am. Nat.} 185, E70--E80
-
-\bibitem{Harte2009-zq}
-Harte, J. \emph{et~al.} (2009) Biodiversity scales from plots to biomes with a
-  universal species-area curve.
-\newblock \emph{Ecol. Lett.} 12, 789--797
-
-\bibitem{Rominger2015-kb}
-Rominger, A.J. \emph{et~al.} (2015) Community assembly on isolated islands:
-  macroecology meets evolution.
-\newblock \emph{Glob. Ecol. Biogeogr.}
-
 \bibitem{Emerson2008-xb}
 Emerson, B.C. and Gillespie, R.G. (2008) Phylogenetic analysis of community
   assembly and structure over space and time.
@@ -268,12 +352,6 @@ Terhorst, J. \emph{et~al.} (2016) Robust and scalable inference of population
 \bibitem{McGill2003-jy}
 McGill, B. (2003) Strong and weak tests of macroecological theory.
 \newblock \emph{Oikos} 102, 679--685
-
-\bibitem{McGill2007-hx}
-McGill, B.J. \emph{et~al.} (2007) Species abundance distributions: moving
-  beyond single prediction theories to integration within an ecological
-  framework.
-\newblock \emph{Ecol. Lett.} 10, 995--1015
 
 \bibitem{Hudson1983-hx}
 Hudson, R.R. (1983) Properties of a neutral model with intragenic
@@ -702,80 +780,11 @@ Krehenwinkel, H. \emph{et~al.} (2016) A cost-efficient and simple protocol to
   content analysis by illumina sequencing.
 \newblock \emph{Methods in Ecology and Evolution}
 
-\bibitem{shokralla2015}
-Shokralla, S. \emph{et~al.} (2015) Massively parallel multiplex dna sequencing
-  for specimen identification using an illumina miseq platform.
-\newblock \emph{Scientific reports} 5, 9687
-
-\bibitem{gibson2014}
-Gibson, J. \emph{et~al.} (2014) Simultaneous assessment of the macrobiome and
-  microbiome in a bulk sample of tropical arthropods through dna
-  metasystematics.
-\newblock \emph{Proceedings of the National Academy of Sciences} 111,
-  8007--8012
-
-\bibitem{taberlet2012}
-Taberlet, P. \emph{et~al.} (2012) Towards next-generation biodiversity
-  assessment using dna metabarcoding.
-\newblock \emph{Molecular Ecology} 21, 2045--2050
-
-\bibitem{Yu2012}
-Yu, D.W. \emph{et~al.} (2012) {Biodiversity soup: metabarcoding of arthropods
-  for rapid biodiversity assessment and biomonitoring}.
-\newblock \emph{Methods in Ecology and Evolution} 3, 613--623
-
-\bibitem{ji2013}
-Ji, Y. \emph{et~al.} (2013) Reliable, verifiable and efficient monitoring of
-  biodiversity via metabarcoding.
-\newblock \emph{Ecology letters} 16, 1245--1257
-
-\bibitem{bohmann2014}
-Bohmann, K. \emph{et~al.} (2014) Environmental dna for wildlife biology and
-  biodiversity monitoring.
-\newblock \emph{Trends in Ecology \& Evolution} 29, 358--367
-
-\bibitem{leray2015}
-Leray, M. and Knowlton, N. (2015) Dna barcoding and metabarcoding of
-  standardized samples reveal patterns of marine benthic diversity.
-\newblock \emph{Proceedings of the National Academy of Sciences} 112,
-  2076--2081
-
-\bibitem{pompanon2012}
-Pompanon, F. \emph{et~al.} (2012) Who is eating what: diet assessment using
-  next generation sequencing.
-\newblock \emph{Molecular ecology} 21, 1931--1950
-
 \bibitem{elbrecht2015}
 Elbrecht, V. and Leese, F. (2015) Can dna-based ecosystem assessments quantify
   species abundance? testing primer bias and biomass—sequence relationships
   with an innovative metabarcoding protocol.
 \newblock \emph{PloS one} 10, e0130324
-
-\bibitem{dodsworth2015}
-Dodsworth, S. (2015) Genome skimming for next-generation biodiversity analysis.
-\newblock \emph{Trends in plant science} 20, 525--527
-
-\bibitem{linard2015}
-Linard, B. \emph{et~al.} (2015) Metagenome skimming of insect specimen pools:
-  potential for comparative genomics.
-\newblock \emph{Genome biology and evolution} 7, 1474--1489
-
-\bibitem{tang2014}
-Tang, M. \emph{et~al.} (2014) Multiplex sequencing of pooled mitochondrial
-  genomes—a crucial step toward biodiversity analysis using
-  mito-metagenomics.
-\newblock \emph{Nucleic acids research} 42, e166--e166
-
-\bibitem{liu2016}
-Liu, S. \emph{et~al.} (2016) Mitochondrial capture enriches mito-dna 100 fold,
-  enabling pcr-free mitogenomics biodiversity analysis.
-\newblock \emph{Molecular ecology resources} 16, 470--479
-
-\bibitem{zhou2013}
-Zhou, X. \emph{et~al.} (2013) Ultra-deep sequencing enables high-fidelity
-  recovery of biodiversity for bulk arthropod samples without pcr
-  amplification.
-\newblock \emph{Gigascience} 2, 4
 
 \bibitem{coissac2016}
 Coissac, E. \emph{et~al.} (2016) From barcodes to genomes: extending the

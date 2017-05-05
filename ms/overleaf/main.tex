@@ -83,25 +83,26 @@ stub
 
 \section{Equilibrium in ecology and evolution}
 
-We propose that combining ecological theory and inference of
+We propose that combining insights from ecological theory and inference of
 evolutionary and demographic change from genetic data will allow us to
 understand and predict the consequences of non-equilibrial processes
-in governing the current and future states of biodiversity. The idea
-of an ecological and evolutionary equilibrium has pervaded studies of
+in governing the current and future states of biodiversity. The time is ripe to fully harness the vast amount of genetic and genomic data being generated at unprecedented scales \citep{Yu2012, pompanon2012, taberlet2012, ji2013, zhou2013, tang2014, bohmann2014, gibson2014, shokralla2015, linard2015, leray2015, dodsworth2015, liu2016} to address  fundamental questions in ecology and evolution.
+
+The idea of an ecological and evolutionary equilibrium has pervaded studies of
 biodiversity both on geologic and ecological time scales, and from
 global to local scales \cite{Sepkoski1984-kv, Alroy2010-lv,
   Rabosky2008-ej, Rabosky2009-gs, Hubbell2001-dx, Harte2011-um,
   Chesson2000-uc, Adler2010-ad, Tilman2004-xt}. Biodiversity theories
 based on assumptions of equilibrium, both mechanistic
 \cite{Hubbell2001-dx, Chesson2000-uc, Tilman2004-xt} and statistical
-\cite{Harte2011-um, Pueyo2007-iq, Shipley2006-sx} have found success
+\citep[see the Glossary;][]{Harte2011-um, Pueyo2007-iq, Shipley2006-sx} have found success
 in predicting ahistorical patterns of diversity such as the species
 abundance distribution \cite{White2012-yw,Hubbell2001-dx,Harte2011-um}
 and the species area relationship
 \cite{Hubbell2001-dx,Harte2011-um}. However, investigation of the
 underlying dynamics producing these patterns has revealed that the
 equilibrium assumed by the theories is not realistic
-\cite{Ricklefs2006-tn}.
+\cite{Ricklefs2006-tn}, and that many processes, equilibrial and otherwise, can generate the same macroscopic, ahistorical predictions \citep{McGill2007-hx, mcgill2010}.
 
 The consequences of non-equilibrium dynamics for biodiversity, from
 diversification to macroecology to conservation, are not well
@@ -110,7 +111,7 @@ processes comes at a critical time when anthropogenic pressures are
 forcing biodiversity systems into states of rapid transition
 \cite{Barnosky2012-qz}. The extent to which ecosystems are governed by
 non-equilibrial processes has profound implications for conservation,
-which are only just beginning to be explored. For example whether
+which are only just beginning to be explored \cite{Wallington2005-kv}. For example whether
 conservation should focus on conventional preservationist paradigms or
 adaptive management \cite{Wallington2005-kv}. Whether biodiversity
 rapidly and consistently tends toward a steady state also determines
@@ -120,20 +121,78 @@ change \cite{Barnosky2012-qz}.
 Tests of equilibrial ecological theory alone will not allow us to
 identify systems out of equilibrium, nor permit us to pinpoint the
 mechanistic causes of any observed patterns indicating non-equilibrial
-processes. The two shortfalls of ahistorical theory are: 1) even when
-the theory fits observed static patterns, the implicit dynamical
-assumptions were wrong so we'd make the wrong conclusion about the
-equilibrium of the system; 2) when the ahistorical theories don't fit
-the data, we can't know why unless we have a perspective on the temporal
-dynamics underlying the generation of those patterns that deviate.
+processes. The two shortfalls of equilibrial theory are: 1) if
+the theory fits observed ahistorical patterns but the implicit dynamical
+assumptions were wrong, we would make the wrong conclusion about the
+equilibrium of the system; 2) if the equilibrial theories do not fit
+the data we cannot know why unless we have a perspective on the temporal
+dynamics underlying the generation of those data. Existing efforts to directly infer the evolutionary and demographic dynamics underlying community assembly in the context of ecological theory testing are limited by a lack of data and analytical framework (see section \ref{sec:toDate}).  The advent of next generation sequencing approaches to biodiversity (cite) have lifted the data barrier, but we need a tool set of bioinformatic methods and meaningful predictions grounded in theory to make use of those data; we call for and sketch that tool set here. 
 
-%% john says bring up the many mechanisms leading to the same sad here
+\section{Ecological theories and equilibrium}
 
-Nobody has tried to evaluate stationary v. non-stationary (or history at
-all) from SAD data alone...so population and species histories inferred
-from genetic data are critical. and even when, e.g. phylogenies are
-included it's done so from an equilibrium perspective (but check the lit
-on this to make sure)
+The development of the equilibrium theory of island biogeography
+(ETIB; \cite{MacArthur1967-ux}) ushered in the advent of
+mechanistically elegant, predictive theories of general patterns in
+biodiversity. The theory of MacArthur and Wilson also set the
+precedent of focusing on equilibrial predictions for biodiversity,
+instead of transient states. From this starting point, three classes
+of ecological theory have emerged, mechanistically niche-based theory,
+mechanistically neutral theory, and mechanistically agnostic,
+statistical mechanical theory. We will focus on neutral and statistical equilibria here. In so doing, we treat niches as in effect being drivers of non-equilibrium: powerful niche dynamics prevent a system from attaining a neutral or statistical equilibrium.  Modeling niche dynamics is difficult due to the inherent high dimensionality of the parameter space implied by verbal niche models \citep[e.g.,][]{hutch}, thus showing a lack of neutrality or statistical equilibrium is easier than directly demonstrating niche factors. We further explore the consequences of this approach in section \ref{sec:future}.
+
+% \subsection{Mechanistically niche-based theory}
+% 
+% Niches have long played a dominant role in guiding ecological theory
+% (cite). The inherent high dimensionality of the niche hypothesis has
+% been recently cast into a lower-dimensional problem by focusing on how
+% differences in resource use (Hutchinsonian niche) and differences in
+% fitness (an aspect of Simpson's adaptive landscape, itself a niche
+% concept) determine competitive coexistence (cite). Competitive
+% coexistence is itself a prediction of equilibrium.
+
+\subsection{Mechanistically neutral theory}
+
+Neutral theory \citep{Hubbell2001-dx} assumes that one mechanism---demographic drift---drives community assembly. By presuming that populations
+do not differ in fitness nor in resource use, neutrality avoids the
+intractability of over parameterization and arrives as an equilibrial
+prediction when homogeneous stochastic processes of birth, death,
+speciation and immigration have reached stationarity. Thus neutrality
+in ecology is analogous to neutral drift in population genetics.
+
+\subsection{Statistical theory}
+
+Rather than assume that any one mechanism, be it niche-based or
+neutral, dominates the assembly of populations into a community,
+theories based on statistical mechanics assume that all mechanisms
+could be valid, but their unique influence has been lost to the
+enormity of the system and thus outcome of assembly is a community in
+statistical equilibrium. In one class of such theories, it is assumed
+that whatever mechanisms are at play, they are only relevant in
+determining the values of ecological state variables, and then if the
+system is allowed to come to equilibrium its properties will be
+predicted by maximizing information entropy relative to the
+constraints of the state variables.  One example is the maximum
+entropy theory of ecology (METE), one model realization of which
+assumes that the area ($A_0$) of an ecosystem, the total number of species
+($S_0$) in some taxonomic group, the total number of individuals in those
+species ($N_0$), and the total metabolic rate of those individuals ($E_0$),
+capture all necessary information to characterize a community because
+that community has reached a statistical equilibrium in which the
+imprint of specific mechanistic forces has been lost. While this
+theory finds widespread success in predicting ahistorical patterns of
+species abundance, size, and spatial distribution \cite{Harte2011-um,
+  White2012-yw, Xiao2015-jv, Harte2009-zq} at single snapshots in
+time, it fails to match observed patterns in disturbed and rapidly
+evolving communities \cite{Rominger2015-kb,Harte2011-um}.
+
+
+\section{Inferring non-equilibrium dynamics}
+
+% NEED A CLEAR STATEMENT AROUND HERE ABOUT WHAT INSIGHTS WE NEED FROM
+% POP GEN AND PHYLO stemming from the realization that abundance data
+% alone can't identify equilibrial from non-equilibrial systems
+
+Unlocking insight into the dynamics underlying community assembly will help us overcome the limitations of analyzing ahistorical patterns with equilibrial theory. We need explicit information about the rates of change of populations and species by processes of demographic fluctuations, immigration, speciation, and extinction.
 
 While the fossil record can elucidate deep time patterns for select,
 well-fossilized groups \cite{Alroy2008-no}, and in limited geographic
@@ -169,89 +228,24 @@ particularly apt because increasingly reliably and inexpensive methods
 permit collection of genomic data across a broad range of non-model
 species.
 
-We propose that combining ecological theory and insights on population
-and diversity trajectories inferred from phylogenetics and population
-genetics will allow us to understand and predict the consequences of
-non-equilibrial processes in governing the current and future states
-of biodiversity. We argue that this will be achieved by the joint
-assessment of ahistorical equilibrium patterns and their underlying
-dynamics using a synthesis of ecological theory, inference techniques
-derived from phylogenetics and population genetics, and advances in
-both the wet and dry lab that will unlock massive data resources to
-test these theories at unprecedented scales. Here we develop this
-research program by lightly reviewing ecological theory and genetic
-inference methods, attempts to date at their synthesis, predictions
-for how non-equilibrial processes will be illuminated by their full
-synthesis, and prospects for future development, including needed
-advances in bioinformatic approaches.
-
-\subsection{Ecological views on equilibrium and non-equilibrium}
-
-The development of the equilibrium theory of island biogeography
-(ETIB; \cite{MacArthur1967-ux}) ushered in the advent of
-mechanistically elegant, predictive theories of general patterns in
-biodiversity. The theory of MacArthur and Wilson also set the
-precedent of focusing on equilibrial predictions for biodiversity,
-instead of transient states. From this starting point, three classes
-of ecological theory have emerged, mechanistically niche-based theory,
-mechanistically neutral theory, and mechanistically agnostic,
-statistical mechanical theory.
-
-\subsubsection{Mechanistically niche-based theory}
-
-Niches have long played a dominant role in guiding ecological theory
-(cite). The inherent high dimensionality of the niche hypothesis has
-been recently cast into a lower-dimensional problem by focusing on how
-differences in resource use (Hutchinsonian niche) and differences in
-fitness (an aspect of Simpson's adaptive landscape, itself a niche
-concept) determine competitive coexistence (cite). Competitive
-coexistence is itself a prediction of equilibrium.
-
-\subsubsection{Mechanistically neutral theory}
-
-Neutral theory \citep{Hubbell2001-dx} is another answer to the high
-dimensionality of the niche hypothesis. By presuming that populations
-do not differ in fitness nor in resource use, neutrality avoids the
-intractability of over parameterization and arrives as an equilibrial
-prediction when homogeneous stochastic processes of birth, death,
-speciation and immigration have reached stationarity. Thus neutrality
-in ecology is analogous to neutral drift in population genetics.
-
-\subsubsection{Statistical theory}
-
-Rather than assume that any one mechanism, be it niche-based or
-neutral, dominates the assembly of populations into a community,
-theories based on statistical mechanics assume that all mechanisms
-could be valid, but their unique influence has been lost to the
-enormity of the system and thus outcome of assembly is a community in
-statistical equilibrium. In one class of such theories, it is assumed
-that whatever mechanisms are at play, they are only relevant in
-determining the values of ecological state variables, and then if the
-system is allowed to come to equilibrium its properties will be
-predicted by maximizing information entropy relative to the
-constraints of the state variables.  One example is the maximum
-entropy theory of ecology (METE), one model realization of which
-assumes that the area ($A_0$) of an ecosystem, the total number of species
-($S_0$) in some taxonomic group, the total number of individuals in those
-species ($N_0$), and the total metabolic rate of those individuals ($E_0$),
-capture all necessary information to characterize a community because
-that community has reached a statistical equilibrium in which the
-imprint of specific mechanistic forces has been lost. While this
-theory finds widespread success in predicting ahistorical patterns of
-species abundance, size, and spatial distribution \cite{Harte2011-um,
-  White2012-yw, Xiao2015-jv, Harte2009-zq} at single snapshots in
-time, it fails to match observed patterns in disturbed and rapidly
-evolving communities \cite{Rominger2015-kb,Harte2011-um}.
+% We propose that combining ecological theory and insights on population
+% and diversity trajectories inferred from phylogenetics and population
+% genetics will allow us to understand and predict the consequences of
+% non-equilibrial processes in governing the current and future states
+% of biodiversity. We argue that this will be achieved by the joint
+% assessment of ahistorical equilibrium patterns and their underlying
+% dynamics using a synthesis of ecological theory, inference techniques
+% derived from phylogenetics and population genetics, and advances in
+% both the wet and dry lab that will unlock massive data resources to
+% test these theories at unprecedented scales. Here we develop this
+% research program by lightly reviewing ecological theory and genetic
+% inference methods, attempts to date at their synthesis, predictions
+% for how non-equilibrial processes will be illuminated by their full
+% synthesis, and prospects for future development, including needed
+% advances in bioinformatic approaches.
 
 
-
-NEED A CLEAR STATEMENT AROUND HERE ABOUT WHAT INSIGHTS WE NEED FROM
-POP GEN AND PHYLO stemming from the realization that abundance data
-alone can't identify equilibrial from non-equilibrial systems
-
-\subsection{Population genetic and phylogenetic views on equilibrium and non-equilibrium}
-
-\subsubsection{Population-level inference}
+\subsection{Population-level inference}
 
 Inference of community dynamics that accounts for non-equilibrium
 historical complexities needs to expand empirical dimensions beyond
@@ -304,7 +298,7 @@ a joint modeling framework with population genetic theory that
 explicitly accounts for historical changes in populations and does not
 rely on stationarity for generative model predictions.
 
-\subsubsection{Coalescent-based inference}
+\subsection{Coalescent-based inference}
 
 One of the fundamental tools allowing for complex historical inference
 with population genetic data is coalescent theory \cite{Hudson1983-hx,
@@ -437,7 +431,7 @@ demographic histories underlying temporal changes in abundances.
 
 NEED TRANSITION
 
-\section{Current efforts to integrate evolution into ecological theory}
+\section{Current efforts to integrate evolution into ecological theory} \label{sec:toDate}
 
 Current efforts to synthesize theoretical perspectives from evolution
 and ecology have made substantial contributions toward understanding
@@ -803,7 +797,7 @@ re-equilibrate.
 
 Conclude on why this all matters.
 
-\section{More future directions}
+\section{More future directions} \label{sec:future}
 
 \begin{enumerate}
 \item Integration with fossils beyond dating phylogenies
@@ -968,6 +962,8 @@ evolutionary change of communities to environmental stress.
 \paragraph{ahistorical}
 
 \paragraph{coalesent}
+
+\paragraph{statistical equilibrium}
 
 \pagebreak
 
