@@ -166,20 +166,6 @@ for how non-equilibrial processes will be illuminated by their full
 synthesis, and prospects for future development, including needed
 advances in bioinformatic approaches.
 
-\noindent
-\colorbox{gray!20}{
-  \begin{minipage}{0.97\textwidth}
-    \refstepcounter{Box}\label{box:lab}
-    \noindent
-    {\bf \large Glossary} 
-    \vspace{1pt}
-    \hrule
-    \vspace{1pt}
-    
-    {\bf Neutral theory of biodiversity (NTB)} stuff
-  \end{minipage}
-}
-
 \subsection{Ecological views on equilibrium and non-equilibrium}
 
 The development of the equilibrium theory of island biogeography
@@ -299,8 +285,7 @@ a joint modeling framework with population genetic theory that
 explicitly accounts for historical changes in populations and does not
 rely on stationarity for generative model predictions.
 
-\subsubsection{Coalescent-based
-inference}
+\subsubsection{Coalescent-based inference}
 
 One of the fundamental tools allowing for complex historical inference
 with population genetic data is coalescent theory \cite{Hudson1983-hx,
@@ -467,7 +452,7 @@ predictions. These studies also miss the opportunity to explore more
 than just diversity metrics, but full models of community assembly,
 population demography and molecular evolution.  These studies are also
 held back by limited access to genetic data, a hurdle we are actively
-overcoming (see Boxes N and N).
+overcoming (see Boxes \ref{box:wet} and \ref{box:dry}).
 
 Phylogeographic studies of past climate change have provided insights
 of how specific groups have responded in non-equilibrium ways to
@@ -483,7 +468,8 @@ processes that operate at macro-scales may also scale down to
 communities of microbes. However, such studies have not made use of
 the immense phylogenetic and functional genomic resources available
 for microbes. Nor has the problem of inferring abundance from
-metagenomic and metabarcoding data been fully resolved (see Box N).
+metagenomic and metabarcoding data been fully resolved (see Box
+\ref{box:dry}).
 
 \subsection{Emerging approaches}
 
@@ -568,15 +554,15 @@ methods:
   advances that would allow the joint capture of genetic or genomic
   data from entire community samples, while also estimating accurate
   abundances for each species in those same samples. This is discussed
-  in Box N: Bioinformatic advances.
+  in Box \ref{box:dry}.
 \item Option 2: building off existing theories, develop new joint
   models that simultaneously predict macroecological and population
   genetic patterns. This amounts to building hierarchical models that
   take genetic data as input and integrate over all possible community
   states given explicit models of community assembly and population
   coalescence. Such a model approach also represents a major
-  bioinformatic challenge, which is also discussed in Box N:
-  Bioinformatic advances.
+  bioinformatic challenge, which is also discussed in Box
+  \ref{box:dry}.
 \end{itemize}
 
 \subsection{What we could gain from this framework}
@@ -617,17 +603,16 @@ evolution, synthesizing historical and contemporary biodiversity
 patterns, are unprecedented in scale and depth. Put simply, we require
 knowing the species identities of each individual in a sample as well
 as information on some portion of their genomes such that we can
-estimate historical demography and diversification. In the Box
-\textbf{Bioinformatic advances}, we discuss progress toward generating
-such data. We highlight two promising routes: 1) estimating abundance
-from targeted capture high throughput sequencing data (i.e.
-metabarcoding) to be used in ahistorical ecological theory testing,
-and then separately fitting models of demography and diversification;
-and 2) jointly estimating the parameters of coupled models of
-community assembly and population demographics. Assuming these two
-approaches are within reach (as we demonstrate in
-\textbf{Bioinformatic advances}), we now discuss hypotheses to be
-tested in our non-equilibrium framework.
+estimate historical demography and diversification. In Box
+\ref{box:dry} we discuss progress toward generating such data. We
+highlight two promising routes: 1) estimating abundance from targeted
+capture high throughput sequencing data (i.e.  metabarcoding) to be
+used in ahistorical ecological theory testing, and then separately
+fitting models of demography and diversification; and 2) jointly
+estimating the parameters of coupled models of community assembly and
+population demographics. Assuming these two approaches are within
+reach (as we demonstrate in \textbf{Bioinformatic advances}), we now
+discuss hypotheses to be tested in our non-equilibrium framework.
 
 \subsection{Cycles of non-equilibrium}
 
@@ -719,13 +704,12 @@ populations, making their size independent of age
 uncorrelated with inference of effective population size from genetic
 data. Further support for the ecology-only hypothesis could come from
 a lack of directional selection detected in community-wide surveys of
-large genomic regions (see \textbf{Informatic advances} and
-\textbf{Box N: Wetlab techniques}). Taken as a whole, systems in which
-ecological metrics deviate from equilibrial theory while demographic
-and macroevolutionary metrics conform to equilibrial theory presents
-an opportunity to understand and test hypotheses relating to
-disturbance, assembly, and the shape of the species abundance
-distribution (cite).
+large genomic regions (see Boxes \ref{box:wet} and
+\ref{box:dry}). Taken as a whole, systems in which ecological metrics
+deviate from equilibrial theory while demographic and
+macroevolutionary metrics conform to equilibrial theory presents an
+opportunity to understand and test hypotheses relating to disturbance,
+assembly, and the shape of the species abundance distribution (cite).
 
 \subsection{Non-equilibrium ecological communities fostering non-equilibrium evolution}
 
@@ -792,10 +776,43 @@ Given sufficient time in ecological equilibrium, the time averaged
 demographic record revealed by genetic inference will likely also
 re-equilibrate.
 
+
+
+
+\section{Harnessing evo-ecological measures of non-equilibrium for a changing world}
+
+Conclude on why this all matters.
+
+\section{More future directions}
+
+\begin{enumerate}
+\item Integration with fossils beyond dating phylogenies
+\item Functional genomics, already underway for microbes, but soon to
+  be realistic for macro-organism communities
+\end{enumerate}
+
+\pagebreak
+
+\section*{Glossary and boxes}
+
 \noindent
 \colorbox{gray!20}{
   \begin{minipage}{0.97\textwidth}
-    \refstepcounter{Box}\label{box:lab}
+    \noindent
+    {\bf \large Glossary} 
+    \vspace{1pt}
+    \hrule
+    \vspace{1pt}
+    
+    {\bf ahistorial}
+    {\bf equilibrium}
+  \end{minipage}
+}
+
+\noindent
+\colorbox{gray!20}{
+  \begin{minipage}{0.97\textwidth}
+    \refstepcounter{Box}\label{box:wet}
     \noindent
     {\bf \large Box \theBox: Wetlab techniques} 
     \vspace{1pt}
@@ -852,7 +869,7 @@ re-equilibrate.
 \noindent
 \colorbox{gray!20}{
   \begin{minipage}{0.97\textwidth}
-    \refstepcounter{Box}\label{box:lab}
+    \refstepcounter{Box}\label{box:dry}
     \noindent
     {\bf \large Box \theBox: Bioinformatic advances} 
     \vspace{1pt}
@@ -926,19 +943,6 @@ re-equilibrate.
     theoretical equilibria.
   \end{minipage}
 }
-
-
-\section{Harnessing evo-ecological measures of non-equilibrium for a changing world}
-
-Conclude on why this all matters.
-
-\section{More future directions}
-
-\begin{enumerate}
-\item Integration with fossils beyond dating phylogenies
-\item Functional genomics, already underway for microbes, but soon to
-  be realistic for macro-organism communities
-\end{enumerate}
 
 \pagebreak
 
