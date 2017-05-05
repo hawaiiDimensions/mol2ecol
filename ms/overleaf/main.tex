@@ -25,9 +25,19 @@
 \urlstyle{same}  % don't use monospace font for urls
 \usepackage{authblk}
 
-\setlength{\parindent}{0pt}
+\usepackage{xcolor}
+
+% \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt plus 2pt minus 1pt}
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
+
+\newcounter{Box}
+
+\newlength{\standardskip}
+\setlength{\standardskip}{\parskip}
+\makeatletter
+\newcommand{\@minipagerestore}{\setlength{\parskip}{\standardskip}}
+\makeatother
 
 \title{Linking evolutionary and ecological theory illuminates
   non-stationary biodiversity}
@@ -57,22 +67,21 @@
 We propose that combining ecological theory and inference of
 evolutionary and demographic change from genetic data will allow us to
 understand and predict the consequences of non-equilibrial processes
-in governing the current and future states of biodiversity.
-
-The idea of an ecological and evolutionary equilibrium has pervaded
-studies of biodiversity both on geologic and ecological time scales,
-and from global to local scales
-\cite{Sepkoski1984-kv,Alroy2010-lv,Rabosky2008-ej, Rabosky2009-gs,
-  Hubbell2001-dx, Harte2011-um,Chesson2000-uc,Adler2010-ad,
-  Tilman2004-xt}. Biodiversity theories based on assumptions of
-equilibrium, both mechanistic \cite{Hubbell2001-dx, Chesson2000-uc,
-  Tilman2004-xt} and statistical \cite{Harte2011-um, Pueyo2007-iq,
-  Shipley2006-sx} have found success in predicting ahistorical
-patterns of diversity such as the species abundance distribution
-\cite{White2012-yw,Hubbell2001-dx,Harte2011-um} and the species area
-relationship \cite{Hubbell2001-dx,Harte2011-um}. However,
-investigation of the underlying dynamics producing these patterns has
-revealed that the equilibrium assumed by the theories is not realistic
+in governing the current and future states of biodiversity. The idea
+of an ecological and evolutionary equilibrium has pervaded studies of
+biodiversity both on geologic and ecological time scales, and from
+global to local scales \cite{Sepkoski1984-kv, Alroy2010-lv,
+  Rabosky2008-ej, Rabosky2009-gs, Hubbell2001-dx, Harte2011-um,
+  Chesson2000-uc, Adler2010-ad, Tilman2004-xt}. Biodiversity theories
+based on assumptions of equilibrium, both mechanistic
+\cite{Hubbell2001-dx, Chesson2000-uc, Tilman2004-xt} and statistical
+\cite{Harte2011-um, Pueyo2007-iq, Shipley2006-sx} have found success
+in predicting ahistorical patterns of diversity such as the species
+abundance distribution \cite{White2012-yw,Hubbell2001-dx,Harte2011-um}
+and the species area relationship
+\cite{Hubbell2001-dx,Harte2011-um}. However, investigation of the
+underlying dynamics producing these patterns has revealed that the
+equilibrium assumed by the theories is not realistic
 \cite{Ricklefs2006-tn}.
 
 The consequences of non-equilibrium dynamics for biodiversity, from
@@ -98,6 +107,8 @@ assumptions were wrong so we'd make the wrong conclusion about the
 equilibrium of the system; 2) when the ahistorical theories don't fit
 the data, we can't know why unless we have a perspective on the temporal
 dynamics underlying the generation of those patterns that deviate.
+
+%% john says bring up the many mechanisms leading to the same sad here
 
 Nobody has tried to evaluate stationary v. non-stationary (or history at
 all) from SAD data alone...so population and species histories inferred
@@ -155,6 +166,20 @@ for how non-equilibrial processes will be illuminated by their full
 synthesis, and prospects for future development, including needed
 advances in bioinformatic approaches.
 
+\noindent
+\colorbox{gray!20}{
+  \begin{minipage}{0.97\textwidth}
+    \refstepcounter{Box}\label{box:lab}
+    \noindent
+    {\bf \large Glossary} 
+    \vspace{1pt}
+    \hrule
+    \vspace{1pt}
+    
+    {\bf Neutral theory of biodiversity (NTB)} stuff
+  \end{minipage}
+}
+
 \subsection{Ecological views on equilibrium and non-equilibrium}
 
 The development of the equilibrium theory of island biogeography
@@ -189,34 +214,31 @@ analogous to neutral drift in population genetics.
 
 \subsubsection{Statistical theory}
 
-Rather than assume that any one mechanism, be it niche-based or neutral,
-dominates the assembly of populations into a community, theories based
-on statistical mechanics assume that all mechanisms could be valid, but
-their unique influence has been lost to the enormity of the system and
-thus outcome of assembly is a community in statistical equilibrium. The
-maximum entropy theory of ecology derives predictions for such a
-community by assuming that whatever mechanisms are at play, they are
-only relevant in determining the values of ecological state variables,
-S, N, and E, and then if the system is allowed to come to equilibrium
-its properties will be predicted by maximizing information entropy
-relative to the constraints of the state variables.
+Rather than assume that any one mechanism, be it niche-based or
+neutral, dominates the assembly of populations into a community,
+theories based on statistical mechanics assume that all mechanisms
+could be valid, but their unique influence has been lost to the
+enormity of the system and thus outcome of assembly is a community in
+statistical equilibrium. In one class of such theories, it is assumed
+that whatever mechanisms are at play, they are only relevant in
+determining the values of ecological state variables, and then if the
+system is allowed to come to equilibrium its properties will be
+predicted by maximizing information entropy relative to the
+constraints of the state variables.  One example is the maximum
+entropy theory of ecology (METE), one model realization of which
+assumes that the area ($A_0$) of an ecosystem, the total number of species
+($S_0$) in some taxonomic group, the total number of individuals in those
+species ($N_0$), and the total metabolic rate of those individuals ($E_0$),
+capture all necessary information to characterize a community because
+that community has reached a statistical equilibrium in which the
+imprint of specific mechanistic forces has been lost. While this
+theory finds widespread success in predicting ahistorical patterns of
+species abundance, size, and spatial distribution \cite{Harte2011-um,
+  White2012-yw, Xiao2015-jv, Harte2009-zq} at single snapshots in
+time, it fails to match observed patterns in disturbed and rapidly
+evolving communities \cite{Rominger2015-kb,Harte2011-um}.
 
-While the NTB describes a simple equilibrium based on mechanistic
-assumptions of neutral demography, equilibrium can also be viewed as
-the outcome of a biodiversity system reaching its statistical
-constraints (needs a box or something; \cite{Harte2011-um,
-  Shipley2006-sx, Pueyo2007-iq,Bowler2012-tn}).  Such a perspective is
-formalized by the maximum entropy theory of ecology (METE;
-\cite{Harte2011-um}) which assumes that simple ecological state
-variables (A, S, N, E) capture all necessary information to
-characterize a community because that community has reached a
-statistical equilibrium in which the imprint of specific mechanistic
-forces has been lost. While this theory finds widespread success in
-predicting ahistorical patterns of species abundance, size, and
-spatial distribution \cite{Harte2011-um, White2012-yw, Xiao2015-jv,
-  Harte2009-zq} at single snapshots in time, it fails to match
-observed patterns in disturbed and rapidly evolving communities
-\cite{Rominger2015-kb,Harte2011-um}.
+
 
 NEED A CLEAR STATEMENT AROUND HERE ABOUT WHAT INSIGHTS WE NEED FROM
 POP GEN AND PHYLO stemming from the realization that abundance data
@@ -770,12 +792,141 @@ Given sufficient time in ecological equilibrium, the time averaged
 demographic record revealed by genetic inference will likely also
 re-equilibrate.
 
-Box: Wet lab techniques
+\noindent
+\colorbox{gray!20}{
+  \begin{minipage}{0.97\textwidth}
+    \refstepcounter{Box}\label{box:lab}
+    \noindent
+    {\bf \large Box \theBox: Wetlab techniques} 
+    \vspace{1pt}
+    \hrule
+    \vspace{1pt}
+    
+    Metabarcoding describes the targeted PCR amplification and next
+    generation sequencing of short DNA barcode markers (typically
+    ~300-500 bp) from community samples (Ji et al. 2013; Yu et
+    al. 2012). The resulting amplicon sequences are clustered into
+    operational taxonomic units (OTUs), based on sequence similarity
+    and compared to reference databases for taxonomic assignment. Even
+    minute traces of taxa in environmental samples can be detected
+    using metabarcoding (Bohmann et al. 2014). At the same time,
+    amplicon sequencing is cheap, requires a small workload and thus
+    allows rapid inventories of species composition and species
+    interactions in whole ecosystems (Gibson et al. 2014; Leray \&
+    Knowlton 2015, Pompanon et al. 2012). However, the phylogenetic
+    resolution offered by short barcode markers is limited. And the
+    preferential amplification of some taxa during PCR can lead to
+    highly skewed abundance estimates (Elbrecht \& Leese 2015) or the
+    complete loss of some taxa (Yu et al. 2012) from metabarcoding
+    libraries. Recent work (Saitoh et al. 2016) suggests the
+    application of taxon specific read abundance correction factors to
+    account for amplification bias and derive accurate estimates for
+    taxa from amplicon sequencing data.  
 
-Box: Bioinformatic advances
+    Metagenomic approaches, in contrast, avoid marker specific
+    amplification bias by sequencing libraries constructed either from
+    untreated genomic DNA (Dodsworth 2015; Linard et al. 2015; Tang et
+    al. 2014), or after targeted enrichment of genomic regions (Liu et
+    al. 2016). While being more laborious, expensive and
+    computationally demanding than metabarcoding, metagenomics thus
+    offers improved accuracy in detecting species composition and
+    abundance (Zhou et al. 2013). Moreover, the assembly of high
+    coverage metagenomic datasets recovers large contiguous sequence
+    stretches, even from rare members in a community, offering high
+    phylogenetic resolution at the whole community level (Coissac et
+    al. 2016). Due to large genome sizes and high genomic complexity,
+    metazoan metagenomics is currently mostly limited to the assembly
+    of fairly short high copy regions. Particularly mitochondrial and
+    chloroplast genomes as well as nuclear ribosomal clusters are
+    popular targets (Dodsworth 2015; Coissac et al. 2016). In
+    contrast, microbial metagenomic studies now routinely assemble
+    complete genomes and characterize gene content and metabolic
+    pathways even from complex communities (Nielsen et al. 2014). This
+    allows unprecedented insights into functional genetic process
+    underlying community assembly and evolutionary change of
+    communities to environmental stress.
+  \end{minipage}
+}
 
-Discuss Bayesian estimation of abundance from high throughput sequence
-data and joint modeling of SAD and SFS.
+
+\noindent
+\colorbox{gray!20}{
+  \begin{minipage}{0.97\textwidth}
+    \refstepcounter{Box}\label{box:lab}
+    \noindent
+    {\bf \large Box \theBox: Bioinformatic advances} 
+    \vspace{1pt}
+    \hrule
+    \vspace{1pt}
+
+    Next generation sequencing technology has ushered in a revolution
+    in evolutionary biology and ecology. The large scale recovery of
+    species richness, food web structure, cryptic species,
+    identification of juveniles and hidden diversity, e.g. internal
+    parasitoids, promise unprecedented new insights into ecosystem
+    function and assembly \citep[see Box
+    \ref{box:wet};][]{krehenwinkel2016, shokralla2015, gibson2014,
+      taberlet2012}. While species richness can be routinely
+    identified by sequencing bulk samples, estimating species
+    abundance remains challenging \citep{elbrecht2015} and severely
+    limits the application of high throughput sequencing methods to
+    many community-level studies. We propose two complementary
+    approaches to estimate species abundance from highthroughput
+    sequenc data, while of course retaining the genetic information.
+    The first approach estimates abundance free from any models of
+    community assembly, the second jointly estimates the parameters of
+    a specific assembly model of interest along with the parameters of
+    a coalescent-based population genetic/demographic model.  Both
+    methods assume genetic data are availible from a pooled sample of
+    organisms, for example as collected by many pasive sampling
+    methods for arthropod communities or in sampling microbial
+    communities from the environment.
+
+    {\bf Model-free abundance estimation.} We propose a pipline
+    (Fig. I) where raw reads are generated and assembled into a
+    phylogeny using standard approaches, and potentially added by
+    additionally availible sequence data in a super tree or super
+    matrix approache. The numbers of sequences assigned to each
+    terminal tip are then used in a Bayesian hierrarchical model which
+    seeks to estimate the true number of organisms representing each
+    terminal tip while accounting for sequencing biases originating
+    from primer affinity and copy number differences between taxa.
+    Information on phylogenetic relatedness will be used to inform
+    modeled correlations in biases between taxa \citep[e.g. copy
+    number is known to be phylogenetically conserved]{foo}. This
+    approach is particularely taylored to metabarcoding data. In a
+    potentially powerful approach, and thanks to the proposed Bayesian
+    framework, information from sequencing experiments that seek to
+    calibrate metabarcoding studies \citep[e.g.,][]{henrik} can be
+    used to build meaningfully informative priors and improve model
+    accuracy. In a simplistic simulation study (described in the
+    supplement) we show that such an approach can accurately estimate
+    true underlying abundances while accounting for known biases
+    (Fig. II).
+
+    {\bf Joint inference of community assembly and population genetic
+      models.} Coupling individual-based, forward-time models of
+    community colonization and expansion with a backwards-time
+    hierarchical multi-taxa coalescent models will allow us to make
+    inference about the values of the parameters in both models. This
+    framework is flexible enough to incorporate multiple refugia,
+    colonization routes, ongoing migration and parameterizing both
+    neutral and deterministic processes of assembly on time scales of
+    hundreds of thousands of years (Fig. III). So far we have
+    implemented a simulation model in the gimmeSAD$\pi$
+    \citep{overcast} by merging an individual-based forward time
+    community dispersal model \citep{rosindel} with the msPrime
+    coalescent simulator \citep{msPrime}. This has been accomplished
+    by rescaling the time dependent local abundance distributions into
+    time- dependent effective population size distributions while
+    allowing for heterogeneity in migration and colonization
+    rates. This simulation model can be combined with random forest
+    classifiers and hierarchical ABC to enable testing alternative
+    assembly models, including models that have not yet reached their
+    theoretical equilibria.
+  \end{minipage}
+}
+
 
 \section{Harnessing evo-ecological measures of non-equilibrium for a changing world}
 
@@ -787,7 +938,6 @@ Conclude on why this all matters.
 \item Integration with fossils beyond dating phylogenies
 \item Functional genomics, already underway for microbes, but soon to
   be realistic for macro-organism communities
-\item Challenges: timescales
 \end{enumerate}
 
 \pagebreak
