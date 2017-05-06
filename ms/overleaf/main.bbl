@@ -241,117 +241,15 @@ Dexter, K.G. \emph{et~al.} (2012) Historical effects on beta diversity and
   community assembly in amazonian trees.
 \newblock \emph{Proc. Natl. Acad. Sci. U. S. A.} 109, 7787--7792
 
-\bibitem{Quental2009-jf}
-Quental, T.B. and Marshall, C.R. (2009) {EXTINCTION} {DURING} {EVOLUTIONARY}
-  {RADIATIONS}: {RECONCILING} {THE} {FOSSIL} {RECORD} {WITH} {MOLECULAR}
-  {PHYLOGENIES}.
-\newblock \emph{Evolution} 63, 3158--3167
+\bibitem{Avise1987-vx}
+Avise, J.C. \emph{et~al.} (1987) Intraspecific phylogeography: The
+  mitochondrial {DNA} bridge between population genetics and systematics.
+\newblock \emph{Annu. Rev. Ecol. Syst.} 18, 489--522
 
-\bibitem{Mallet2016-iu}
-Mallet, J. \emph{et~al.} (2016) How reticulated are species?
-\newblock \emph{Bioessays} 38, 140--149
-
-\bibitem{Xu2016-ql}
-Xu, B. and Yang, Z. (2016) Challenges in species tree estimation under the
-  multispecies coalescent model.
-\newblock \emph{Genetics} 204, 1353--1368
-
-\bibitem{Terhorst2015-mt}
-Terhorst, J. and Song, Y.S. (2015) Fundamental limits on the accuracy of
-  demographic inference based on the sample frequency spectrum.
-\newblock \emph{Proc. Natl. Acad. Sci. U. S. A.} 112, 7677--7682
-
-\bibitem{Robinson2014-vy}
-Robinson, J.D. \emph{et~al.} (2014) {ABC} inference of multi-population
-  divergence with admixture from unphased population genomic data.
-\newblock \emph{Mol. Ecol.} 23, 4458--4471
-
-\bibitem{Sousa2013-ox}
-Sousa, V. and Hey, J. (2013) Understanding the origin of species with
-  genome-scale data: modelling gene flow.
-\newblock \emph{Nat. Rev. Genet.} 14, 404--414
-
-\bibitem{Hickerson2014-za}
-Hickerson, M.J. \emph{et~al.} (2014) Recommendations for using msbayes to
-  incorporate uncertainty in selecting an abc model prior: a response to oaks
-  et al.
-\newblock \emph{Evolution} 68, 284--294
-
-\bibitem{Emerson2008-xb}
-Emerson, B.C. and Gillespie, R.G. (2008) Phylogenetic analysis of community
-  assembly and structure over space and time.
-\newblock \emph{Trends Ecol. Evol.} 23, 619--630
-
-\bibitem{Rosindell2015-dk}
-Rosindell, J. \emph{et~al.} (2015) Unifying ecology and macroevolution with
-  individual-based theory.
-\newblock \emph{Ecol. Lett.} 18, 472--482
-
-\bibitem{Burbrink2015-yh}
-Burbrink, F.T. \emph{et~al.} (2015) Predicting community structure in snakes on
-  eastern nearctic islands using ecological neutral theory and phylogenetic
-  methods.
-\newblock \emph{Proc. Biol. Sci.} 282
-
-\bibitem{Hewitt2004-my}
-Hewitt, G.M. (2004) Genetic consequences of climatic oscillations in the
-  quaternary.
-\newblock \emph{Philos. Trans. R. Soc. Lond. B Biol. Sci.} 359, 183
-
-\bibitem{Chan2014-nq}
-Chan, Y.L. \emph{et~al.} (2014) Detecting concerted demographic response across
-  community assemblages using hierarchical approximate bayesian computation.
-\newblock \emph{Mol. Biol. Evol.} , msu187
-
-\bibitem{Papadopoulou2016-ki}
-Papadopoulou, A. and Knowles, L.L. (2016) Toward a paradigm shift in
-  comparative phylogeography driven by trait-based hypotheses.
-\newblock \emph{Proc. Natl. Acad. Sci. U. S. A.} 113, 8018--8024
-
-\bibitem{Meirmans2012-uw}
-Meirmans, P.G. (2012) The trouble with isolation by distance.
-\newblock \emph{Mol. Ecol.} 21, 2839--2846
-
-\bibitem{Hoban2016-wc}
-Hoban, S. \emph{et~al.} (2016) Finding the genomic basis of local adaptation:
-  Pitfalls, practical solutions, and future directions.
-\newblock \emph{Am. Nat.} 188, 379--397
-
-\bibitem{Xue2015-el}
-Xue, A.T. and Hickerson, M.J. (2015) The aggregate site frequency spectrum
-  ({aSFS}) for comparative population genomic inference.
-\newblock \emph{Mol. Ecol.}
-
-\bibitem{Petkova2016-rw}
-Petkova, D. \emph{et~al.} (2016) Visualizing spatial population structure with
-  estimated effective migration surfaces.
-\newblock \emph{Nat. Genet.} 48, 94--100
-
-\bibitem{Joseph2016-iu}
-Joseph, T.A. \emph{et~al.} (2016) Demographic inference under a spatially
-  continuous coalescent model.
-\newblock \emph{Heredity} 117, 94--99
-
-\bibitem{Prates2016-xv}
-Prates, I. \emph{et~al.} (2016) Inferring responses to climate dynamics from
-  historical demography in neotropical forest lizards.
-\newblock \emph{Proceedings of the National Academy of Sciences} 113,
-  7978--7985
-
-\bibitem{Brown2016-th}
-Brown, J.L. \emph{et~al.} (2016) Predicting the genetic consequences of future
-  climate change: The power of coupling spatial demography, the coalescent, and
-  historical landscape changes.
-\newblock \emph{Am. J. Bot.} 103, 153--163
-
-\bibitem{Terhorst2016-wl}
-Terhorst, J. \emph{et~al.} (2016) Robust and scalable inference of population
-  history from hundreds of unphased whole genomes.
-\newblock \emph{Nat. Genet.}
-
-\bibitem{McGill2003-jy}
-McGill, B. (2003) Strong and weak tests of macroecological theory.
-\newblock \emph{Oikos} 102, 679--685
+\bibitem{Avise1998-th}
+Avise, J.C. (1998) The history and purview of phylogeography: a personal
+  reflection.
+\newblock \emph{Mol. Ecol.} 7, 371--379
 
 \bibitem{Hudson1983-hx}
 Hudson, R.R. (1983) Properties of a neutral model with intragenic
@@ -380,6 +278,32 @@ Rosenberg, N.A. and Nordborg, M. (2002) Genealogical trees, coalescent theory
 Wakeley, J. (2008) \emph{Coalescent Theory}.
 \newblock Roberts and Company Publishers
 
+\bibitem{Xue2015-el}
+Xue, A.T. and Hickerson, M.J. (2015) The aggregate site frequency spectrum
+  ({aSFS}) for comparative population genomic inference.
+\newblock \emph{Mol. Ecol.}
+
+\bibitem{Hickerson2006-uf}
+Hickerson, M.J. \emph{et~al.} (2006) Test for simultaneous divergence using
+  approximate bayesian computation.
+\newblock \emph{Evolution} 60, 2435--2453
+
+\bibitem{Carstens2016-mc}
+Carstens, B.C. \emph{et~al.} (2016) Community trees: Identifying
+  codiversification in the p{\'a}ramo dipteran community.
+\newblock \emph{Evolution} 70, 1080--1093
+
+\bibitem{Chan2014-nq}
+Chan, Y.L. \emph{et~al.} (2014) Detecting concerted demographic response across
+  community assemblages using hierarchical approximate bayesian computation.
+\newblock \emph{Mol. Biol. Evol.} , msu187
+
+\bibitem{Satler2016-lb}
+Satler, J.D. and Carstens, B.C. (2016) Phylogeographic concordance factors
+  quantify phylogeographic congruence among co-distributed species in the
+  sarracenia alata pitcher plant system.
+\newblock \emph{Evolution}
+
 \bibitem{Charlesworth2010-hn}
 Charlesworth, D. (2010) Don't forget the ancestral polymorphisms.
 \newblock \emph{Heredity} 105, 509--510
@@ -388,24 +312,6 @@ Charlesworth, D. (2010) Don't forget the ancestral polymorphisms.
 Edwards, S.V. and Beerli, P. (2000) Perspective: gene divergence, population
   divergence, and the variance in coalescence time in phylogeographic studies.
 \newblock \emph{Evolution} 54, 1839--1854
-
-\bibitem{Shapiro2016-rx}
-Shapiro, B.J. \emph{et~al.} (2016) What is speciation?
-\newblock \emph{PLoS Genet.} 12, e1005860
-
-\bibitem{Nosil2008-km}
-Nosil, P. (2008) Speciation with gene flow could be common.
-\newblock \emph{Mol. Ecol.} 17, 2103--2106
-
-\bibitem{Cruickshank2014-bp}
-Cruickshank, T.E. and Hahn, M.W. (2014) Reanalysis suggests that genomic
-  islands of speciation are due to reduced diversity, not reduced gene flow.
-\newblock \emph{Mol. Ecol.} 23, 3133--3157
-
-\bibitem{Yang2017-xy}
-Yang, M. \emph{et~al.} (2017) Can genomic data alone tell us whether speciation
-  happened with gene flow?
-\newblock \emph{Mol. Ecol.}
 
 \bibitem{Estoup2003-ny}
 Estoup, A. and Clegg, S.M. (2003) Bayesian inferences on the recent island
@@ -442,23 +348,6 @@ Drummond, A.J. \emph{et~al.} (2005) Bayesian coalescent inference of past
   population dynamics from molecular sequences.
 \newblock \emph{Mol. Biol. Evol.} 22, 1185--1192
 
-\bibitem{Schiffels2014-rv}
-Schiffels, S. and Durbin, R. (2014) Inferring human population size and
-  separation history from multiple genome sequences.
-\newblock \emph{Nat. Genet.} 46, 919--925
-
-\bibitem{Boitard2016-zw}
-Boitard, S. \emph{et~al.} (2016) Inferring population size history from large
-  samples of {Genome-Wide} molecular data - an approximate bayesian computation
-  approach.
-\newblock \emph{PLoS Genet.} 12, e1005877
-
-\bibitem{Mazet2015-iy}
-Mazet, O. \emph{et~al.} (2015) On the importance of being structured:
-  instantaneous coalescence rates and human evolution---lessons for ancestral
-  population size inference?
-\newblock \emph{Heredity} 116, 362--371
-
 \bibitem{Prado-Martinez2013-hv}
 Prado-Martinez, J. \emph{et~al.} (2013) Great ape genetic diversity and
   population history.
@@ -480,26 +369,6 @@ Hey, J. and Nielsen, R. (2004) Multilocus methods for estimating population
   sizes, migration rates and divergence time, with applications to the
   divergence of drosophila pseudoobscura and d. persimilis.
 \newblock \emph{Genetics} 167, 747--760
-
-\bibitem{Slatkin2005-rb}
-Slatkin, M. (2005) Seeing ghosts: the effect of unsampled populations on
-  migration rates estimated for sampled populations.
-\newblock \emph{Mol. Ecol.} 14, 67--73
-
-\bibitem{Alter2007-hk}
-Alter, S.E. \emph{et~al.} (2007) {DNA} evidence for historic population size
-  and past ecosystem impacts of gray whales.
-\newblock \emph{Proc. Natl. Acad. Sci. U. S. A.} 104, 15162--15167
-
-\bibitem{Kuhlwilm2016-vf}
-Kuhlwilm, M. \emph{et~al.} (2016) Ancient gene flow from early modern humans
-  into eastern neanderthals.
-\newblock \emph{Nature} 530, 429--433
-
-\bibitem{Veeramah2014-fg}
-Veeramah, K.R. and Hammer, M.F. (2014) The impact of whole-genome sequencing on
-  the reconstruction of human population history.
-\newblock \emph{Nat. Rev. Genet.} 15, 149--162
 
 \bibitem{Beaumont2010-to}
 Beaumont, M. (2010) Approximate bayesian computation in evolution and ecology.
@@ -578,55 +447,6 @@ Roux, C. \emph{et~al.} (2016) Shedding light on the grey zone of speciation
   along a continuum of genomic divergence.
 \newblock \emph{PLoS Biol.} 14, e2000234
 
-\bibitem{Avise1987-vx}
-Avise, J.C. \emph{et~al.} (1987) Intraspecific phylogeography: The
-  mitochondrial {DNA} bridge between population genetics and systematics.
-\newblock \emph{Annu. Rev. Ecol. Syst.} 18, 489--522
-
-\bibitem{Avise1998-th}
-Avise, J.C. (1998) The history and purview of phylogeography: a personal
-  reflection.
-\newblock \emph{Mol. Ecol.} 7, 371--379
-
-\bibitem{Arbogast2001-jx}
-Arbogast, B.S. and Kenagy, G.J. (2001) Comparative phylogeography as an
-  integrative approach to historical biogeography.
-\newblock \emph{J. Biogeogr.} 28, 819--825
-
-\bibitem{Smith2012-db}
-Smith, B.T. \emph{et~al.} (2012) Evaluating the role of contracting and
-  expanding rainforest in initiating cycles of speciation across the isthmus of
-  panama.
-\newblock \emph{Proc. Biol. Sci.} 279, 3520--3526
-
-\bibitem{Carstens2005-uf}
-Carstens, B.C. \emph{et~al.} (2005) Investigating the evolutionary history of
-  the pacific northwest mesic forest ecosystem: Hypothesis testing within a
-  comparative phylogeographic framework.
-\newblock \emph{Evolution} 59, 1639--1652
-
-\bibitem{Hickerson2005-ek}
-Hickerson, M.J. and Cunningham, C.W. (2005) Contrasting quaternary histories in
-  an ecologically divergent pair of low-dispersing intertidal fish (xiphister)
-  revealed by multi-locus {DNA} analysis.
-\newblock \emph{Evolution} 59, 344--360
-
-\bibitem{Hickerson2006-uf}
-Hickerson, M.J. \emph{et~al.} (2006) Test for simultaneous divergence using
-  approximate bayesian computation.
-\newblock \emph{Evolution} 60, 2435--2453
-
-\bibitem{Carstens2016-mc}
-Carstens, B.C. \emph{et~al.} (2016) Community trees: Identifying
-  codiversification in the p{\'a}ramo dipteran community.
-\newblock \emph{Evolution} 70, 1080--1093
-
-\bibitem{Satler2016-lb}
-Satler, J.D. and Carstens, B.C. (2016) Phylogeographic concordance factors
-  quantify phylogeographic congruence among co-distributed species in the
-  sarracenia alata pitcher plant system.
-\newblock \emph{Evolution}
-
 \bibitem{Losos2008-eq}
 Losos, J.B. (2008) Phylogenetic niche conservatism, phylogenetic signal and the
   relationship between phylogenetic relatedness and ecological similarity among
@@ -652,6 +472,23 @@ Vellend, M. (2005) Species diversity and genetic diversity: parallel processes
 Vellend, M. \emph{et~al.} (2014) Drawing ecological inferences from coincident
   patterns of population- and community-level biodiversity.
 \newblock \emph{Mol. Ecol.} 23, 2890--2901
+
+\bibitem{Arbogast2001-jx}
+Arbogast, B.S. and Kenagy, G.J. (2001) Comparative phylogeography as an
+  integrative approach to historical biogeography.
+\newblock \emph{J. Biogeogr.} 28, 819--825
+
+\bibitem{Smith2012-db}
+Smith, B.T. \emph{et~al.} (2012) Evaluating the role of contracting and
+  expanding rainforest in initiating cycles of speciation across the isthmus of
+  panama.
+\newblock \emph{Proc. Biol. Sci.} 279, 3520--3526
+
+\bibitem{Hickerson2005-ek}
+Hickerson, M.J. and Cunningham, C.W. (2005) Contrasting quaternary histories in
+  an ecologically divergent pair of low-dispersing intertidal fish (xiphister)
+  revealed by multi-locus {DNA} analysis.
+\newblock \emph{Evolution} 59, 344--360
 
 \bibitem{Venkataraman2015-rk}
 Venkataraman, A. \emph{et~al.} (2015) Application of a neutral community model
@@ -770,6 +607,15 @@ Godoy, O. \emph{et~al.} (2014) Phylogenetic relatedness and the determinants of
   competitive outcomes.
 \newblock \emph{Ecol. Lett.} 17, 836--844
 
+\bibitem{redQueen}
+Van~Valen, L. (1973) A new evolutionary law.
+\newblock \emph{Evolutionary theory} 1, 1--30
+
+\bibitem{benton2009}
+Benton, M.J. (2009) The red queen and the court jester: species diversity and
+  the role of biotic and abiotic factors through time.
+\newblock \emph{science} 323, 728--732
+
 \bibitem{Kirchner1998-uk}
 Kirchner, J.W. and Weil, A. (1998) No fractals in fossil extinction statistics.
 \newblock \emph{Nature} 395, 337--338
@@ -811,6 +657,11 @@ Saitoh, S. \emph{et~al.} (2016) A quantitative protocol for dna metabarcoding
 \bibitem{overcast}
 Overcast, I.A. and Hickerson, M.J. ({in prep.}) Integrating community assembly
   models and comparative population genetics.
+
+\bibitem{Rosindell2015-dk}
+Rosindell, J. \emph{et~al.} (2015) Unifying ecology and macroevolution with
+  individual-based theory.
+\newblock \emph{Ecol. Lett.} 18, 472--482
 
 \bibitem{kelleher2016}
 Kelleher, J. \emph{et~al.} (2016) Efficient coalescent simulation and
