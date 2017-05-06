@@ -87,7 +87,7 @@ We propose that combining insights from ecological theory and
 inference of evolutionary and demographic change from genetic data
 will allow us to understand and predict the consequences of
 non-equilibrial processes in governing the current and future states
-of biodiversity. The time is ripe to fully harness the vast amount of
+of ecological assemblages. The time is ripe to fully harness the vast amount of
 genetic and genomic data being generated at unprecedented scales
 \citep{Yu2012, pompanon2012, taberlet2012, ji2013, zhou2013, tang2014,
   bohmann2014, gibson2014, shokralla2015, linard2015, leray2015,
@@ -130,72 +130,33 @@ and communities will respond to global environmental change
 Tests of equilibrial ecological theory alone will not allow us to
 identify systems out of equilibrium, nor permit us to pinpoint the
 mechanistic causes of any observed patterns indicating non-equilibrial
-processes. The two shortfalls of equilibrial theory are: 1) if the
-theory fits observed ahistorical patterns but the implicit dynamical
-assumptions were wrong, we would make the wrong conclusion about the
-equilibrium of the system; 2) if the equilibrial theories do not fit
-the data we cannot know why unless we have a perspective on the
-temporal dynamics underlying the generation of those data. 
-
-%%%%%%%%%%%%%%%%%%%%%%
-
-% While theoretical developments in ecology have often
-% focused on geographical and environmental processes underlying the
-% equilibrium dynamics of aggregate species distributions and regional
-% patterns of diversity, the dynamic nature of landscape and habitat change
-% suggests that ecological theory could be greatly enriched by building
-% a joint modeling framework with population genetic theory that
-% explicitly accounts for historical changes in populations and does not
-% rely on stationarity for generative model predictions.
-
-% Inference of community dynamics that accounts for non-equilibrium
-% historical complexities needs to expand empirical dimensions beyond
-% species abundances and diversities to include axes of information that
-% are historically dynamic with respect to generative models that link
-% spatial-temporal processes and regional genetics patterns across and
-% between species. 
-
-% Coupling phylogenetic and ecological models with
-% extant taxa have been useful \citep{Emerson2008-xb, Rosindell2015-dk,
-%   Burbrink2015-yh}, yet these approaches lack a link between
-% community-level processes and within-species variation, which could
-% reveal and exploit information about aggregate population histories
-% that underlie non-equilibrium ecological models. 
-
-% Population genetics
-% and phylogeography have always had enormous potential for the
-% inference of community expansion and assembly in the general context
-% of post-LGM warming \citep{Hewitt2004-my}, as well as the community
-% assembly of islands. Yet these studies suffer from the high
-% uncertainty surrounding limited numbers of genetic markers
-% \citep{Chan2014-nq}, overly generic models \citep{Papadopoulou2016-ki},
-% ignoring spatial processes \citep{Meirmans2012-uw}, and confounding
-% effects of spatial patterns of adaptation \citep{Hoban2016-wc}.
+processes. The dynamic natures of evolutionary innovation and
+landscape change suggest that ecological theory could be greatly
+enriched by building a joint modeling framework with population
+genetic theory that explicitly accounts for historical changes in
+populations and does not rely on stationarity for generative model
+predictions. This would remedy two shortfalls of equilibrial theory:
+1) if the theory fits observed ahistorical patterns but the implicit
+dynamical assumptions were wrong, we would make the wrong conclusion
+about the equilibrium of the system; 2) if the equilibrial theories do
+not fit the data we cannot know why unless we have a perspective on
+the temporal dynamics underlying the generation of those data.
 
 Existing efforts to directly infer the evolutionary and demographic
 dynamics underlying community assembly in the context of ecological
 theory testing are limited by a lack of data and analytical framework
 (see section \ref{sec:toDate}).  The advent of next generation
-sequencing approaches to biodiversity (cite) have lifted the data
-barrier, but we need a tool set of bioinformatic methods and
-meaningful predictions grounded in theory to make use of those data;
-we call for and sketch that tool set here.
+sequencing approaches to biodiversity \citep{Yu2012, ji2013, tang2014,
+  dodsworth2015} have lifted the data barrier, but we need a tool set
+of bioinformatic methods (see Box \ref{box:dry}) and meaningful
+predictions (see section \ref{sec:pred} grounded in theory
+to make use of those data; we call for and sketch that tool set here.
 
-% We propose that combining ecological theory and insights on population
-% and diversity trajectories inferred from phylogenetics and population
-% genetics will allow us to understand and predict the consequences of
-% non-equilibrial processes in governing the current and future states
-% of biodiversity. We argue that this will be achieved by the joint
-% assessment of ahistorical equilibrium patterns and their underlying
-% dynamics using a synthesis of ecological theory, inference techniques
-% derived from phylogenetics and population genetics, and advances in
-% both the wet and dry lab that will unlock massive data resources to
-% test these theories at unprecedented scales. Here we develop this
-% research program by lightly reviewing ecological theory and genetic
-% inference methods, attempts to date at their synthesis, predictions
-% for how non-equilibrial processes will be illuminated by their full
-% synthesis, and prospects for future development, including needed
-% advances in bioinformatic approaches.
+% * <krehenwinkel@berkeley.edu> 2017-05-06T02:11:04.713Z:
+% 
+% Apart from phylogenetics and popgen how about simple community structure, e.g., taxonomic composition? 
+% 
+% ^.
 
 %%%%%%%%%%%%%%%%%%%%%%
 
@@ -217,8 +178,8 @@ niche dynamics is difficult due to the inherent high dimensionality of
 the parameter space implied by verbal niche models
 \citep[e.g.,][]{hutch}, thus showing a lack of neutrality or
 statistical equilibrium is easier than directly demonstrating niche
-factors. We further explore the consequences of this approach in
-section \ref{sec:future}.
+factors. We further explore the consequences of this approach the {\bf
+  Outstanding Questions} box.
 
 % \subsection{Mechanistically niche-based theory}
 % 
@@ -280,7 +241,7 @@ While the fossil record can elucidate deep time patterns for select,
 well-fossilized groups \citep{Alroy2008-no}, and in limited geographic
 areas and temporal extents yielding good preservation
 \citep{Harnik2011-qe}, we require an approach that is applicable
-across taxa, and scales of space and time. Bridging ecological theory
+across taxa and scales of space and time. Bridging ecological theory
 with models from phylogenetics has long given us potential general-use
 tools to gain insight into the dynamics underlying contemporary
 biodiversity patterns \citep{Webb2002-yr, Emerson2002-mw,
@@ -288,61 +249,56 @@ biodiversity patterns \citep{Webb2002-yr, Emerson2002-mw,
 more recently explored \citep{Webb2002-yr, Emerson2002-mw,
   Lavergne2010-ts, Li2016-ns, McGaughran2015-sy, Laroche2015-qo,
   Vanoverbeke2015-ym, Vellend2005-qd,
-  Papadopoulou2011-bd,Dexter2012-rn}.
-
-Inference of community dynamics from phylogenetic and genetic/genomic
-polymorphism data has its own challenges, e.g., reliably
-reconstructing extinction rates \citep{Quental2009-jf}, species trees
-topologies \citep{Mallet2016-iu,Xu2016-ql}, and demographic histories
-\citep{Terhorst2015-mt, Robinson2014-vy, Sousa2013-ox,
-  Hickerson2014-za}. However, its applicability to all extant life and
-the advent of economical methods for producing massive amounts of
-genetic data across a wide swath of non-model species make it a
-promising approach. Much progress has also been made in multi-species
-historical demographic models \citep{Xue2015-el, Hickerson2006-uf,
-  Carstens2016-mc, Chan2014-nq, Satler2016-lb}. The potential for such
+  Papadopoulou2011-bd,Dexter2012-rn}. 
+  
+The potential for such
 modeling approaches was appreciated early on \citep{Avise1987-vx,
   Avise1998-th}, as it was well recognized that population genetic
 data from multiple codistributed taxa could augment investigation of
-traditionally ecologically-centered questions about the geographic,
-geological, and/or climatological phenomena that have generated the
-observed distribution of biodiversity. Yet Despite over 30 years of
+traditionally ecologically-centered questions. Yet Despite over 30 years of
 comparative historical demography studies, there has been almost a
 wholesale neglect of the growing body of theory from community
 ecology. Conversely, ecological models of community assembly tend to
-view communities as static pools with an ahistorical focus on
-equilibrium expectations.  The oppurtunity to unify processes
+ignore the history.  The opportunity to unify processes
 underlying patterns of species diversities and abundances with
 distributions of historical population size trajectories, colonisation
 times, speciation times and regional patterns of genetic connectivity
-begs investigation.
+begs investigation. 
 
 
 % \subsection{Coalescent-based inference}
 
 One of the fundamental tools allowing for complex historical inference
-with population genetic data is coalescent theory \citep{Hudson1983-hx,
-  Tajima1983-me, Kingman1982-uf, Kingman1982-ie, Rosenberg2002-ag}.
-Now broadly applied, coalescent theory can generate the statistical
-properties of any sample of alleles across the genome by modeling gene
-genealogies backwards in time under virtually any complex demographic
-history thereby allowing model-based estimation of historical
-parameters such as historical population size fluctuations, divergence
-and/or colonization times, and migration rates \citep{Wakeley2008-se}.
+with population genetic data is coalescent theory
+\citep{Hudson1983-hx, Tajima1983-me, Kingman1982-uf, Kingman1982-ie,
+  Rosenberg2002-ag}.  Now broadly applied, coalescent theory can
+generate the statistical properties of any sample of alleles across
+the genome by modeling gene genealogies backwards in time under
+virtually any complex demographic history thereby allowing model-based
+estimation of historical parameters such as historical population size
+fluctuations, divergence and/or colonization times, and migration
+rates \citep{Wakeley2008-se}. This approach can also be put in a
+multi-species, community context thanks to advances in historical
+demographic models \citep{Xue2015-el,
+  Hickerson2006-uf,Carstens2016-mc, Chan2014-nq, Satler2016-lb}.
 
 Estimating isolation, divergence and/or speciation times has been a
 particularly important application of population genetic data, and use
 of coalescent theory is of notable importance in this endeavor because
 it statistically captures the stochastic discord between population
 divergence times and gene divergence times \citep{Charlesworth2010-hn,
-  Edwards2000-cs}. However, the isolation of ancestral lineages into
-sibling lineages is often only part of a more complex history, as
-migration and admixture at parts of the genome between diverged
-populations is a common feature across the tree of life
-\citep{Shapiro2016-rx, Mallet2016-iu, Sousa2013-ox, Nosil2008-km},
-although the frequency and statistical identifiability of this general
-observation remains highly contentious \citep{Cruickshank2014-bp,
-  Yang2017-xy}. In the context of island biogeography and invasion
+  Edwards2000-cs}. 
+%
+% However, the isolation of ancestral lineages into
+% sibling lineages is often only part of a more complex history, as
+% migration and admixture at parts of the genome between diverged
+% populations is a common feature across the tree of life
+% \citep{Shapiro2016-rx, Mallet2016-iu, Sousa2013-ox, Nosil2008-km},
+% although the frequency and statistical identifiability of this general
+% observation remains highly contentious \citep{Cruickshank2014-bp,
+%   Yang2017-xy}. 
+%
+In the context of island biogeography and invasion
 ecology, coalescent-based estimates of isolation times is of
 particular importance for understanding the dynamics and timing of
 island colonization, intra-island speciation, as well as invasion
@@ -381,6 +337,7 @@ modeling complex patterns of historical population structure
 % without the use of ancient DNA samples \citep{Kuhlwilm2016-vf,
 %   Veeramah2014-fg}. 
 %
+
 Taking all of these elements of demographic
 history together (i.e. structure, divergence, expansion, size change
 and migration), researcher, simulation-based coalescent approaches
@@ -449,8 +406,9 @@ theoretical core that could be used to make testable
 predictions. These studies also miss the opportunity to explore more
 than just diversity metrics, but full models of community assembly,
 population demography and molecular evolution.  These studies are also
-held back by limited access to genetic data, a hurdle we are actively
-overcoming (see Boxes \ref{box:wet} and \ref{box:dry}).
+held back by limited access to genetic data, a hurdle which is
+currently overcome by the development of next generation sequencing
+based community analysis approaches (see Box \ref{box:wet}).
 
 Phylogeographic studies of past climate change have provided insights
 of how specific groups have responded in non-equilibrium ways to
@@ -536,7 +494,7 @@ theoretical prediction. This nicely parallels calls to incorporate
 additional information into community ecology and macroecological
 studies \citep{McGill2007-zd}. We propose here a needed
 framework for integrating the dynamics inferred from population and
-phylogenetic approaches with with ahistorical, equilibrial ecological
+phylogenetic approaches with ahistorical, equilibrial ecological
 theory. There are two complementary options for incorporating the
 insights of both ahistorical ecological theory and genetic inference
 methods:
@@ -592,7 +550,7 @@ slowdowns) would be more believable and robust if combined with
 population genetic inference (e.g. declining populations) and
 community patterns (e.g.  deviation from equilibrium).
 
-\section{Evo-ecological predictions for systems out of equilibrium}
+\section{Evo-ecological predictions for systems out of equilibrium} \label{sec:pred}
 
 The data needed to fully test a non-equilibrial theory of ecology and
 evolution, synthesizing historical and contemporary biodiversity
@@ -612,10 +570,10 @@ discuss hypotheses to be tested in our non-equilibrium framework.
 
 \subsection{Cycles of non-equilibrium}
 
-Ecosystems are likely to experience consistence disturbances (cite)
-which can occur on ecological time-scales, such as primary success
-(cite), or evolutionary time scales, such as evolution of novel
-innovations that lead to new ecosystem processes (cite). We
+Ecosystems are likely to experience consistence disturbacnes which can
+occur on ecological time-scales, such as primary success, or
+evolutionary time scales, such as evolution of novel innovations that
+lead to new ecosystem processes \citep{redQueen, benton2009}. We
 hypothesize that these consistence disturbances will lead to cycles of
 non-equilibrium in observed biodiversity patterns.
 
@@ -700,13 +658,13 @@ populations, making their size independent of age
 uncorrelated with inference of effective population size from genetic
 data. Further support for the ecology-only hypothesis could come from
 a lack of directional selection detected in community-wide surveys of
-large genomic regions (see Boxes \ref{box:wet} and
-\ref{box:dry}). Taken as a whole, systems in which ecological metrics
-deviate from equilibrial theory while demographic and
-macroevolutionary metrics conform to equilibrial theory presents an
-opportunity to understand and test hypotheses relating to disturbance,
-assembly, and the shape of the species abundance distribution
-\citep[e.g.;][]{Harte2011-um}.
+large genomic regions (see Box \ref{box:wet}); however, this is not
+yet feasible at the scale of entire community samples. Taken as a
+whole, systems in which ecological metrics deviate from equilibrial
+theory while demographic and macroevolutionary metrics conform to
+equilibrial theory presents an opportunity to understand and test
+hypotheses relating to disturbance, assembly, and the shape of the
+species abundance distribution \citep[e.g.,][]{Harte2011-um}.
 
 \subsection{Non-equilibrium ecological communities fostering non-equilibrium evolution}
 
@@ -774,19 +732,29 @@ demographic record revealed by genetic inference will likely also
 re-equilibrate.
 
 
-
-
 \section{Harnessing evo-ecological measures of non-equilibrium for a changing world}
 
-Conclude on why this all matters.
-
-\section{More future directions} \label{sec:future}
-
-\begin{enumerate}
-\item Integration with fossils beyond dating phylogenies
-\item Functional genomics, already underway for microbes, but soon to
-  be realistic for macro-organism communities
-\end{enumerate}
+Inference of community dynamics that accounts for non-equilibrium
+historical complexities needs to expand empirical dimensions beyond
+species abundances and diversities to include axes of information that
+are historically dynamic with respect to generative models that link
+spatial-temporal processes and regional genetics patterns across and
+between species. Although comparative historical demographic models
+are advancing \citep{Xue2015-el, Hickerson2006-uf, Carstens2016-mc,
+  Chan2014-nq, Satler2016-l}, testing community-scale hypotheses with
+milti-taxa data would be profoundly improved and enriched if
+population genetic model were grounded in macroecological and
+biogeographic theory.  Conversely, it has been long recognized that
+models in community ecology have been overly reliant on ahistorical
+patterns, such as the species abundance distribution, which are by
+themselves often insufficient for distinguishing competing models of
+assembly \citep{McGill2007-hx, mcgill2010}.  The field is ready to
+fully merge these two approaches using the wetlab, bioinformatic, and
+theoretical-conceptual approaches we have promoted here. The time is
+right to do so as biodiversity scientists must face an increasingly
+non-equilibrium world and its consequences for our fundamental
+understanding of what forces govern the diversity of life and how we
+can best harmonize human activities with it.
 
 \pagebreak
 
@@ -800,16 +768,6 @@ Conclude on why this all matters.
 
 \refstepcounter{Box}\label{box:wet}
 \subsection*{Box \theBox: Wetlab techniques}
-
-% \noindent
-% \colorbox{gray!20}{
-%   \begin{minipage}{0.97\textwidth}
-%     \refstepcounter{Box}\label{box:wet}
-%     \noindent
-%     {\bf \large Box \theBox: Wetlab techniques} 
-%     \vspace{1pt}
-%     \hrule
-%     \vspace{1pt}
     
 Next generation sequencing technology has ushered in a revolution in
 evolutionary biology and ecology. The large scale recovery from bulk
@@ -851,102 +809,114 @@ microbial metagenomic studies now routinely assemble complete genomes
 and characterize gene content and metabolic pathways even from complex
 communities \citep{nielsen2014}. This allows unprecedented insights
 into functional genetic process underlying community assembly and
-evolutionary change of communities to environmental stress.
+evolutionary change of communities to environmental stress.  Such
+whole genome based community analysis is not yet feasible for
+macroorganisms. However, considering the ever increasing throughput
+and read length of next generation sequencing technology, as well as
+growing number of whole genomes, it might well become a possibility in
+the near future, opening up unprecedented new research avenues for
+community ecology and evolution.
 
-%   \end{minipage}
-% }
 
 \refstepcounter{Box}\label{box:dry}
 \subsection*{Box \theBox: Bioinformatic advances}
 
-% \noindent
-% \colorbox{gray!20}{
-%   \begin{minipage}{0.97\textwidth}
-%     \refstepcounter{Box}\label{box:dry}
-%     \noindent
-%     {\bf \large Box \theBox: Bioinformatic advances} 
-%     \vspace{1pt}
-%     \hrule
-%     \vspace{1pt}
-    
-    While species richness can be routinely identified by sequencing
-    bulk samples using high throughput methods, estimating species
-    abundance remains challenging \citep{elbrecht2015} and severely
-    limits the application of high throughput sequencing methods to
-    many community-level studies. We propose two complementary
-    approaches to estimate species abundance from high throughput
-    data.  The first approach estimates abundance free from any models
-    of community assembly, the second jointly estimates the parameters
-    of a specific assembly model of interest along with the parameters
-    of a coalescent-based population genetic model.
+While species richness can be routinely identified by sequencing bulk
+samples using high throughput methods, estimating species abundance
+remains challenging \citep{elbrecht2015} and severely limits the
+application of high throughput sequencing methods to many
+community-level studies. We propose two complementary approaches to
+estimate species abundance from high throughput data.  The first
+approach estimates abundance free from any models of community
+assembly, the second jointly estimates the parameters of a specific
+assembly model of interest along with the parameters of a
+coalescent-based population genetic model.
 
-    \paragraph{Model-free abundance estimation.} We propose a pipeline
-    (Fig. \ref{fig:abundPipeline}) where raw reads are generated and
-    assembled into a phylogeny using standard approaches, and
-    potentially aided by additionally available sequence data in a
-    super tree or super matrix approach. The numbers of sequences
-    assigned to each terminal tip are then used in a Bayesian
-    hierarchical model which seeks to estimate the true number of
-    organisms representing each terminal tip, accounting for
-    sequencing biases originating from primer affinity and copy number
-    differences between taxa.  Information on phylogenetic relatedness
-    can inform modeled correlations in biases between taxa
-    \citep[e.g. copy number is known to be phylogenetically conserved
-    at least in microbes]{angly2014}. This approach is particularly
-    tailored to metabarcoding data. In a potentially powerful
-    extension, and thanks to the proposed Bayesian framework,
-    information from sequencing experiments that seek to calibrate
-    metabarcoding studies \citep[e.g.,][]{krehenwinkel2016,
-      Saitoh2016} can be used to build meaningfully informative priors
-    and improve model accuracy. Through a simulation study (described
-    in the supplement) we show that true underlying abundances can be
-    accurately estimated (Fig. \ref{fig:abundEst}).
+\paragraph{Model-free abundance estimation.} We propose a pipeline
+(Fig. \ref{fig:abundPipeline}) where raw reads are generated and
+assembled into a phylogeny using standard approaches, and potentially
+aided by additionally available sequence data in a super tree or super
+matrix approach. The numbers of sequences assigned to each terminal
+tip are then used in a Bayesian hierarchical model which seeks to
+estimate the true number of organisms representing each terminal tip,
+accounting for sequencing biases originating from, e.g. primer
+affinity and copy number differences between taxa.  Information on
+phylogenetic relatedness can inform modeled correlations in biases
+between taxa \citep[e.g. copy number is known to be phylogenetically
+conserved at least in microbes]{angly2014}. This approach is
+particularly tailored to metabarcoding data. In a potentially powerful
+extension, and thanks to the proposed Bayesian framework, information
+from sequencing experiments that seek to calibrate metabarcoding
+studies \citep[e.g.,][]{krehenwinkel2016, Saitoh2016} can be used to
+build meaningfully informative priors and improve model
+accuracy. Through a simulation study (described in the supplement) we
+show that true underlying abundances can be accurately estimated
+(Fig. \ref{fig:abundEst}).
 
-    \paragraph{Joint inference of community assembly and population
-      genetic models.} Coupling individual-based, forward-time models
-    of community assembly with backwards-time hierarchical multi-taxa
-    coalescent models permits inference about the values of the
-    parameters in both models. This framework is flexible enough to
-    incorporate multiple refugia, colonization routes, ongoing
-    migration and both neutral and deterministic processes of assembly
-    on time scales of hundreds of thousands of years
-    (Fig. \ref{fig:gimmeSAD}). A forthcoming implementation
-    \citep[gimmeSAD$\pi$;][]{overcast} simulates an individual-based
-    forward time community dispersal model \citep{Rosindell2015-dk} linked
-    with the msPrime coalescent simulator \citep{kelleher2016}. This has
-    been accomplished by rescaling the time dependent local abundance
-    distributions into time dependent effective population size
-    distributions while allowing for heterogeneity in migration and
-    colonization rates. This simulation model can be combined with
-    random forest classifiers and hierarchical ABC to enable testing
-    alternative assembly models, including models that have not yet
-    reached their theoretical equilibria.
-
-%   \end{minipage}
-% }
+\paragraph{Joint inference of community assembly and population
+  genetic models.} Coupling individual-based, forward-time models of
+community assembly with backwards-time hierarchical multi-taxa
+coalescent models permits inference about the values of the parameters
+in both models. This framework is flexible enough to incorporate
+multiple refugia, colonization routes, ongoing migration and both
+neutral and deterministic processes of assembly on time scales of
+hundreds of thousands of years (Fig. \ref{fig:gimmeSAD}). A
+forthcoming implementation \citep[gimmeSAD$\pi$;][]{overcast}
+simulates an individual-based forward time community dispersal model
+\citep{Rosindell2015-dk} linked with the msPrime coalescent simulator
+\citep{kelleher2016}. This has been accomplished by rescaling the time
+dependent local abundance distributions into time dependent effective
+population size distributions while allowing for heterogeneity in
+migration and colonization rates. This simulation model can be
+combined with random forest classifiers and hierarchical ABC to enable
+testing alternative assembly models, including models that have not
+yet reached their theoretical equilibria.
 
 
 \subsection*{Glossary}
 
-% \noindent
-% \colorbox{gray!20}{
-%   \begin{minipage}{0.97\textwidth}
-%     \noindent
-%     {\bf \large Glossary} 
-%     \vspace{1pt}
-%     \hrule
-%     \vspace{1pt}
-    
-%     {\bf ahistorial}
-%     {\bf equilibrium}
-%   \end{minipage}
-% }
+\paragraph{ABC} Approximate Bayesian Computation. A method of
+approximating the posterior sample of parameters in a complex model
+whose likelihood function cannot be analytically solved by simulating
+realizations of the model, computing summary statistics from those
+realizations, and probabilistically accepting or rejecting the
+parameter values leading to those summary statistics based on their
+agreement with the observed statistics computed from the real data.
 
-\paragraph{ahistorical}
+\paragraph{ahistorical} Patterns or theories which do not contain
+information about the historical processes that gave rise to them
 
-\paragraph{coalesent}
+\paragraph{coalescent} A backwards in time model approach in
+population genetics in which alleles in the sample are traced to their
+ancestors under demographic models of interest.
 
-\paragraph{statistical equilibrium}
+\paragraph{statistical equilibrium} In the context of biodiversity, a
+description of a steady state arrived at not by the force of one or a
+few deterministic mechanisms but by the stationary, statistical
+behavior of very large collections of mechanistic drivers acting on
+large assemblages of organisms.
+
+\paragraph{Tajima's D} A metric of non-stationary evolution computed
+as the difference between two distinct derivations of theoretical
+genetic diversity. If neutral molecular evolution in a constant
+population holds, both derivations should be equal, and otherwise if
+assumptions of constant demography and neutral selection are violated,
+will be unequal.
+
+\subsection*{Outstanding Questions}
+
+\begin{enumerate}
+\item How can fossil data be best integrated with ahistorical
+  ecological theory and diversity dynamics as informed by phylogenetic
+  and population genetic inference?
+\item How can functional genomics be used to better distinguish
+  between purely demographic and niche-based drivers of
+  non-equilibrium? Can understanding the functional content of genomes
+  across taxa in a community help predict potential for
+  non-equilibrium responses to future perturbations? Functional
+  genomics is still very much in development (see Box \ref{box:wet}),
+  but future prospects are exciting.
+\end{enumerate}
 
 \pagebreak
 
