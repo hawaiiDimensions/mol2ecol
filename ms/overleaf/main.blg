@@ -4,45 +4,45 @@ The top-level auxiliary file: main.aux
 The style file: tree.bst
 Database file #1: references.bib.bib
 Warning--empty journal in overcast
-You've used 132 entries,
+You've used 137 entries,
             2349 wiz_defined-function locations,
-            1358 strings with 30456 characters,
-and the built_in function-call counts, 43306 in all, are:
-= -- 3706
-> -- 1008
+            1369 strings with 30981 characters,
+and the built_in function-call counts, 45031 in all, are:
+= -- 3855
+> -- 1048
 < -- 1
-+ -- 456
-- -- 228
-* -- 2501
-:= -- 5537
-add.period$ -- 131
-call.type$ -- 132
-change.case$ -- 128
++ -- 474
+- -- 237
+* -- 2603
+:= -- 5758
+add.period$ -- 136
+call.type$ -- 137
+change.case$ -- 133
 chr.to.int$ -- 0
-cite$ -- 133
-duplicate$ -- 4091
-empty$ -- 4412
-format.name$ -- 324
-if$ -- 9655
+cite$ -- 138
+duplicate$ -- 4252
+empty$ -- 4587
+format.name$ -- 337
+if$ -- 10040
 int.to.chr$ -- 0
-int.to.str$ -- 132
-missing$ -- 990
-newline$ -- 530
-num.names$ -- 132
-pop$ -- 1247
+int.to.str$ -- 137
+missing$ -- 1029
+newline$ -- 550
+num.names$ -- 137
+pop$ -- 1294
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 640
+skip$ -- 663
 stack$ -- 0
-substring$ -- 2982
-swap$ -- 2424
+substring$ -- 3109
+swap$ -- 2521
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 344
-width$ -- 135
-write$ -- 1304
+while$ -- 358
+width$ -- 140
+write$ -- 1354
 (There was 1 warning)

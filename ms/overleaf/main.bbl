@@ -1,5 +1,85 @@
 \begin{thebibliography}{100}
 
+\bibitem{Sepkoski1984-kv}
+Sepkoski, J.J. (1984) A kinetic model of phanerozoic taxonomic diversity.
+  {III}. {Post-Paleozoic} families and mass extinctions.
+\newblock \emph{Paleobiology} 10, 246--267
+
+\bibitem{Alroy2010-lv}
+Alroy, J. (2010) The shifting balance of diversity among major marine animal
+  groups.
+\newblock \emph{Science} 329, 1191--1194
+
+\bibitem{Rabosky2008-ej}
+Rabosky, D.L. and Lovette, I.J. (2008) Density-dependent diversification in
+  north american wood warblers.
+\newblock \emph{Proceedings of the Royal Society B: Biological Sciences} 275,
+  2363--2371
+
+\bibitem{Rabosky2009-gs}
+Rabosky, D.L. (2009) Ecological limits and diversification rate: alternative
+  paradigms to explain the variation in species richness among clades and
+  regions.
+\newblock \emph{Ecol. Lett.} 12, 735--743
+
+\bibitem{Hubbell2001-dx}
+Hubbell, S.P. (2001) \emph{The unified neutral theory of biodiversity and
+  biogeography}, vol.~32.
+\newblock Princeton University Press
+
+\bibitem{Harte2011-um}
+Harte, J. (2011) \emph{The Maximum Entropy Theory of Ecology}.
+\newblock Oxford University Press
+
+\bibitem{Chesson2000-uc}
+Chesson, P. (2000) Mechanisms of maintenance of species diversity.
+\newblock \emph{Annu. Rev. Ecol. Syst.} 31, 343--366
+
+\bibitem{Adler2010-ad}
+Adler, P.B. \emph{et~al.} (2010) Coexistence of perennial plants: an
+  embarrassment of niches.
+\newblock \emph{Ecol. Lett.} , no--no
+
+\bibitem{Tilman2004-xt}
+Tilman, D. (2004) Niche tradeoffs, neutrality, and community structure: a
+  stochastic theory of resource competition, invasion, and community assembly.
+\newblock \emph{Proc. Natl. Acad. Sci. U. S. A.} 101, 10854--10861
+
+\bibitem{Pueyo2007-iq}
+Pueyo, S. \emph{et~al.} (2007) The maximum entropy formalism and the
+  idiosyncratic theory of biodiversity.
+\newblock \emph{Ecol. Lett.} 10, 1017--1028
+
+\bibitem{Shipley2006-sx}
+Shipley, B. \emph{et~al.} (2006) From plant traits to plant communities: A
+  statistical mechanistic approach to biodiversity.
+\newblock \emph{Science}
+
+\bibitem{White2012-yw}
+White, E.P. \emph{et~al.} (2012) Characterizing species abundance distributions
+  across taxa and ecosystems using a simple maximum entropy model.
+\newblock \emph{Ecology} 93, 1772--1778
+
+\bibitem{blonder2015}
+Blonder, B. \emph{et~al.} (2015) Linking environmental filtering and
+  disequilibrium to biogeography with a community climate framework.
+\newblock \emph{Ecology} 96, 972--985
+
+\bibitem{Ricklefs2006-tn}
+Ricklefs, R.E. (2006) The unified neutral theory of biodiversity: do the
+  numbers add up?
+\newblock \emph{Ecology} 87, 1424--1431
+
+\bibitem{McGill2007-hx}
+McGill, B.J. \emph{et~al.} (2007) Species abundance distributions: moving
+  beyond single prediction theories to integration within an ecological
+  framework.
+\newblock \emph{Ecol. Lett.} 10, 995--1015
+
+\bibitem{mcgill2010}
+McGill, B.J. (2010) Towards a unification of unified theories of biodiversity.
+\newblock \emph{Ecology Letters} 13, 627--642
+
 \bibitem{Yu2012}
 Yu, D.W. \emph{et~al.} (2012) {Biodiversity soup: metabarcoding of arthropods
   for rapid biodiversity assessment and biomonitoring}.
@@ -69,81 +149,6 @@ Liu, S. \emph{et~al.} (2016) Mitochondrial capture enriches mito-dna 100 fold,
   enabling pcr-free mitogenomics biodiversity analysis.
 \newblock \emph{Molecular ecology resources} 16, 470--479
 
-\bibitem{Sepkoski1984-kv}
-Sepkoski, J.J. (1984) A kinetic model of phanerozoic taxonomic diversity.
-  {III}. {Post-Paleozoic} families and mass extinctions.
-\newblock \emph{Paleobiology} 10, 246--267
-
-\bibitem{Alroy2010-lv}
-Alroy, J. (2010) The shifting balance of diversity among major marine animal
-  groups.
-\newblock \emph{Science} 329, 1191--1194
-
-\bibitem{Rabosky2008-ej}
-Rabosky, D.L. and Lovette, I.J. (2008) Density-dependent diversification in
-  north american wood warblers.
-\newblock \emph{Proceedings of the Royal Society B: Biological Sciences} 275,
-  2363--2371
-
-\bibitem{Rabosky2009-gs}
-Rabosky, D.L. (2009) Ecological limits and diversification rate: alternative
-  paradigms to explain the variation in species richness among clades and
-  regions.
-\newblock \emph{Ecol. Lett.} 12, 735--743
-
-\bibitem{Hubbell2001-dx}
-Hubbell, S.P. (2001) \emph{The unified neutral theory of biodiversity and
-  biogeography}, vol.~32.
-\newblock Princeton University Press
-
-\bibitem{Harte2011-um}
-Harte, J. (2011) \emph{The Maximum Entropy Theory of Ecology}.
-\newblock Oxford University Press
-
-\bibitem{Chesson2000-uc}
-Chesson, P. (2000) Mechanisms of maintenance of species diversity.
-\newblock \emph{Annu. Rev. Ecol. Syst.} 31, 343--366
-
-\bibitem{Adler2010-ad}
-Adler, P.B. \emph{et~al.} (2010) Coexistence of perennial plants: an
-  embarrassment of niches.
-\newblock \emph{Ecol. Lett.} , no--no
-
-\bibitem{Tilman2004-xt}
-Tilman, D. (2004) Niche tradeoffs, neutrality, and community structure: a
-  stochastic theory of resource competition, invasion, and community assembly.
-\newblock \emph{Proc. Natl. Acad. Sci. U. S. A.} 101, 10854--10861
-
-\bibitem{Pueyo2007-iq}
-Pueyo, S. \emph{et~al.} (2007) The maximum entropy formalism and the
-  idiosyncratic theory of biodiversity.
-\newblock \emph{Ecol. Lett.} 10, 1017--1028
-
-\bibitem{Shipley2006-sx}
-Shipley, B. \emph{et~al.} (2006) From plant traits to plant communities: A
-  statistical mechanistic approach to biodiversity.
-\newblock \emph{Science}
-
-\bibitem{White2012-yw}
-White, E.P. \emph{et~al.} (2012) Characterizing species abundance distributions
-  across taxa and ecosystems using a simple maximum entropy model.
-\newblock \emph{Ecology} 93, 1772--1778
-
-\bibitem{Ricklefs2006-tn}
-Ricklefs, R.E. (2006) The unified neutral theory of biodiversity: do the
-  numbers add up?
-\newblock \emph{Ecology} 87, 1424--1431
-
-\bibitem{McGill2007-hx}
-McGill, B.J. \emph{et~al.} (2007) Species abundance distributions: moving
-  beyond single prediction theories to integration within an ecological
-  framework.
-\newblock \emph{Ecol. Lett.} 10, 995--1015
-
-\bibitem{mcgill2010}
-McGill, B.J. (2010) Towards a unification of unified theories of biodiversity.
-\newblock \emph{Ecology Letters} 13, 627--642
-
 \bibitem{Barnosky2012-qz}
 Barnosky, A.D. \emph{et~al.} (2012) Approaching a state shift in earth/'s
   biosphere.
@@ -159,10 +164,14 @@ MacArthur, R.H. and Wilson, E.O. (1967) \emph{The theory of island
   biogeography}.
 \newblock Princeton University Press
 
-\bibitem{hutch}
-Hutchinson, G.E. (1959) Homage to santa rosalia or why are there so many kinds
-  of animals?
-\newblock \emph{The American Naturalist} 93, 145--159
+\bibitem{pueyo2007}
+Pueyo, S. \emph{et~al.} (2007) The maximum entropy formalism and the
+  idiosyncratic theory of biodiversity.
+\newblock \emph{Ecology Letters} 10, 1017--1028
+
+\bibitem{neill2009}
+Neill, C. \emph{et~al.} (2009) A competitive coexistence principle?
+\newblock \emph{Oikos} 118, 1570--1578
 
 \bibitem{Xiao2015-jv}
 Xiao, X. \emph{et~al.} (2015) A strong test of the maximum entropy theory of
@@ -178,6 +187,31 @@ Harte, J. \emph{et~al.} (2009) Biodiversity scales from plots to biomes with a
 Rominger, A.J. \emph{et~al.} (2015) Community assembly on isolated islands:
   macroecology meets evolution.
 \newblock \emph{Glob. Ecol. Biogeogr.}
+
+\bibitem{McGill2003-jy}
+McGill, B. (2003) Strong and weak tests of macroecological theory.
+\newblock \emph{Oikos} 102, 679--685
+
+\bibitem{McGill2007-zd}
+McGill, B.J. \emph{et~al.} (2007) Species abundance distributions: moving
+  beyond single prediction theories to integration within an ecological
+  framework.
+\newblock \emph{Ecol. Lett.} 10, 995--1015
+
+\bibitem{baldridge2016}
+Baldridge, E. \emph{et~al.} (2016) An extensive comparison of species-abundance
+  distribution models.
+\newblock \emph{PeerJ} 4, e2823
+
+\bibitem{etienne2007}
+Etienne, R.S. (2007) A neutral sampling formula for multiple samples and an
+  'exact' test of neutrality.
+\newblock \emph{Ecology letters} 10, 608--618
+
+\bibitem{meteR}
+Rominger, A.J. and Merow, C. (2017) meter: an r package for testing the maximum
+  entropy theory of ecology.
+\newblock \emph{Methods in Ecology and Evolution} 8, 241--247
 
 \bibitem{Alroy2008-no}
 Alroy, J. \emph{et~al.} (2008) Phanerozoic trends in the global diversity of
@@ -500,11 +534,6 @@ Hubbell, S.P. (2005) The neutral theory of biodiversity and biogeography and
   stephen jay gould.
 \newblock \emph{Paleobiology} 31, 122--132
 
-\bibitem{Etienne2004-fm}
-Etienne, R.S. and Olff, H. (2004) A novel genealogical approach to neutral
-  biodiversity theory.
-\newblock \emph{Ecol. Lett.} 7, 170--175
-
 \bibitem{Jabot2009-xr}
 Jabot, F. and Chave, J. (2009) Inferring the parameters of the neutral theory
   of biodiversity using phylogenetic information and implications for tropical
@@ -562,12 +591,6 @@ Engen, S. and Lande, R. (1996) Population dynamic models generating species
 McGill, B. (2003) Strong and weak tests of macroecological theory.
 \newblock \emph{Oikos} 102, 679--685
 
-\bibitem{McGill2007-zd}
-McGill, B.J. \emph{et~al.} (2007) Species abundance distributions: moving
-  beyond single prediction theories to integration within an ecological
-  framework.
-\newblock \emph{Ecol. Lett.} 10, 995--1015
-
 \bibitem{Etienne2012-ky}
 Etienne, R.S. and Haegeman, B. (2012) A conceptual and statistical framework
   for adaptive radiations with a key role for diversity dependence.
@@ -611,10 +634,10 @@ Godoy, O. \emph{et~al.} (2014) Phylogenetic relatedness and the determinants of
 Van~Valen, L. (1973) A new evolutionary law.
 \newblock \emph{Evolutionary theory} 1, 1--30
 
-\bibitem{benton2009}
-Benton, M.J. (2009) The red queen and the court jester: species diversity and
-  the role of biotic and abiotic factors through time.
-\newblock \emph{science} 323, 728--732
+\bibitem{erwin2008}
+Erwin, D.H. (2008) Macroevolution of ecosystem engineering, niche construction
+  and diversity.
+\newblock \emph{Trends in Ecology \& Evolution} 23, 304--310
 
 \bibitem{Kirchner1998-uk}
 Kirchner, J.W. and Weil, A. (1998) No fractals in fossil extinction statistics.
