@@ -118,8 +118,7 @@ exclusive.  Nonetheless, investigation of the underlying dynamics
 producing these patterns has revealed that the equilibrium assumed by
 the theories is not realistic \citep{Ricklefs2006-tn}, and that many
 processes, equilibrial and otherwise, can generate the same
-macroscopic, ahistorical predictions \citep{McGill2007-hx,
-  mcgill2010}.
+macroscopic, ahistorical predictions \citep{McGill2007-hx}.
 
 We propose that combining insights from ecological theory and
 inference of evolutionary and demographic change from genetic data
@@ -181,34 +180,31 @@ bioinformatic advances.
 
 \section{Ecological theories and non-equilibrium}
 
-The development of the equilibrium theory of island biogeography
-(ETIB; \citep{MacArthur1967-ux}) ushered in the advent of
-mechanistically elegant, predictive theories of general patterns in
-biodiversity. The theory of MacArthur and Wilson also set the
-precedent of focusing on equilibrial predictions. From this starting
-point, two classes of simple yet predictive ecological theory have
-emerged: mechanistically neutral theory and mechanistically agnostic,
-statistical mechanical theory. Non-neutral and non-statistical models
-\citep[e.g.,][]{Tilman2004-xt, Chesson2000-uc} also invoke ideas of
-equilibrium in their derivation; however, we recognize that these
-equilibrium are defined at the species level, and only accidentally
-lead to stable macroscopic patterns, and so do not fall within our
-primary focus. Additionally, the upscaling of these theories to entire
-communities is often mathematically intractable due to the huge
-parameter spaces they imply.  Thus we relegate niche-based equilibria
-to the realm of statistical mechanics \citep[as have
-others:][]{pueyo2007, neill2009, Harte2011-um}, discussed in section
-\ref{sec:statThr}. We further treat niches and strong species
-interactions as drivers of non-equilibrium: powerful interactions with
-species and the environment could prevent a system from attaining a
-neutral or statistical equilibrium.
+Neutral and statistical theories in ecology focus on macroscopic
+patterns, and the equilibrium the presume is relevant to those
+patterns, not finer-grained properties of ecosystems. Non-neutral and
+non-statistical models \citep[e.g.,][]{Tilman2004-xt, Chesson2000-uc}
+also invoke ideas of equilibrium in their derivation; however, these
+equilibrium are defined at the level of individual populations, and
+only accidentally lead to stable macroscopic patterns, and so do not
+fall within our primary focus. We focus explicitly on simple yet
+predictive theories for their utility as null models, not because of a
+presumption of their realism.
+
+Additionally, upscaling niche-based models to entire communities is
+often mathematically intractable due to the huge parameter spaces they
+imply.  Thus we relegate niche-based equilibria to the realm of
+statistical mechanics \citep[as have others:][]{pueyo2007, neill2009,
+  Harte2011-um}, discussed in section \ref{sec:statThr}. We further
+treat niches and species interactions as potential drivers of
+non-equilibrium: powerful interactions between species and with the
+environment could prevent a system from attaining a neutral or
+statistical equilibrium.
 
 Our goal throughout is not to validate neutral or statistical
-theories---quite the opposite, we treat neutral and statistical
-theories as null models, a role they are well suited for given their
-simplicity yet predictiveness. We propose new data dimensions, namely
+theories---quite the opposite, we propose new data dimensions, namely
 genetics, to help better test alternative hypotheses against these
-nulls, thereby gaining insight into what non-neutral and
+null theories, thereby gaining insight into what non-neutral and
 non-statistical mechanisms are at play in systems of interest.
 
 \subsection{Mechanistically neutral theory}
@@ -225,46 +221,47 @@ analogous to neutral drift in population genetics
 
 \subsection{Statistical theory} \label{sec:statThr}
 
-Rather than assume that any one mechanism, be it niche-based or
-neutral, dominates the assembly of populations into a community,
-theories based on statistical mechanics assume that all mechanisms
-could be valid, but their unique influence has been lost to the
-enormity of the system and thus outcome of assembly is a community in
-statistical equilibrium. In one class of such theories, it is assumed
-that whatever mechanisms are at play, they are only relevant in
-determining the values of ecological state variables, and then if the
-system is allowed to come to equilibrium its properties will be
-predicted by maximizing information entropy relative to the
-constraints of the state variables.  One example is the maximum
-entropy theory of ecology (METE), one model realization of which
-assumes that the area of an ecosystem, the total number of species in
-some taxonomic group, the total number of individuals in those
-species, and the total metabolic rate of those individuals, capture
-all necessary information to characterize a community because that
-community has reached a statistical equilibrium in which the imprint
-of specific mechanistic forces has been lost. While this theory finds
-widespread success in predicting ahistorical patterns of species
-abundance, size, and spatial distribution \citep{Harte2011-um,
-  White2012-yw, Xiao2015-jv, Harte2009-zq} at single snapshots in
+Rather than assume that any one mechanism, dominates the assembly of
+populations into a community, theories based on statistical mechanics
+assume that all mechanisms could be valid, but their unique influence
+has been lost to the enormity of the system and thus outcome of
+assembly is a community in statistical equilibrium. In one class of
+such theories, it is assumed that whatever mechanisms are at play,
+they are only relevant in determining the values of ecological state
+variables, and then if the system is allowed to come to equilibrium
+its properties will be predicted by maximizing information entropy
+relative to the constraints of the state variables.  One example is
+the maximum entropy theory of ecology (METE), one model realization of
+which assumes that the area of an ecosystem, the total number of
+species in some taxonomic group, the total number of individuals in
+those species, and the total metabolic rate of those individuals,
+capture all necessary information to characterize a community because
+that community has reached a statistical equilibrium in which the
+imprint of specific mechanistic forces has been lost. While this
+theory finds widespread success in predicting ahistorical patterns of
+species abundance, size, and spatial distribution \citep{Harte2011-um,
+  White2012-yw, Xiao2015-jv} at single snapshots in
 time, it fails to match observed patterns in disturbed and rapidly
-evolving communities \citep{Rominger2015-kb,Harte2011-um}.
+evolving communities \citep{Rominger2015-kb, Harte2011-um}.
 
 \subsection{Testing theory with ahistorical data}
 
 The vast majority of tests of neutral and/or statistical ecological
 theory have compared theoretical predictions to ahistorical data. Most
-common is the species abundance distribution, although other metrics
-such as species area relationship and the distribution of
-allometrically-scaled metabolic rates across organisms have also been
-used. These handfull of metrics may not be sufficient to distinguish
-equilibrium from non-equilibrium \citep[as discussed here and
-in][]{McGill2003-jy, McGill2007-zd}. All the same, to test theory in
-any way, some test statistic describing goodness of fit is needed. The
-emerging consensus is that likelihood-based test statistics should be
-preferred \citep{baldridge2016}. The ``exact test'' of
-\citet{etienne2007} has been extended by \citet{meteR} into a simple
-z-score which can parsimoniously describe the goodness of fit between
-theory and pattern.  We advocate its use in our proposed framework.
+common is the species abundance distribution \citep{Hubbell2001-dx,
+  Harte2011-um, White2012-yw}, although other metrics such as species
+area relationship and the distribution of allometrically-scaled
+metabolic rates across organisms have also been used
+\citep{Harte2011-um, Xiao2015-jv}. These handfull of metrics may not
+be sufficient to distinguish equilibrium from non-equilibrium
+\citep[as discussed here and in][]{McGill2003-jy, McGill2007-zd}. All
+the same, to test theory in any way, some test statistic describing
+goodness of fit is needed. The emerging consensus is that
+likelihood-based test statistics should be preferred
+\citep{baldridge2016}. The ``exact test'' of \citep{etienne2007} has
+been extended by \citep{meteR} into a simple z-score which can
+parsimoniously describe the goodness of fit between theory and
+pattern.  We advocate its use in our proposed framework.
 
 
 \section{Inferring non-equilibrium dynamics}
@@ -275,36 +272,21 @@ with equilibrial theory. While the fossil record can elucidate deep
 time patterns for select, well-fossilized groups \citep{Alroy2008-no},
 and in limited geographic areas and temporal extents yielding good
 preservation \citep{Harnik2011-qe}, we require an approach that is
-applicable across taxa and scales of space and time. Bridging
-ecological theory with models from phylogenetics has long given us
-potential general-use tools to gain insight into the dynamics
+applicable across taxa and scales of space and
+time. Population/phylogenetics provide insights on rates of change of
+populations and species by processes of demographic fluctuations,
+immigration, selection, speciation, and extinction. Bridging
+ecological theory with models from population/phylogenetics has great
+potential for general-use tools to gain insight into the dynamics
 underlying contemporary biodiversity patterns \citep{Webb2002-yr,
-  Emerson2002-mw, Lavergne2010-ts}, while links from population
-genetics have been more recently explored \citep{Webb2002-yr,
   Emerson2002-mw, Lavergne2010-ts, Li2016-ns, McGaughran2015-sy,
   Laroche2015-qo, Vanoverbeke2015-ym, Vellend2005-qd,
   Papadopoulou2011-bd,Dexter2012-rn}. However, these approaches have
 yet to quantitatively link the inferences of change through time from
 phylo/population genetics with inferences of macroscopic ahistorical
 patterns from macroecology.  If we can overcome this shortfall, we can
-finally test which of the biodiversity patterns we see today result
-from equilibrium and which from, or in spite of, non-equilibrium.  Do
-to so we to leverage insights from phylo/population genetics on rates
-of change of populations and species by processes of demographic
-fluctuations, immigration, selection, speciation, and extinction
-
-The potential for such modeling approaches was appreciated early on
-\citep{Avise1987-vx, Avise1998-th}, as it was well recognized that
-population genetic data from multiple codistributed taxa could augment
-investigation of traditionally ecologically-centered questions. Yet
-Despite over 30 years of comparative historical demography studies,
-there has been almost a wholesale neglect of the growing body of
-theory from community ecology. Conversely, ecological models of
-community assembly tend to ignore the history.  The opportunity to
-unify processes underlying patterns of species diversities and
-abundances with distributions of historical population size
-trajectories, colonisation times, speciation times and regional
-patterns of genetic connectivity begs investigation.
+finally test which biodiversity patterns we see today result from
+equilibrium and which from, or in spite of, non-equilibrium.
 
 One of the fundamental tools allowing for complex historical inference
 with population genetic data is coalescent theory
@@ -314,37 +296,16 @@ generate the statistical properties of any sample of alleles across
 the genome by modeling gene genealogies backwards in time under
 virtually any complex demographic history thereby allowing model-based
 estimation of historical parameters such as historical population size
-fluctuations, divergence and/or colonization times, and migration
-rates \citep{Wakeley2008-se}. This approach can also be put in a
-multi-species, community context thanks to advances in historical
-demographic models \citep{Xue2015-el,
-  Hickerson2006-uf,Carstens2016-mc, Chan2014-nq, Satler2016-lb}.
-
-Estimating isolation, divergence and/or speciation times has been a
-particularly important application of population genetic data, and use
-of coalescent theory is of notable importance in this endeavor because
-it statistically captures the stochastic discord between population
-divergence times and gene divergence times \citep{Charlesworth2010-hn,
-  Edwards2000-cs}. In the context of island biogeography and invasion
-ecology, coalescent-based estimates of isolation times is of
-particular importance for understanding the dynamics and timing of
-island colonization, intra-island speciation, as well as invasion
-times \citep{Estoup2003-ny, Estoup2004-cy, Hickerson2008-da,
-  Gray2014-kp}.
-
-The history of population size change is also of fundamental
-importance for understanding the dynamics of community assembly across
-a variety of ecological settings, and coalescent theory has likewise
-become the standard tool for estimating size change histories with
-population genetic and phylogeographic data on hand
-\citep{Kuhner1998-dp, Slatkin1991-ec}. This application of coalescent
-modeling has been deployed for large numbers of species from which
-only small numbers of genetic loci are sampled from populations
-\citep{Drummond2005-zh}. Pivotal to the understanding of demographic
-and evolutionary histories, coalescent theory has also allowed
-modeling complex patterns of historical population structure
-\citep{Prado-Martinez2013-hv, Bahlo2000-cx} and gene flow
-\citep{Beerli2001-mt,Hey2004-xe}.
+fluctuations \citep{Kuhner1998-dp, Slatkin1991-ec}, divergence and/or
+colonization times \citep{Charlesworth2010-hn, Edwards2000-cs},
+migration rates \citep{Wakeley2008-se}, and complex patterns of
+historical population structure \citep{Prado-Martinez2013-hv,
+  Bahlo2000-cx} and gene flow \citep{Beerli2001-mt,Hey2004-xe}. This
+approach can also be put in a multi-species, community context thanks
+to advances in historical demographic models \citep{Xue2015-el,
+  Hickerson2006-uf, Carstens2016-mc, Chan2014-nq, Satler2016-lb}, even
+when only small numbers of genetic loci are sampled from populations
+\citep{Drummond2005-zh}.
 
 Taking all of these elements of demographic history together
 (i.e. structure, divergence, expansion, size change and migration),
@@ -354,9 +315,8 @@ become of notable importance for making statistical inference under
 complex histories when solving the likelihood function becomes
 intractable \citep{Sunnaker2013-ts}.
 
-As important as it is for the inference of complex demographic
-history, coalescent theory has also become an important modeling tool
-for understanding how natural selection shapes patterns of genetic
+Coalescent theory has also become an important modeling tool for
+understanding how natural selection shapes patterns of genetic
 polymorphism \citep{Kim2002-ex, Kern2016-ap, Ewing2016-bm}. Indeed,
 one of the most commonly used techniques for detecting positive
 selection relies on a summary statistic, Tajima's D, that can be
@@ -373,39 +333,32 @@ as a metric that quantifies deviation from demographic equilibrium and
 used to jointly describe selection and demographic history
 \citep{Kern2016-ap, Ewing2016-bm, Phung2016-uo, Roux2016-hz}.
 
-Ultimately, it is at the community level of inference that
-coalescent-based population genetic methods could be most useful for
-investigating ecological models that deviate from
-stationarity. Indeed, it is the inherent historical approach enabled
-by coalescent methods that can potentially enrich the ecological
-theoretical approaches to community assembly and stationarity.
-
 
 \section{Current efforts to integrate evolution into ecological theory} \label{sec:toDate}
 
-Current efforts to synthesize theoretical perspectives from evolution
-and ecology have made substantial contributions toward understanding
-what drives biodiversity patterns. However, a more concerted
-integration is needed, and indeed was not even feasible until recent
-and ongoing genetic, bioinformatic and theoretical
-advances. Approaches to date have been hindered by one or more of
-several general issues: 1) lack of a solid theoretical foundation, 2)
-inability to distinguish multiple competing alternative hypotheses, 3)
-lack of comprehensive genetic data, 4) lack of bioinformatic
-approaches to resolve species and their abundances. Here we quickly
-survey the ways these shortcomings have prevented further advances and
-then move on to the cutting edge of the field.
+While quantitatively integrating theory from ecology, population
+genetics, and phylogenetics has not yet been achieved, efforts so far
+to synthesize perspectives from evolution and ecology warrant
+attention. Nonetheless, a more concerted integration is needed because
+approaches to date have been hindered by one or more general issues:
+1) lack of a solid theoretical foundation, 2) inability to distinguish
+multiple competing alternative hypotheses, 3) lack of comprehensive
+genetic/genomic data, 4) lack of bioinformatic approaches to resolve species
+and their abundances. Here we quickly survey the ways these
+shortcomings have prevented further advances and then move on to the
+cutting edge of the field.
 
-Community phylogenetics \citep{Webb2002-yr} attempted to understand the
-roles of competition and environmental filtering on community assembly
-by assuming key ecologically-relevant traits are conserved along
-phylogenies; without a solid theory of trait-mediated competition and
-recruitment, nor a solid theory of trait evolution, this program broke
-down \citep{Losos2008-eq}. Largely lost is the opportunity to use
-phylogenetic information to understand the historical contingencies at
-play in community assembly \citep{Ricklefs2007-wo,Emerson2008-as}, a
-task which phylogenies might be able to perform, while they are often
-poor proxies for traits \citep{Losos2008-eq}.
+Community phylogenetics \citep{Webb2002-yr} was founded to understand
+the roles of competition and environmental filtering on community
+assembly by assuming key ecologically-relevant traits are conserved
+along phylogenies; without a solid theory of trait-mediated
+competition and recruitment, nor a solid theory of trait evolution,
+this program broke down \citep{Losos2008-eq}. While the field has
+progressed \citep[e.g.,][]{sukumaran2016}, not enough attention is
+given to using phylogenetic information to understand the historical
+contingencies at play in community assembly \citep{Ricklefs2007-wo,
+  Emerson2008-as}, a task which phylogenies might be able to perform,
+while they are often poor proxies for traits \citep{Losos2008-eq}.
 
 The recent growth in joint studies of genetic and species diversity
 \citep{Vanoverbeke2015-ym, Vellend2005-up, Vellend2014-ir,
@@ -429,13 +382,13 @@ ecological theory and have not been leveraged by theoreticians to gain
 more realistic insights on demographic and geographic change.
 
 Ecological neutral theory applied to microbial communities
-\citep{Venkataraman2015-rk} has demonstrated that the same ecological
-processes that operate at macro-scales may also scale down to
-communities of microbes. However, such studies have not made use of
-the immense phylogenetic and functional genomic resources available
-for microbes. Nor has the problem of inferring abundance from
-metagenomic and metabarcoding data been fully resolved (see Box
-\ref{box:dry}).
+\citep{Venkataraman2015-rk} have used the exact same kind of
+genetic/genomic data that we propose using to test ecological theory
+in any group, from microbes to macrobes. However, such studies to date
+have not made use of the immense phylogenetic and functional genomic
+resources available for microbes. Nor has the problem of inferring
+abundance from metagenomic and metabarcoding data been fully resolved
+(see Box \ref{box:dry}).
 
 \subsection{Emerging approaches}
 
@@ -448,21 +401,17 @@ ecological theory using evolutionary information; and 2) inferring
 non-neutral or non-statistical mechanics by combining theory with
 history. 
 
-Because the NTB is implicitly an evo-ecological theory
-\citep{Hubbell2001-dx, Hubbell2005-ng}, despite typically being
-treated as ahistorical, it is natural to include evolutionary
-information into inference about the theory's parameters. Jabot and
-Chave \citep{Jabot2009-xr} used approximate Bayesian computation (ABC)
-to improve estimates of the NTB's fundamental biodiversity number
-using phylogenetic information. Efforts have also been made to
-validate the underlying assumption of ecological equivalence, a key
-assumption of the NTB, from a phylogenetic perspective
-\citep{Burbrink2015-vx}. While these efforts improved inference of the
-parameters involved in making ahistorical predictions of species
-abundance, they did not aim to improve the underlying realism of the
-evolutionary dynamic presumed by the NTB. For example, while the NTB
-accurately predicts phylogenetic tree shape (sensu
-\citep{Jabot2009-xr}) it does not accurately reflect tree tempo
+Jabot and Chave \citep{Jabot2009-xr} used approximate Bayesian
+computation (ABC) to improve estimates of the NTB's fundamental
+biodiversity number using phylogenetic information. Efforts have also
+been made to validate the underlying assumption of ecological
+equivalence, a key assumption of the NTB, from a phylogenetic
+perspective \citep{Burbrink2015-vx}. While these efforts improved
+inference of the parameters involved in making ahistorical predictions
+of species abundance, they did not aim to improve the underlying
+realism of the evolutionary dynamic presumed by the NTB. For example,
+while the NTB accurately predicts phylogenetic tree shape
+(\citep{Jabot2009-xr}) it does not accurately reflect tree tempo
 \citep{Davies2011-mz}. The time to equilibration in the NTB is also
 unrealistically long \citep{Ricklefs2006-tn}. While protracted
 speciation has been proposed to correct some of these tempo problems
@@ -472,10 +421,10 @@ advances can accurately predict joint patterns of population genetics,
 phylogenies, and communities.
 
 Another approach has tested the ahistorical predictions of equilibrial
-ecological theory through evolutionary snapshots of community assembly
-and change with the goal of understanding how changing evolutionary
-dynamics drive community assembly. Several applications of the NTB in
-the fossil record have been used to show changes over geologic time in
+ecological theory across evolutionary snapshots of community assembly
+with the goal of understanding how changing evolutionary dynamics
+drive community assembly. Several applications of the NTB in the
+fossil record have been used to show changes over geologic time in
 community assembly mechanisms \citep{Olszewski2004-ud,
   Wagner2006-te}. In a similar theme, Rominger et
 al. \citep{Rominger2015-kb} used the geologic chronosequence of the
@@ -486,8 +435,8 @@ et al. used genetic information to understand how evolutionary rates
 vary between different arthropod clades in response to the geologic
 chronosequence, these evolutionary snapshot studies lack a
 quantitative reconciliation of mechanisms inferred by analyses of
-ahistorical theory with independently inferred dynamics, either from
-genetic data or stratigraphic time series.
+ahistorical theory with independently inferred dynamics, e.g., from
+population genetic modeling.
 
 \section{What is needed now}
 
@@ -594,12 +543,18 @@ lead to new ecosystem processes \citep{redQueen, erwin2008}. We
 hypothesize that these regular disturbances will lead to cycles of
 non-equilibrium in observed biodiversity patterns.
 
-Figure \ref{fig:cycles} shows how we hypothesize biodiversity to
-transition between different phases of equilibrium and
-non-equilibrium. The figure presents deviation between data and
-ahistorical ecological theory on the y-axis, versus deviations from
-demographic or evolutionary equilibrium on the x-axis. A clockwise
-cycle through this space would indicate:
+Figure \ref{fig:cycles} derives from comparing summaries of deviation
+from neutral/statistical equilibrium on the y-axis and deviations from
+equilibrial demography/diversification on the x-axis. Trajectories of
+biodiversity assemblages through this space shows how we hypothesize
+biodiversity to transition between different phases of equilibrium and
+non-equilibrium. Deviations from ecological theory can be quantified
+by the previously discussed exact tests \citep{etienne2007} and
+z-scores \citep{meteR}, while many statistics are available to
+quantify departure from demographic/diversification steady state
+including the previously discussed Tajima's D (which would be averaged
+over all populations in the sample). A clockwise cycle through this
+space would indicate:
 
 \begin{itemize}
 \item Panel I $\rightarrow$ Panel II: following rapid ecological
@@ -781,7 +736,7 @@ biogeographic theory.  What is more, it has been long recognized that
 models in community ecology have been overly reliant on ahistorical
 patterns, such as the species abundance distribution, which are by
 themselves often insufficient for distinguishing competing models of
-assembly \citep{McGill2007-hx, mcgill2010}.  The field is ready to
+assembly \citep{McGill2007-hx}.  The field is ready to
 fully merge these two approaches using the wetlab, bioinformatic, and
 theoretical-conceptual approaches we have promoted here. The time is
 right to do so as biodiversity scientists must face an increasingly

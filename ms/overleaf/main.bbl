@@ -10,12 +10,6 @@ Alroy, J. (2010) The shifting balance of diversity among major marine animal
   groups.
 \newblock \emph{Science} 329, 1191--1194
 
-\bibitem{Rabosky2008-ej}
-Rabosky, D.L. and Lovette, I.J. (2008) Density-dependent diversification in
-  north american wood warblers.
-\newblock \emph{Proceedings of the Royal Society B: Biological Sciences} 275,
-  2363--2371
-
 \bibitem{Rabosky2009-gs}
 Rabosky, D.L. (2009) Ecological limits and diversification rate: alternative
   paradigms to explain the variation in species richness among clades and
@@ -35,11 +29,6 @@ Harte, J. (2011) \emph{The Maximum Entropy Theory of Ecology}.
 Chesson, P. (2000) Mechanisms of maintenance of species diversity.
 \newblock \emph{Annu. Rev. Ecol. Syst.} 31, 343--366
 
-\bibitem{Adler2010-ad}
-Adler, P.B. \emph{et~al.} (2010) Coexistence of perennial plants: an
-  embarrassment of niches.
-\newblock \emph{Ecol. Lett.} , no--no
-
 \bibitem{Tilman2004-xt}
 Tilman, D. (2004) Niche tradeoffs, neutrality, and community structure: a
   stochastic theory of resource competition, invasion, and community assembly.
@@ -49,11 +38,6 @@ Tilman, D. (2004) Niche tradeoffs, neutrality, and community structure: a
 Pueyo, S. \emph{et~al.} (2007) The maximum entropy formalism and the
   idiosyncratic theory of biodiversity.
 \newblock \emph{Ecol. Lett.} 10, 1017--1028
-
-\bibitem{Shipley2006-sx}
-Shipley, B. \emph{et~al.} (2006) From plant traits to plant communities: A
-  statistical mechanistic approach to biodiversity.
-\newblock \emph{Science}
 
 \bibitem{White2012-yw}
 White, E.P. \emph{et~al.} (2012) Characterizing species abundance distributions
@@ -75,10 +59,6 @@ McGill, B.J. \emph{et~al.} (2007) Species abundance distributions: moving
   beyond single prediction theories to integration within an ecological
   framework.
 \newblock \emph{Ecol. Lett.} 10, 995--1015
-
-\bibitem{mcgill2010}
-McGill, B.J. (2010) Towards a unification of unified theories of biodiversity.
-\newblock \emph{Ecology Letters} 13, 627--642
 
 \bibitem{Yu2012}
 Yu, D.W. \emph{et~al.} (2012) {Biodiversity soup: metabarcoding of arthropods
@@ -159,11 +139,6 @@ Wallington, T.J. \emph{et~al.} (2005) Implications of current ecological
   thinking for biodiversity conservation: A review of the salient issues.
 \newblock \emph{Ecol. Soc.} 10
 
-\bibitem{MacArthur1967-ux}
-MacArthur, R.H. and Wilson, E.O. (1967) \emph{The theory of island
-  biogeography}.
-\newblock Princeton University Press
-
 \bibitem{pueyo2007}
 Pueyo, S. \emph{et~al.} (2007) The maximum entropy formalism and the
   idiosyncratic theory of biodiversity.
@@ -177,11 +152,6 @@ Neill, C. \emph{et~al.} (2009) A competitive coexistence principle?
 Xiao, X. \emph{et~al.} (2015) A strong test of the maximum entropy theory of
   ecology.
 \newblock \emph{Am. Nat.} 185, E70--E80
-
-\bibitem{Harte2009-zq}
-Harte, J. \emph{et~al.} (2009) Biodiversity scales from plots to biomes with a
-  universal species-area curve.
-\newblock \emph{Ecol. Lett.} 12, 789--797
 
 \bibitem{Rominger2015-kb}
 Rominger, A.J. \emph{et~al.} (2015) Community assembly on isolated islands:
@@ -275,16 +245,6 @@ Dexter, K.G. \emph{et~al.} (2012) Historical effects on beta diversity and
   community assembly in amazonian trees.
 \newblock \emph{Proc. Natl. Acad. Sci. U. S. A.} 109, 7787--7792
 
-\bibitem{Avise1987-vx}
-Avise, J.C. \emph{et~al.} (1987) Intraspecific phylogeography: The
-  mitochondrial {DNA} bridge between population genetics and systematics.
-\newblock \emph{Annu. Rev. Ecol. Syst.} 18, 489--522
-
-\bibitem{Avise1998-th}
-Avise, J.C. (1998) The history and purview of phylogeography: a personal
-  reflection.
-\newblock \emph{Mol. Ecol.} 7, 371--379
-
 \bibitem{Hudson1983-hx}
 Hudson, R.R. (1983) Properties of a neutral model with intragenic
   recombination.
@@ -308,9 +268,50 @@ Rosenberg, N.A. and Nordborg, M. (2002) Genealogical trees, coalescent theory
   and the analysis of genetic polymorphisms.
 \newblock \emph{Nat. Rev. Genet.} 3, 380--390
 
+\bibitem{Kuhner1998-dp}
+Kuhner, M.K. \emph{et~al.} (1998) Maximum likelihood estimation of population
+  growth rates based on the coalescent.
+\newblock \emph{Genetics} 149, 429--434
+
+\bibitem{Slatkin1991-ec}
+Slatkin, M. and Hudson, R.R. (1991) Pairwise comparisons of mitochondrial {DNA}
+  sequences in stable and exponentially growing populations.
+\newblock \emph{Genetics} 129, 555--562
+
+\bibitem{Charlesworth2010-hn}
+Charlesworth, D. (2010) Don't forget the ancestral polymorphisms.
+\newblock \emph{Heredity} 105, 509--510
+
+\bibitem{Edwards2000-cs}
+Edwards, S.V. and Beerli, P. (2000) Perspective: gene divergence, population
+  divergence, and the variance in coalescence time in phylogeographic studies.
+\newblock \emph{Evolution} 54, 1839--1854
+
 \bibitem{Wakeley2008-se}
 Wakeley, J. (2008) \emph{Coalescent Theory}.
 \newblock Roberts and Company Publishers
+
+\bibitem{Prado-Martinez2013-hv}
+Prado-Martinez, J. \emph{et~al.} (2013) Great ape genetic diversity and
+  population history.
+\newblock \emph{Nature} 499, 471--475
+
+\bibitem{Bahlo2000-cx}
+Bahlo, M. and Griffiths, R.C. (2000) Inference from gene trees in a subdivided
+  population.
+\newblock \emph{Theor. Popul. Biol.} 57, 79--95
+
+\bibitem{Beerli2001-mt}
+Beerli, P. and Felsenstein, J. (2001) Maximum likelihood estimation of a
+  migration matrix and effective population sizes in n subpopulations by using
+  a coalescent approach.
+\newblock \emph{Proc. Natl. Acad. Sci. U. S. A.} 98, 4563--4568
+
+\bibitem{Hey2004-xe}
+Hey, J. and Nielsen, R. (2004) Multilocus methods for estimating population
+  sizes, migration rates and divergence time, with applications to the
+  divergence of drosophila pseudoobscura and d. persimilis.
+\newblock \emph{Genetics} 167, 747--760
 
 \bibitem{Xue2015-el}
 Xue, A.T. and Hickerson, M.J. (2015) The aggregate site frequency spectrum
@@ -338,71 +339,10 @@ Satler, J.D. and Carstens, B.C. (2016) Phylogeographic concordance factors
   sarracenia alata pitcher plant system.
 \newblock \emph{Evolution}
 
-\bibitem{Charlesworth2010-hn}
-Charlesworth, D. (2010) Don't forget the ancestral polymorphisms.
-\newblock \emph{Heredity} 105, 509--510
-
-\bibitem{Edwards2000-cs}
-Edwards, S.V. and Beerli, P. (2000) Perspective: gene divergence, population
-  divergence, and the variance in coalescence time in phylogeographic studies.
-\newblock \emph{Evolution} 54, 1839--1854
-
-\bibitem{Estoup2003-ny}
-Estoup, A. and Clegg, S.M. (2003) Bayesian inferences on the recent island
-  colonization history by the bird zosterops lateralis lateralis.
-\newblock \emph{Mol. Ecol.} 12, 657--674
-
-\bibitem{Estoup2004-cy}
-Estoup, A. \emph{et~al.} (2004) Genetic analysis of complex demographic
-  scenarios: spatially expanding populations of the cane toad, bufo marinus.
-\newblock \emph{Evolution} 58, 2021--2036
-
-\bibitem{Hickerson2008-da}
-Hickerson, M.J. and Meyer, C. (2008) Testing comparative phylogeographic models
-  of marine vicariance and dispersal using a hierarchical bayesian approach.
-\newblock \emph{BMC Evol. Biol.} 8, 322
-
-\bibitem{Gray2014-kp}
-Gray, M.M. \emph{et~al.} (2014) Demographic history of a recent invasion of
-  house mice on the isolated island of gough.
-\newblock \emph{Mol. Ecol.} 23, 1923--1939
-
-\bibitem{Kuhner1998-dp}
-Kuhner, M.K. \emph{et~al.} (1998) Maximum likelihood estimation of population
-  growth rates based on the coalescent.
-\newblock \emph{Genetics} 149, 429--434
-
-\bibitem{Slatkin1991-ec}
-Slatkin, M. and Hudson, R.R. (1991) Pairwise comparisons of mitochondrial {DNA}
-  sequences in stable and exponentially growing populations.
-\newblock \emph{Genetics} 129, 555--562
-
 \bibitem{Drummond2005-zh}
 Drummond, A.J. \emph{et~al.} (2005) Bayesian coalescent inference of past
   population dynamics from molecular sequences.
 \newblock \emph{Mol. Biol. Evol.} 22, 1185--1192
-
-\bibitem{Prado-Martinez2013-hv}
-Prado-Martinez, J. \emph{et~al.} (2013) Great ape genetic diversity and
-  population history.
-\newblock \emph{Nature} 499, 471--475
-
-\bibitem{Bahlo2000-cx}
-Bahlo, M. and Griffiths, R.C. (2000) Inference from gene trees in a subdivided
-  population.
-\newblock \emph{Theor. Popul. Biol.} 57, 79--95
-
-\bibitem{Beerli2001-mt}
-Beerli, P. and Felsenstein, J. (2001) Maximum likelihood estimation of a
-  migration matrix and effective population sizes in n subpopulations by using
-  a coalescent approach.
-\newblock \emph{Proc. Natl. Acad. Sci. U. S. A.} 98, 4563--4568
-
-\bibitem{Hey2004-xe}
-Hey, J. and Nielsen, R. (2004) Multilocus methods for estimating population
-  sizes, migration rates and divergence time, with applications to the
-  divergence of drosophila pseudoobscura and d. persimilis.
-\newblock \emph{Genetics} 167, 747--760
 
 \bibitem{Beaumont2010-to}
 Beaumont, M. (2010) Approximate bayesian computation in evolution and ecology.
@@ -487,6 +427,12 @@ Losos, J.B. (2008) Phylogenetic niche conservatism, phylogenetic signal and the
   species.
 \newblock \emph{Ecol. Lett.} 11, 995--1007
 
+\bibitem{sukumaran2016}
+Sukumaran, J. \emph{et~al.} (2016) Machine learning biogeographic processes
+  from biotic patterns: A new trait-dependent dispersal and diversification
+  model with model choice by simulation-trained discriminant analysis.
+\newblock \emph{Systematic biology} 65, 525--545
+
 \bibitem{Ricklefs2007-wo}
 Ricklefs, R.E. (2007) History and diversity: Explorations at the intersection
   of ecology and evolution.
@@ -528,11 +474,6 @@ Hickerson, M.J. and Cunningham, C.W. (2005) Contrasting quaternary histories in
 Venkataraman, A. \emph{et~al.} (2015) Application of a neutral community model
   to assess structuring of the human lung microbiome.
 \newblock \emph{MBio} 6
-
-\bibitem{Hubbell2005-ng}
-Hubbell, S.P. (2005) The neutral theory of biodiversity and biogeography and
-  stephen jay gould.
-\newblock \emph{Paleobiology} 31, 122--132
 
 \bibitem{Jabot2009-xr}
 Jabot, F. and Chave, J. (2009) Inferring the parameters of the neutral theory
