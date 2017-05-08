@@ -1,4 +1,5 @@
 library(igraph)
+library(socorro)
 
 ## figure showing cycles of equilibrium and non-equilibrium
 
@@ -15,11 +16,17 @@ evoCycle <- make_graph(c(1, 4, 4, 3, 3, 1), directed = TRUE)
 
 pdf('ms/overleaf/fig_cycles.pdf', width = 4, height = 4)
 
-par(mar = c(3, 3, 0, 0) + 0.5, mgp = c(1.5, 0, 0), xpd = FALSE)
+par(mar = c(3.25, 3.25, 0, 0) + 0.5, mgp = c(1.5, 0, 0), xpd = FALSE)
 plot(1, type = 'n', xlim = mm, ylim = mm, 
      xaxs = 'i', yaxs = 'i', axes = FALSE, frame.plot = TRUE,
-     xlab = 'Demogrphic or phylogenetic departure\nfrom equilibrium', 
-     ylab = 'Deviation from ahistorical\necological theory')
+     xlab = '', ylab = '')
+mtext('Demogrphic or phylogenetic departure\nfrom equilibrium', side = 1, line = 2.5)
+mtext('Deviation from ahistorical\necological theory', side = 2, line = 1.75)
+axisArrows(lwd = 2, length = 0.1, offset = 0.125)
+mtext('less', side = 1, line = 0, at = par('usr')[1] + 0.05*diff(range(par('usr')[1:2])))
+mtext('more', side = 1, line = 0, at = par('usr')[2] - 0.05*diff(range(par('usr')[1:2])))
+mtext('less', side = 2, line = 0.25, at = par('usr')[3] + 0.05*diff(range(par('usr')[3:4])))
+mtext('more', side = 2, line = 0.25, at = par('usr')[4] - 0.05*diff(range(par('usr')[3:4])))
 
 rect(xleft = zgrid[, 1], 
      xright = zgrid[, 1] + diff(par('usr')[1:2])/(ncol-1), 
