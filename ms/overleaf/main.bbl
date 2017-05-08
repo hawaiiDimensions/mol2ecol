@@ -1,101 +1,69 @@
-\begin{thebibliography}{100}
+\begin{thebibliography}{10}
 
-\bibitem{Sepkoski1984-kv}
+\bibitem{sepkoski1984}
 Sepkoski, J.J. (1984) A kinetic model of phanerozoic taxonomic diversity.
   {III}. {Post-Paleozoic} families and mass extinctions.
 \newblock \emph{Paleobiology} 10, 246--267
 
-\bibitem{Alroy2010-lv}
-Alroy, J. (2010) The shifting balance of diversity among major marine animal
-  groups.
-\newblock \emph{Science} 329, 1191--1194
-
-\bibitem{Rabosky2009-gs}
+\bibitem{rabosky2009}
 Rabosky, D.L. (2009) Ecological limits and diversification rate: alternative
   paradigms to explain the variation in species richness among clades and
   regions.
 \newblock \emph{Ecol. Lett.} 12, 735--743
 
-\bibitem{Hubbell2001-dx}
+\bibitem{hubbell2001}
 Hubbell, S.P. (2001) \emph{The unified neutral theory of biodiversity and
   biogeography}, vol.~32.
 \newblock Princeton University Press
 
-\bibitem{Harte2011-um}
+\bibitem{harte2011}
 Harte, J. (2011) \emph{The Maximum Entropy Theory of Ecology}.
 \newblock Oxford University Press
 
-\bibitem{Chesson2000-uc}
+\bibitem{chesson2000}
 Chesson, P. (2000) Mechanisms of maintenance of species diversity.
 \newblock \emph{Annu. Rev. Ecol. Syst.} 31, 343--366
 
-\bibitem{Tilman2004-xt}
+\bibitem{tilman2004}
 Tilman, D. (2004) Niche tradeoffs, neutrality, and community structure: a
   stochastic theory of resource competition, invasion, and community assembly.
 \newblock \emph{Proc. Natl. Acad. Sci. U. S. A.} 101, 10854--10861
-
-\bibitem{Pueyo2007-iq}
-Pueyo, S. \emph{et~al.} (2007) The maximum entropy formalism and the
-  idiosyncratic theory of biodiversity.
-\newblock \emph{Ecol. Lett.} 10, 1017--1028
-
-\bibitem{White2012-yw}
-White, E.P. \emph{et~al.} (2012) Characterizing species abundance distributions
-  across taxa and ecosystems using a simple maximum entropy model.
-\newblock \emph{Ecology} 93, 1772--1778
 
 \bibitem{blonder2015}
 Blonder, B. \emph{et~al.} (2015) Linking environmental filtering and
   disequilibrium to biogeography with a community climate framework.
 \newblock \emph{Ecology} 96, 972--985
 
-\bibitem{Ricklefs2006-tn}
+\bibitem{wallington2005}
+Wallington, T.J. \emph{et~al.} (2005) Implications of current ecological
+  thinking for biodiversity conservation: A review of the salient issues.
+\newblock \emph{Ecol. Soc.} 10
+
+\bibitem{pueyo2007}
+Pueyo, S. \emph{et~al.} (2007) The maximum entropy formalism and the
+  idiosyncratic theory of biodiversity.
+\newblock \emph{Ecology Letters} 10, 1017--1028
+
+\bibitem{white2012}
+White, E.P. \emph{et~al.} (2012) Characterizing species abundance distributions
+  across taxa and ecosystems using a simple maximum entropy model.
+\newblock \emph{Ecology} 93, 1772--1778
+
+\bibitem{ricklefs2006}
 Ricklefs, R.E. (2006) The unified neutral theory of biodiversity: do the
   numbers add up?
 \newblock \emph{Ecology} 87, 1424--1431
 
-\bibitem{McGill2007-hx}
+\bibitem{mcgill2007}
 McGill, B.J. \emph{et~al.} (2007) Species abundance distributions: moving
   beyond single prediction theories to integration within an ecological
   framework.
 \newblock \emph{Ecol. Lett.} 10, 995--1015
 
-\bibitem{Yu2012}
-Yu, D.W. \emph{et~al.} (2012) {Biodiversity soup: metabarcoding of arthropods
-  for rapid biodiversity assessment and biomonitoring}.
-\newblock \emph{Methods in Ecology and Evolution} 3, 613--623
-
-\bibitem{pompanon2012}
-Pompanon, F. \emph{et~al.} (2012) Who is eating what: diet assessment using
-  next generation sequencing.
-\newblock \emph{Molecular ecology} 21, 1931--1950
-
 \bibitem{taberlet2012}
 Taberlet, P. \emph{et~al.} (2012) Towards next-generation biodiversity
   assessment using dna metabarcoding.
 \newblock \emph{Molecular Ecology} 21, 2045--2050
-
-\bibitem{ji2013}
-Ji, Y. \emph{et~al.} (2013) Reliable, verifiable and efficient monitoring of
-  biodiversity via metabarcoding.
-\newblock \emph{Ecology letters} 16, 1245--1257
-
-\bibitem{zhou2013}
-Zhou, X. \emph{et~al.} (2013) Ultra-deep sequencing enables high-fidelity
-  recovery of biodiversity for bulk arthropod samples without pcr
-  amplification.
-\newblock \emph{Gigascience} 2, 4
-
-\bibitem{tang2014}
-Tang, M. \emph{et~al.} (2014) Multiplex sequencing of pooled mitochondrial
-  genomes—a crucial step toward biodiversity analysis using
-  mito-metagenomics.
-\newblock \emph{Nucleic acids research} 42, e166--e166
-
-\bibitem{bohmann2014}
-Bohmann, K. \emph{et~al.} (2014) Environmental dna for wildlife biology and
-  biodiversity monitoring.
-\newblock \emph{Trends in Ecology \& Evolution} 29, 358--367
 
 \bibitem{gibson2014}
 Gibson, J. \emph{et~al.} (2014) Simultaneous assessment of the macrobiome and
@@ -108,6 +76,22 @@ Gibson, J. \emph{et~al.} (2014) Simultaneous assessment of the macrobiome and
 Shokralla, S. \emph{et~al.} (2015) Massively parallel multiplex dna sequencing
   for specimen identification using an illumina miseq platform.
 \newblock \emph{Scientific reports} 5, 9687
+
+\bibitem{ji2013}
+Ji, Y. \emph{et~al.} (2013) Reliable, verifiable and efficient monitoring of
+  biodiversity via metabarcoding.
+\newblock \emph{Ecology letters} 16, 1245--1257
+
+\bibitem{zhou2013}
+Zhou, X. \emph{et~al.} (2013) Ultra-deep sequencing enables high-fidelity
+  recovery of biodiversity for bulk arthropod samples without pcr
+  amplification.
+\newblock \emph{Gigascience} 2, 4
+
+\bibitem{bohmann2014}
+Bohmann, K. \emph{et~al.} (2014) Environmental dna for wildlife biology and
+  biodiversity monitoring.
+\newblock \emph{Trends in Ecology \& Evolution} 29, 358--367
 
 \bibitem{linard2015}
 Linard, B. \emph{et~al.} (2015) Metagenome skimming of insect specimen pools:
@@ -129,44 +113,10 @@ Liu, S. \emph{et~al.} (2016) Mitochondrial capture enriches mito-dna 100 fold,
   enabling pcr-free mitogenomics biodiversity analysis.
 \newblock \emph{Molecular ecology resources} 16, 470--479
 
-\bibitem{Barnosky2012-qz}
-Barnosky, A.D. \emph{et~al.} (2012) Approaching a state shift in earth/'s
-  biosphere.
-\newblock \emph{Nature} 486, 52--58
-
-\bibitem{Wallington2005-kv}
-Wallington, T.J. \emph{et~al.} (2005) Implications of current ecological
-  thinking for biodiversity conservation: A review of the salient issues.
-\newblock \emph{Ecol. Soc.} 10
-
-\bibitem{pueyo2007}
-Pueyo, S. \emph{et~al.} (2007) The maximum entropy formalism and the
-  idiosyncratic theory of biodiversity.
-\newblock \emph{Ecology Letters} 10, 1017--1028
-
-\bibitem{neill2009}
-Neill, C. \emph{et~al.} (2009) A competitive coexistence principle?
-\newblock \emph{Oikos} 118, 1570--1578
-
-\bibitem{Xiao2015-jv}
-Xiao, X. \emph{et~al.} (2015) A strong test of the maximum entropy theory of
-  ecology.
-\newblock \emph{Am. Nat.} 185, E70--E80
-
-\bibitem{Rominger2015-kb}
-Rominger, A.J. \emph{et~al.} (2015) Community assembly on isolated islands:
-  macroecology meets evolution.
-\newblock \emph{Glob. Ecol. Biogeogr.}
-
-\bibitem{McGill2003-jy}
-McGill, B. (2003) Strong and weak tests of macroecological theory.
-\newblock \emph{Oikos} 102, 679--685
-
-\bibitem{McGill2007-zd}
-McGill, B.J. \emph{et~al.} (2007) Species abundance distributions: moving
-  beyond single prediction theories to integration within an ecological
-  framework.
-\newblock \emph{Ecol. Lett.} 10, 995--1015
+\bibitem{venkataraman2015}
+Venkataraman, A. \emph{et~al.} (2015) Application of a neutral community model
+  to assess structuring of the human lung microbiome.
+\newblock \emph{MBio} 6
 
 \bibitem{baldridge2016}
 Baldridge, E. \emph{et~al.} (2016) An extensive comparison of species-abundance
@@ -183,406 +133,209 @@ Rominger, A.J. and Merow, C. (2017) meter: an r package for testing the maximum
   entropy theory of ecology.
 \newblock \emph{Methods in Ecology and Evolution} 8, 241--247
 
-\bibitem{Alroy2008-no}
-Alroy, J. \emph{et~al.} (2008) Phanerozoic trends in the global diversity of
-  marine invertebrates.
-\newblock \emph{Science} 321, 97--100
+\bibitem{neill2009}
+Neill, C. \emph{et~al.} (2009) A competitive coexistence principle?
+\newblock \emph{Oikos} 118, 1570--1578
 
-\bibitem{Harnik2011-qe}
-Harnik, P.G. (2011) Direct and indirect effects of biological factors on
-  extinction risk in fossil bivalves.
-\newblock \emph{Proceedings of the National Academy of Sciences} 108,
-  13594--13599
+\bibitem{rominger2015}
+Rominger, A.J. \emph{et~al.} (2015) Community assembly on isolated islands:
+  macroecology meets evolution.
+\newblock \emph{Glob. Ecol. Biogeogr.}
 
-\bibitem{Webb2002-yr}
+\bibitem{mcgill2003}
+McGill, B. (2003) Strong and weak tests of macroecological theory.
+\newblock \emph{Oikos} 102, 679--685
+
+\bibitem{xiao2015}
+Xiao, X. \emph{et~al.} (2015) A strong test of the maximum entropy theory of
+  ecology.
+\newblock \emph{Am. Nat.} 185, E70--E80
+
+\bibitem{webb2002}
 Webb, C.O. \emph{et~al.} (2002) Phylogenies and community ecology.
 \newblock \emph{Annu. Rev. Ecol. Syst.} 33, 475--505
 
-\bibitem{Emerson2002-mw}
-Emerson, B.C. (2002) Evolution on oceanic islands: molecular phylogenetic
-  approaches to understanding pattern and process.
-\newblock \emph{Mol. Ecol.} 11, 951--966
-
-\bibitem{Lavergne2010-ts}
+\bibitem{lavergne2010}
 Lavergne, S. \emph{et~al.} (2010) Biodiversity and climate change: Integrating
   evolutionary and ecological responses of species and communities.
 \newblock \emph{Annu. Rev. Ecol. Evol. Syst.} 41, 321--350
 
-\bibitem{Li2016-ns}
-Li, L. and Ma, Z.S. (2016) Testing the neutral theory of biodiversity with
-  human microbiome datasets.
-\newblock \emph{Sci. Rep.} 6, 31448
-
-\bibitem{McGaughran2015-sy}
+\bibitem{mcgaughran2015}
 McGaughran, A. (2015) Integrating a population genomics focus into
   biogeographic and macroecological research.
 \newblock \emph{Front. Ecol. Evol.} 3
 
-\bibitem{Laroche2015-qo}
+\bibitem{laroche2015}
 Laroche, F. \emph{et~al.} (2015) A neutral theory for interpreting correlations
   between species and genetic diversity in communities.
 \newblock \emph{Am. Nat.} 185, 59--69
 
-\bibitem{Vanoverbeke2015-ym}
-Vanoverbeke, J. \emph{et~al.} (2015) Community assembly is a race between
-  immigration and adaptation: eco-evolutionary interactions across spatial
-  scales.
-\newblock \emph{Ecography}
-
-\bibitem{Vellend2005-qd}
-Vellend, M. and Geber, M.A. (2005) Connections between species diversity and
-  genetic diversity.
-\newblock \emph{Ecol. Lett.} 8, 767--781
-
-\bibitem{Papadopoulou2011-bd}
+\bibitem{papadopoulou2011}
 Papadopoulou, A. \emph{et~al.} (2011) Testing the {Species--Genetic} diversity
   correlation in the aegean archipelago: Toward a {Haplotype-Based}
   macroecology?
 \newblock \emph{Am. Nat.} 178, 241--255
 
-\bibitem{Dexter2012-rn}
+\bibitem{dexter2012}
 Dexter, K.G. \emph{et~al.} (2012) Historical effects on beta diversity and
   community assembly in amazonian trees.
 \newblock \emph{Proc. Natl. Acad. Sci. U. S. A.} 109, 7787--7792
 
-\bibitem{Hudson1983-hx}
-Hudson, R.R. (1983) Properties of a neutral model with intragenic
-  recombination.
-\newblock \emph{Theor. Popul. Biol.} 23, 183--201
-
-\bibitem{Tajima1983-me}
-Tajima, F. (1983) Evolutionary relationship of {DNA} sequences in finite
-  populations.
-\newblock \emph{Genetics} 105, 437--460
-
-\bibitem{Kingman1982-uf}
+\bibitem{kingman1982stochasti}
 Kingman, J.F.C. (1982) The coalescent.
 \newblock \emph{Stochastic Process. Appl.} 13, 235--248
 
-\bibitem{Kingman1982-ie}
-Kingman, J.F.C. (1982) On the genealogy of large populations.
-\newblock \emph{J. Appl. Probab.} 19a, 27--43
-
-\bibitem{Rosenberg2002-ag}
+\bibitem{rosenberg2002}
 Rosenberg, N.A. and Nordborg, M. (2002) Genealogical trees, coalescent theory
   and the analysis of genetic polymorphisms.
 \newblock \emph{Nat. Rev. Genet.} 3, 380--390
 
-\bibitem{Kuhner1998-dp}
+\bibitem{kuhner1998}
 Kuhner, M.K. \emph{et~al.} (1998) Maximum likelihood estimation of population
   growth rates based on the coalescent.
 \newblock \emph{Genetics} 149, 429--434
 
-\bibitem{Slatkin1991-ec}
-Slatkin, M. and Hudson, R.R. (1991) Pairwise comparisons of mitochondrial {DNA}
-  sequences in stable and exponentially growing populations.
-\newblock \emph{Genetics} 129, 555--562
-
-\bibitem{Charlesworth2010-hn}
+\bibitem{charlesworth2010}
 Charlesworth, D. (2010) Don't forget the ancestral polymorphisms.
 \newblock \emph{Heredity} 105, 509--510
 
-\bibitem{Edwards2000-cs}
+\bibitem{edwards2000}
 Edwards, S.V. and Beerli, P. (2000) Perspective: gene divergence, population
   divergence, and the variance in coalescence time in phylogeographic studies.
 \newblock \emph{Evolution} 54, 1839--1854
 
-\bibitem{Wakeley2008-se}
+\bibitem{wakeley2008}
 Wakeley, J. (2008) \emph{Coalescent Theory}.
 \newblock Roberts and Company Publishers
 
-\bibitem{Prado-Martinez2013-hv}
+\bibitem{kern2016}
+Kern, A.D. and Schrider, D.R. (2016) Discoal: flexible coalescent simulations
+  with selection.
+\newblock \emph{Bioinformatics} 32, 3839--3841
+
+\bibitem{prado-martinez2013}
 Prado-Martinez, J. \emph{et~al.} (2013) Great ape genetic diversity and
   population history.
 \newblock \emph{Nature} 499, 471--475
 
-\bibitem{Bahlo2000-cx}
-Bahlo, M. and Griffiths, R.C. (2000) Inference from gene trees in a subdivided
-  population.
-\newblock \emph{Theor. Popul. Biol.} 57, 79--95
-
-\bibitem{Beerli2001-mt}
+\bibitem{beerli2001}
 Beerli, P. and Felsenstein, J. (2001) Maximum likelihood estimation of a
   migration matrix and effective population sizes in n subpopulations by using
   a coalescent approach.
 \newblock \emph{Proc. Natl. Acad. Sci. U. S. A.} 98, 4563--4568
 
-\bibitem{Hey2004-xe}
+\bibitem{hey2004}
 Hey, J. and Nielsen, R. (2004) Multilocus methods for estimating population
   sizes, migration rates and divergence time, with applications to the
   divergence of drosophila pseudoobscura and d. persimilis.
 \newblock \emph{Genetics} 167, 747--760
 
-\bibitem{Xue2015-el}
+\bibitem{xue2015}
 Xue, A.T. and Hickerson, M.J. (2015) The aggregate site frequency spectrum
   ({aSFS}) for comparative population genomic inference.
 \newblock \emph{Mol. Ecol.}
 
-\bibitem{Hickerson2006-uf}
+\bibitem{hickerson2006}
 Hickerson, M.J. \emph{et~al.} (2006) Test for simultaneous divergence using
   approximate bayesian computation.
 \newblock \emph{Evolution} 60, 2435--2453
 
-\bibitem{Carstens2016-mc}
+\bibitem{carstens2016}
 Carstens, B.C. \emph{et~al.} (2016) Community trees: Identifying
   codiversification in the p{\'a}ramo dipteran community.
 \newblock \emph{Evolution} 70, 1080--1093
 
-\bibitem{Chan2014-nq}
+\bibitem{chan2014}
 Chan, Y.L. \emph{et~al.} (2014) Detecting concerted demographic response across
   community assemblages using hierarchical approximate bayesian computation.
 \newblock \emph{Mol. Biol. Evol.} , msu187
 
-\bibitem{Satler2016-lb}
-Satler, J.D. and Carstens, B.C. (2016) Phylogeographic concordance factors
-  quantify phylogeographic congruence among co-distributed species in the
-  sarracenia alata pitcher plant system.
-\newblock \emph{Evolution}
-
-\bibitem{Drummond2005-zh}
+\bibitem{drummond2005}
 Drummond, A.J. \emph{et~al.} (2005) Bayesian coalescent inference of past
   population dynamics from molecular sequences.
 \newblock \emph{Mol. Biol. Evol.} 22, 1185--1192
 
-\bibitem{Beaumont2010-to}
-Beaumont, M. (2010) Approximate bayesian computation in evolution and ecology.
-\newblock \emph{Annu. Rev. Ecol. Evol. Syst.} 41, 379--406
-
-\bibitem{Pritchard1999-zf}
-Pritchard, J.K. \emph{et~al.} (1999) Population growth of human {Y}
-  chromosomes: a study of {Y} chromosome microsatellites.
-\newblock \emph{Mol. Biol. Evol.} 16, 1791--1798
-
-\bibitem{Sunnaker2013-ts}
-Sunn{\aa}ker, M. \emph{et~al.} (2013) Approximate bayesian computation.
-\newblock \emph{PLoS Comput. Biol.} 9, e1002803.
-  doi:10.1371/journal.pcbi.1002803
-
-\bibitem{Kim2002-ex}
-Kim, Y. and Stephan, W. (2002) Detecting a local signature of genetic
-  hitchhiking along a recombining chromosome.
-\newblock \emph{Genetics} 160, 765--777
-
-\bibitem{Kern2016-ap}
-Kern, A.D. and Schrider, D.R. (2016) Discoal: flexible coalescent simulations
-  with selection.
-\newblock \emph{Bioinformatics} 32, 3839--3841
-
-\bibitem{Ewing2016-bm}
-Ewing, G.B. and Jensen, J.D. (2016) The consequences of not accounting for
-  background selection in demographic inference.
-\newblock \emph{Mol. Ecol.}
-
-\bibitem{Tajima1989-mc}
+\bibitem{tajima1989}
 Tajima, F. (1989) Statistical method for testing the neutral mutation
   hypothesis by {DNA} polymorphism.
 \newblock \emph{Genetics} 123, 585--595
 
-\bibitem{Freedman2016-yx}
-Freedman, A.H. \emph{et~al.} (2016) Demographically-based evaluation of genomic
-  regions under selection in domestic dogs.
-\newblock \emph{PLoS Genet.} 12, e1005851
-
-\bibitem{Barton1998-xs}
-Barton, N.H. (1998) The effect of hitch-hiking on neutral genealogies.
-\newblock \emph{Genet. Res.} 72, 123--133
-
-\bibitem{Barton2000-gr}
-Barton, N.H. (2000) Genetic hitchhiking.
-\newblock \emph{Philos. Trans. R. Soc. Lond. B Biol. Sci.} 355, 1553--1562
-
-\bibitem{Jensen2005-ef}
+\bibitem{jensen2005}
 Jensen, J.D. \emph{et~al.} (2005) Distinguishing between selective sweeps and
   demography using {DNA} polymorphism data.
 \newblock \emph{Genetics} 170, 1401--1410
 
-\bibitem{Schrider2016-cw}
+\bibitem{schrider2016}
 Schrider, D.R. \emph{et~al.} (2016) Effects of linked selective sweeps on
   demographic inference and model selection.
 \newblock \emph{Genetics} 204, 1207--1223
 
-\bibitem{Stephan2016-lf}
+\bibitem{stephan2016}
 Stephan, W. (2016) Signatures of positive selection: from selective sweeps at
   individual loci to subtle allele frequency changes in polygenic adaptation.
 \newblock \emph{Mol. Ecol.} 25, 79--88
 
-\bibitem{Good2014-fq}
-Good, B.H. \emph{et~al.} (2014) Genetic diversity in the interference selection
-  limit.
-\newblock \emph{PLoS Genet.} 10, e1004222
-
-\bibitem{Phung2016-uo}
-Phung, T.N. \emph{et~al.} (2016) Determining the effect of natural selection on
-  linked neutral divergence across species.
-\newblock \emph{PLoS Genet.} 12, e1006199
-
-\bibitem{Roux2016-hz}
-Roux, C. \emph{et~al.} (2016) Shedding light on the grey zone of speciation
-  along a continuum of genomic divergence.
-\newblock \emph{PLoS Biol.} 14, e2000234
-
-\bibitem{Losos2008-eq}
-Losos, J.B. (2008) Phylogenetic niche conservatism, phylogenetic signal and the
-  relationship between phylogenetic relatedness and ecological similarity among
-  species.
-\newblock \emph{Ecol. Lett.} 11, 995--1007
-
-\bibitem{sukumaran2016}
-Sukumaran, J. \emph{et~al.} (2016) Machine learning biogeographic processes
-  from biotic patterns: A new trait-dependent dispersal and diversification
-  model with model choice by simulation-trained discriminant analysis.
-\newblock \emph{Systematic biology} 65, 525--545
-
-\bibitem{Ricklefs2007-wo}
-Ricklefs, R.E. (2007) History and diversity: Explorations at the intersection
-  of ecology and evolution.
-\newblock \emph{Am. Nat.} 170, S56--S70
-
-\bibitem{Emerson2008-as}
-Emerson, B.C. and Gillespie, R.G. (2008) Phylogenetic analysis of community
-  assembly and structure over space and time.
-\newblock \emph{Trends Ecol. Evol.}
-
-\bibitem{Vellend2005-up}
-Vellend, M. (2005) Species diversity and genetic diversity: parallel processes
-  and correlated patterns.
-\newblock \emph{Am. Nat.} 166, 199--215
-
-\bibitem{Vellend2014-ir}
-Vellend, M. \emph{et~al.} (2014) Drawing ecological inferences from coincident
-  patterns of population- and community-level biodiversity.
-\newblock \emph{Mol. Ecol.} 23, 2890--2901
-
-\bibitem{Arbogast2001-jx}
-Arbogast, B.S. and Kenagy, G.J. (2001) Comparative phylogeography as an
-  integrative approach to historical biogeography.
-\newblock \emph{J. Biogeogr.} 28, 819--825
-
-\bibitem{Smith2012-db}
-Smith, B.T. \emph{et~al.} (2012) Evaluating the role of contracting and
-  expanding rainforest in initiating cycles of speciation across the isthmus of
-  panama.
-\newblock \emph{Proc. Biol. Sci.} 279, 3520--3526
-
-\bibitem{Hickerson2005-ek}
-Hickerson, M.J. and Cunningham, C.W. (2005) Contrasting quaternary histories in
-  an ecologically divergent pair of low-dispersing intertidal fish (xiphister)
-  revealed by multi-locus {DNA} analysis.
-\newblock \emph{Evolution} 59, 344--360
-
-\bibitem{Venkataraman2015-rk}
-Venkataraman, A. \emph{et~al.} (2015) Application of a neutral community model
-  to assess structuring of the human lung microbiome.
-\newblock \emph{MBio} 6
-
-\bibitem{Jabot2009-xr}
+\bibitem{jabot2009}
 Jabot, F. and Chave, J. (2009) Inferring the parameters of the neutral theory
   of biodiversity using phylogenetic information and implications for tropical
   forests.
 \newblock \emph{Ecol. Lett.} 12, 239--248
 
-\bibitem{Burbrink2015-vx}
+\bibitem{burbrink2015}
 Burbrink, F.T. \emph{et~al.} (2015) Predicting community structure in snakes on
   eastern nearctic islands using ecological neutral theory and phylogenetic
   methods.
 \newblock \emph{Proceedings of the Royal Society B: Biological Sciences} 282,
   20151700
 
-\bibitem{Davies2011-mz}
-Davies, T.J. \emph{et~al.} (2011) {NEUTRAL} {BIODIVERSITY} {THEORY} {CAN}
-  {EXPLAIN} {THE} {IMBALANCE} {OF} {PHYLOGENETIC} {TREES} {BUT} {NOT} {THE}
-  {TEMPO} {OF} {THEIR} {DIVERSIFICATION}.
-\newblock \emph{Evolution} 65, 1841--1850
-
-\bibitem{Rosindell2010-gq}
+\bibitem{rosindell2010}
 Rosindell, J. \emph{et~al.} (2010) Protracted speciation revitalizes the
   neutral theory of biodiversity.
 \newblock \emph{Ecol. Lett.} 13, 716--727
 
-\bibitem{Olszewski2004-ud}
-Olszewski, T.D. and Erwin, D.H. (2004) Dynamic response of permian brachiopod
-  communities to long-term environmental change.
-\newblock \emph{Nature} 428, 738--741
+\bibitem{etienne2011}
+Etienne, R.S. and Rosindell, J. (2011) Prolonging the past counteracts the pull
+  of the present: protracted speciation can explain observed slowdowns in
+  diversification.
+\newblock \emph{Systematic Biology} , syr091
 
-\bibitem{Wagner2006-te}
+\bibitem{smith2012}
+Smith, B.T. \emph{et~al.} (2012) Evaluating the role of contracting and
+  expanding rainforest in initiating cycles of speciation across the isthmus of
+  panama.
+\newblock \emph{Proc. Biol. Sci.} 279, 3520--3526
+
+\bibitem{hickerson2005}
+Hickerson, M.J. and Cunningham, C.W. (2005) Contrasting quaternary histories in
+  an ecologically divergent pair of low-dispersing intertidal fish (xiphister)
+  revealed by multi-locus {DNA} analysis.
+\newblock \emph{Evolution} 59, 344--360
+
+\bibitem{vanoverbeke2015}
+Vanoverbeke, J. \emph{et~al.} (2015) Community assembly is a race between
+  immigration and adaptation: eco-evolutionary interactions across spatial
+  scales.
+\newblock \emph{Ecography}
+
+\bibitem{vellend2005amnat}
+Vellend, M. (2005) Species diversity and genetic diversity: parallel processes
+  and correlated patterns.
+\newblock \emph{Am. Nat.} 166, 199--215
+
+\bibitem{wagner2006}
 Wagner, P.J. \emph{et~al.} (2006) Abundance distributions imply elevated
   complexity of post-paleozoic marine ecosystems.
 \newblock \emph{Science} 314, 1289--1292
 
-\bibitem{Kendall1948-pj}
-Kendall, D.G. (1948) On the generalized ``{Birth-and-Death}'' process.
-\newblock \emph{Ann. Math. Stat.} 19, 1--15
-
-\bibitem{Kendall1948-ri}
-Kendall, D.G. (1948) On some modes of population growth leading to r. a.
-  fisher's logarithmic series distribution.
-\newblock \emph{Biometrika} 35, 6--15
-
-\bibitem{Engen1996-jt}
+\bibitem{engen1996lnorm}
 Engen, S. and Lande, R. (1996) Population dynamic models generating the
   lognormal species abundance distribution.
 \newblock \emph{Math. Biosci.} 132, 169--183
-
-\bibitem{Engen1996-na}
-Engen, S. and Lande, R. (1996) Population dynamic models generating species
-  abundance distributions of the gamma type.
-\newblock \emph{J. Theor. Biol.} 178, 325--331
-
-\bibitem{McGill2003-sf}
-McGill, B. (2003) Strong and weak tests of macroecological theory.
-\newblock \emph{Oikos} 102, 679--685
-
-\bibitem{Etienne2012-ky}
-Etienne, R.S. and Haegeman, B. (2012) A conceptual and statistical framework
-  for adaptive radiations with a key role for diversity dependence.
-\newblock \emph{Am. Nat.} 180, E75--E89
-
-\bibitem{Rabosky2013-gk}
-Rabosky, D.L. (2013) Diversity-dependence, ecological speciation, and the role
-  of competition in macroevolution.
-\newblock \emph{Annu. Rev. Ecol. Evol. Syst.} 44
-
-\bibitem{Rabosky2008-bs}
-Rabosky, D.L. and Lovette, I.J. (2008) Explosive evolutionary radiations:
-  decreasing speciation or increasing extinction through time?
-\newblock \emph{Evolution} 62, 1866--1875
-
-\bibitem{Adler2007-pl}
-Adler, P.B. \emph{et~al.} (2007) A niche for neutrality.
-\newblock \emph{Ecol. Lett.} 10, 95--104
-
-\bibitem{HilleRisLambers2012-xt}
-HilleRisLambers, J. \emph{et~al.} (2012) Rethinking community assembly through
-  the lens of coexistence theory.
-\newblock \emph{Annual Review of}
-
-\bibitem{Levine2009-qj}
-Levine, J.M. and HilleRisLambers, J. (2009) The importance of niches for the
-  maintenance of species diversity.
-\newblock \emph{Nature} 461, 254--257
-
-\bibitem{Mayfield2010-hg}
-Mayfield, M.M. and Levine, J.M. (2010) Opposing effects of competitive
-  exclusion on the phylogenetic structure of communities.
-\newblock \emph{Ecol. Lett.} 13, 1085--1093
-
-\bibitem{Godoy2014-iv}
-Godoy, O. \emph{et~al.} (2014) Phylogenetic relatedness and the determinants of
-  competitive outcomes.
-\newblock \emph{Ecol. Lett.} 17, 836--844
-
-\bibitem{redQueen}
-Van~Valen, L. (1973) A new evolutionary law.
-\newblock \emph{Evolutionary theory} 1, 1--30
 
 \bibitem{erwin2008}
 Erwin, D.H. (2008) Macroevolution of ecosystem engineering, niche construction
   and diversity.
 \newblock \emph{Trends in Ecology \& Evolution} 23, 304--310
-
-\bibitem{Kirchner1998-uk}
-Kirchner, J.W. and Weil, A. (1998) No fractals in fossil extinction statistics.
-\newblock \emph{Nature} 395, 337--338
 
 \bibitem{krehenwinkel2016}
 Krehenwinkel, H. \emph{et~al.} (2016) A cost-efficient and simple protocol to
@@ -613,16 +366,11 @@ Angly, F.E. \emph{et~al.} (2014) Copyrighter: a rapid tool for improving the
   number correction.
 \newblock \emph{Microbiome} 2, 11
 
-\bibitem{Saitoh2016}
-Saitoh, S. \emph{et~al.} (2016) A quantitative protocol for dna metabarcoding
-  of springtails (collembola) 1.
-\newblock \emph{Genome} 59, 705--723
-
 \bibitem{overcast}
 Overcast, I.A. and Hickerson, M.J. ({in prep.}) Integrating community assembly
   models and comparative population genetics.
 
-\bibitem{Rosindell2015-dk}
+\bibitem{rosindell2015}
 Rosindell, J. \emph{et~al.} (2015) Unifying ecology and macroevolution with
   individual-based theory.
 \newblock \emph{Ecol. Lett.} 18, 472--482
@@ -631,5 +379,16 @@ Rosindell, J. \emph{et~al.} (2015) Unifying ecology and macroevolution with
 Kelleher, J. \emph{et~al.} (2016) Efficient coalescent simulation and
   genealogical analysis for large sample sizes.
 \newblock \emph{PLoS Comput Biol} 12, e1004842
+
+\bibitem{dawson2016}
+Dawson, A. \emph{et~al.} (2016) Quantifying pollen-vegetation relationships to
+  reconstruct ancient forests using 19th-century forest composition and pollen
+  data.
+\newblock \emph{Quaternary Science Reviews} 137, 156--175
+
+\bibitem{capo2016}
+Capo, E. \emph{et~al.} (2016) Long-term dynamics in microbial eukaryotes
+  communities: a palaeolimnological view based on sedimentary dna.
+\newblock \emph{Molecular Ecology} 25, 5925--5943
 
 \end{thebibliography}
