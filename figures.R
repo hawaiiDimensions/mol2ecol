@@ -18,7 +18,7 @@ pdf('ms/overleaf/fig_cycles.pdf', width = 4, height = 4)
 par(mar = c(3, 3, 0, 0) + 0.5, mgp = c(1.5, 0, 0), xpd = FALSE)
 plot(1, type = 'n', xlim = mm, ylim = mm, 
      xaxs = 'i', yaxs = 'i', axes = FALSE, frame.plot = TRUE,
-     xlab = 'Demogrphic of phylogenetic departure\nfrom equilibrium', 
+     xlab = 'Demogrphic or phylogenetic departure\nfrom equilibrium', 
      ylab = 'Deviation from ahistorical\necological theory')
 
 rect(xleft = zgrid[, 1], 
