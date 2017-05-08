@@ -6,43 +6,43 @@ Database file #1: references.bib.bib
 Warning--empty journal in overcast
 You've used 76 entries,
             2349 wiz_defined-function locations,
-            951 strings with 19409 characters,
-and the built_in function-call counts, 24873 in all, are:
-= -- 2113
+            953 strings with 19394 characters,
+and the built_in function-call counts, 24980 in all, are:
+= -- 2127
 > -- 594
 < -- 1
 + -- 268
 - -- 134
-* -- 1429
-:= -- 3187
+* -- 1439
+:= -- 3197
 add.period$ -- 75
 call.type$ -- 76
 change.case$ -- 73
 chr.to.int$ -- 0
 cite$ -- 77
-duplicate$ -- 2367
-empty$ -- 2532
+duplicate$ -- 2371
+empty$ -- 2542
 format.name$ -- 192
-if$ -- 5550
+if$ -- 5574
 int.to.chr$ -- 0
 int.to.str$ -- 76
-missing$ -- 572
+missing$ -- 574
 newline$ -- 306
 num.names$ -- 76
-pop$ -- 732
+pop$ -- 731
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
 skip$ -- 371
 stack$ -- 0
-substring$ -- 1648
-swap$ -- 1398
+substring$ -- 1673
+swap$ -- 1404
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 195
+while$ -- 197
 width$ -- 78
-write$ -- 750
+write$ -- 751
 (There was 1 warning)

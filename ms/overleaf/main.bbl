@@ -311,12 +311,6 @@ Hickerson, M.J. and Cunningham, C.W. (2005) Contrasting quaternary histories in
   revealed by multi-locus {DNA} analysis.
 \newblock \emph{Evolution} 59, 344--360
 
-\bibitem{vanoverbeke2015}
-Vanoverbeke, J. \emph{et~al.} (2015) Community assembly is a race between
-  immigration and adaptation: eco-evolutionary interactions across spatial
-  scales.
-\newblock \emph{Ecography}
-
 \bibitem{vellend2005amnat}
 Vellend, M. (2005) Species diversity and genetic diversity: parallel processes
   and correlated patterns.
@@ -331,6 +325,11 @@ Wagner, P.J. \emph{et~al.} (2006) Abundance distributions imply elevated
 Engen, S. and Lande, R. (1996) Population dynamic models generating the
   lognormal species abundance distribution.
 \newblock \emph{Math. Biosci.} 132, 169--183
+
+\bibitem{harmon2015amNat}
+Harmon, L.J. and Harrison, S. (2015) Species diversity is dynamic and unbounded
+  at local and continental scales.
+\newblock \emph{The American Naturalist} 185, 584--593
 
 \bibitem{erwin2008}
 Erwin, D.H. (2008) Macroevolution of ecosystem engineering, niche construction
