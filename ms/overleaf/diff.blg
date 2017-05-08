@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: diff.aux
+The style file: tree.bst
+Database file #1: references_allEdit.bib.bib
+Warning--I didn't find a database entry for ""
+Warning--empty journal in overcast
+You've used 111 entries,
+            2349 wiz_defined-function locations,
+            1221 strings with 26546 characters,
+and the built_in function-call counts, 36106 in all, are:
+= -- 3087
+> -- 839
+< -- 1
++ -- 380
+- -- 190
+* -- 2069
+:= -- 4629
+add.period$ -- 110
+call.type$ -- 111
+change.case$ -- 108
+chr.to.int$ -- 0
+cite$ -- 112
+duplicate$ -- 3438
+empty$ -- 3678
+format.name$ -- 269
+if$ -- 8047
+int.to.chr$ -- 0
+int.to.str$ -- 111
+missing$ -- 832
+newline$ -- 446
+num.names$ -- 111
+pop$ -- 1042
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 531
+stack$ -- 0
+substring$ -- 2424
+swap$ -- 2036
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 290
+width$ -- 114
+write$ -- 1098
+(There were 2 warnings)
