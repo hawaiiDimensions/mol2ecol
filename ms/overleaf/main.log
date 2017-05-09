@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  8 MAY 2017 18:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  8 MAY 2017 18:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -524,27 +524,8 @@ File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 [22] [23] [24] [25] [26]
 (/usr/local/texlive/2015/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
-) [27]
-<fig_cycles.pdf, id=429, 289.08pt x 289.08pt>
-File: fig_cycles.pdf Graphic file (type pdf)
- <use fig_cycles.pdf>
-Package pdftex.def Info: fig_cycles.pdf used on input line 790.
-(pdftex.def)             Requested size: 289.07928pt x 289.07928pt.
-
-<fig_age-abund.pdf, id=434, 289.08pt x 289.08pt>
-File: fig_age-abund.pdf Graphic file (type pdf)
- <use fig_age-abund.pdf>
-Package pdftex.def Info: fig_age-abund.pdf used on input line 810.
-(pdftex.def)             Requested size: 289.07928pt x 289.07928pt.
-
-[28 <./fig_cycles.pdf>] [29 <./fig_age-abund.pdf>]
-<fig_metab.pdf, id=459, 770.77408pt x 827.08333pt>
-File: fig_metab.pdf Graphic file (type pdf)
- <use fig_metab.pdf>
-Package pdftex.def Info: fig_metab.pdf used on input line 830.
-(pdftex.def)             Requested size: 308.30417pt x 330.82747pt.
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
-s been already used, duplicate ignored
+) [27] [28]pdfTeX warning (ext4): destination with the same identifier (name{fi
+gure.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.835 ...modeling leading to abundance estimates.}
@@ -554,15 +535,9 @@ e ignored
 <to be read again> 
                    \relax 
 l.835 ...modeling leading to abundance estimates.}
-                                                  
-<fig_abundEst-1.pdf, id=460, 276.03125pt x 278.03876pt>
-File: fig_abundEst-1.pdf Graphic file (type pdf)
-
-<use fig_abundEst-1.pdf>
-Package pdftex.def Info: fig_abundEst-1.pdf used on input line 841.
-(pdftex.def)             Requested size: 276.03056pt x 278.03807pt.
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
-s been already used, duplicate ignored
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{figure.2}) has been already used, duplicat
+e ignored
 <to be read again> 
                    \relax 
 l.846     supplement.}
@@ -571,22 +546,11 @@ er (name{figure.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.846     supplement.}
-                       <fig_gimmeSAD.png, id=461, 1263.72125pt x 792.9625pt>
-File: fig_gimmeSAD.png Graphic file (type png)
-
-<use fig_gimmeSAD.png>
-Package pdftex.def Info: fig_gimmeSAD.png used on input line 852.
-(pdftex.def)             Requested size: 505.47955pt x 317.17938pt.
-
-Overfull \hbox (35.72453pt too wide) in paragraph at lines 852--860
- [][] 
- []
-
+                      
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 864.
-[30 <./fig_metab.pdf>] [31 <./fig_abundEst-1.pdf>] [32 <./fig_gimmeSAD.png>]
+ [29]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 864.
-
-(./main.aux)
+ (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 864.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 864.
 Package rerunfilecheck Info: File `main.out' has not changed.
@@ -594,13 +558,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 864.
  ) 
 Here is how much of TeX's memory you used:
- 12674 strings out of 493089
- 174610 string characters out of 6134842
+ 12645 strings out of 493089
+ 174100 string characters out of 6134842
  259554 words of memory out of 5000000
- 15840 multiletter control sequences out of 15000+600000
+ 15820 multiletter control sequences out of 15000+600000
  20033 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,7n,35p,944b,763s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,5n,35p,944b,763s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
@@ -615,10 +579,10 @@ ive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texliv
 e/2015/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/local/texlive/20
 15/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on main.pdf (33 pages, 2818832 bytes).
+Output written on main.pdf (30 pages, 261880 bytes).
 PDF statistics:
- 597 PDF objects out of 1000 (max. 8388607)
- 523 compressed objects within 6 object streams
- 157 named destinations out of 1000 (max. 500000)
- 138 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 525 PDF objects out of 1000 (max. 8388607)
+ 472 compressed objects within 5 object streams
+ 154 named destinations out of 1000 (max. 500000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 

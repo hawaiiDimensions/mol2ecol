@@ -372,37 +372,29 @@ from equilibrium).
 
 \section{Evo-ecological predictions for systems out of equilibrium} \label{sec:pred}
 
-need to talk about fig 1 and fig 2, where they come from in relation
-to option 1 and 2, and also talk about using model selection
-
-Figure \ref{fig:cycles} derives from comparing summaries of deviation
-from neutral/statistical equilibrium on the y-axis and deviations from
-equilibrial demography/diversification on the x-axis. Systems will
-cycle through this space in 
-
-Figure \ref{fig:cycles} describes a space containing all hypothetical
-communities, either deviating or conforming to equilibrial predictions
-from macroecology and evolutionary demography. Trajectories of
-biodiversity assemblages through this space show how communities can
-transition between different phases of equilibrium and
-non-equilibrium. 
-%
-% Such an approach assumes that abundance data have been estimated
-% from sequence data, ahistorical ecological theories have been fit to
-% those abundance data, and models of population demography and/or
-% diversification have been separately fit to the underlying sequence
-% data.
-%
-
-
-We bring to bear other predictions
-from joint eco-evolutionary inference including the relationship
+We propose a simple yet powerful way to summarize joint inference into
+deviations from ecological and evolutionary/demographic
+equilibrium. Assuming that equilibrial models have been independently
+or jointly fit (Box \ref{box:dry}) to a dataset of macroecological
+metrics (such as species abundances) and genetic/genomic variables
+(such as community-wide polymorphism data) we can then contrast the
+system's deviation from ecological equilibrium with its deviation from
+evolutionary/demographic equilibrium
+(Fig. \ref{fig:cycles}). Ecological deviations can be measured by,
+e.g., the previously discussed z-score \citep{meteR}, while
+evolutionary/demographic deviations can be captured by summary
+statistics such as community-averaged Tajima's D. The space of
+equilibrium and non-equilibrium states that this comparison generates
+(Fig. \ref{fig:cycles}) can be used to understand a communitie's
+current state, and predict its past and future. Additional predictions
+from joint eco-evolutionary inference can be tested to further
+understand a systems' trajectory through phases of equilibrium and
+non-equilibrium. One particularly useful metric is the relationship
 between lineage age (colonization or divergence time inferred from
-molecular data) and lineage abundance (Fig. \ref{fig:age-abund}), and
-model selection of joint population genetic-community assembly models
-(see Box \ref{box:dry}).
-
-WHEN/WHY TO USE PATTERNS (FIG 1 and 2) VERSUS MODELING
+molecular data) and lineage abundance (Fig. \ref{fig:age-abund}),
+which is known to be a telling test of the NTB \citep{ricklefs2006,
+  rosindell2010}.  Cometing different models of assembly and
+coalescence in a model selection framework can also provide insight.
 
 
 \subsection{Cycles of non-equilibrium}
@@ -412,10 +404,9 @@ ecological time-scales, such as primary succession, or evolutionary
 time scales, such as evolution of novel innovations that lead to new
 ecosystem processes \citep{erwin2008}. We hypothesize that these
 regular disturbances can lead to cycles of non-equilibrium in observed
-biodiversity patterns.
-
-A clockwise cycle through the space depicted in Figure
-\ref{fig:cycles} would indicate:
+biodiversity patterns. Using the phase space of equilibrium and
+non-equilibrium states showing in Figure \ref{fig:cycles} a clockwise
+cycle through this space would indicate:
 
 \begin{itemize}
 \item Panel I $\rightarrow$ II: following rapid ecological
@@ -461,16 +452,12 @@ Panel II) are less likely.
 A complete cycle cannot be observed without a time machine, but by
 combining ahistorical ecological theory and population/phylogenetic
 inference methods using community-level genetic data we can identify
-where in this space our focal systems are located. To determine the
-trajectory of our focal systems through this space we must more deeply
-explore the joint inference of community assembly and evolutionary
-processes. In the following sections we do that for each transition
-shown in Figure \ref{fig:cycles}. We bring to bear other predictions
-from joint eco-evolutionary inference including the relationship
-between lineage age (colonization or divergence time inferred from
-molecular data) and lineage abundance (Fig. \ref{fig:age-abund}), and
-model selection of joint population genetic-community assembly models
-(see Box \ref{box:dry}).
+where in this space our focal systems are located. To determine their
+trajectory through this space we must more deeply explore the joint
+inference of community assembly and evolutionary processes. In the
+following sections we do that for each transition shown in Figure
+\ref{fig:cycles} using patterns of lineage age and abundance together
+with model selection.
 
 \subsection{Systems undergoing rapid ecological change}
 
@@ -787,7 +774,7 @@ will be unequal.
 
 \begin{figure}[!hbp]
   \centering
-  \includegraphics[scale=1]{fig_cycles.pdf}
+  % \includegraphics[scale=1]{fig_cycles.pdf}
   \caption{Hypothesized cycles between different states of equilibrium
     and non-equilibrium in ecological theory (y-axis) and evolutionary
     demography/diversification (x-axis). Deviations from ecological
@@ -807,7 +794,7 @@ will be unequal.
 
 \begin{figure}[!hbp]
   \centering
-  \includegraphics[scale=1]{fig_age-abund.pdf}
+  % \includegraphics[scale=1]{fig_age-abund.pdf}
   \caption{Hypothesized relationships between lineage age and
     abundance under different evo-ecological scenarios. Colors
     correspond to panels in Figure \ref{fig:cycles}: teal is
@@ -827,7 +814,7 @@ will be unequal.
 
 \begin{figure}[!hbp]
   \centering
-  \includegraphics[scale=0.4]{fig_metab.pdf}
+  % \includegraphics[scale=0.4]{fig_metab.pdf}
   \caption{Pipeline to estimate true abundances from metabarcoding
     data. The pipeline follows sequence generation, matching sequences
     to a phylogeny (generated from the sequences themselves, or better
@@ -838,7 +825,7 @@ will be unequal.
 
 \begin{figure}[!hbp]
   \centering
-  \includegraphics[scale=1]{fig_abundEst-1.pdf}
+  % \includegraphics[scale=1]{fig_abundEst-1.pdf}
   \caption{Demonstration of agreement between actual and estimated
     abundances. Actual (simulated) abundances are on the x-axis, which
     the y-axis shows estimated abundances (error bars are 95\% maximum
@@ -849,7 +836,7 @@ will be unequal.
 
 \begin{figure}[!hbp]
   \centering
-  \includegraphics[scale=0.4]{fig_gimmeSAD.png}
+  % \includegraphics[scale=0.4]{fig_gimmeSAD.png}
   \caption{The gimmeSAD$\pi$ pipeline. The forward time models
     involves multi-regional expansion generating local abundance
     distributions over time with heterogeneity in
