@@ -2,7 +2,9 @@
 title: "Random effect multinomial model"
 author: "A. J. Rominger"
 date: "`r format(Sys.time(), '%d %B %Y')`"
-output: pdf_document
+output:
+  pdf_document:
+    keep_tex: true
 ---
 
 ```{r setup, include=FALSE}
